@@ -34,4 +34,4 @@ Currently, this action is only supported when getting complete image information
 
 This action will generate an **image information report**, which you can view at any time.
 
-<!-- More to be added -->
+DISMTools 0.4 expands this functionality by showing a preview of the information report after completing the process.

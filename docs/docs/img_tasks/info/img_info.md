@@ -15,6 +15,4 @@ _This action is supported on DISMTools 0.3.1 and later._
 
 ## Saving this information
 
-<!-- This is not implemented yet on the program, but mention it anyway. Perform changes to this section when needed -->
-
 You can also save this information by clicking the Save button on the bottom right and specifying the target path.
