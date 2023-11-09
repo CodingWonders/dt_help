@@ -15,8 +15,13 @@ nav:
     - Remounting an image: img_tasks/mgmt/remount_image.md
     - Splitting an image: img_tasks/mgmt/split_image.md
     - Unmounting an image: img_tasks/mgmt/unmount_image.md
-    - Image information:
+    - Image information dialogs:
       - Overview: img_tasks/info/infodlgs.md
+      - Image file information: img_tasks/info/img_info.md
+      - Package information: img_tasks/info/pkg_info.md
+      - Feature information: img_tasks/info/feat_info.md
+      - AppX package information: img_tasks/info/appxpkg_info.md
+      - Capability information: img_tasks/info/cap_info.md
   - OS packages:
     - Overview: img_tasks/packages/pkgs.md
     - Adding packages: img_tasks/packages/add_package.md
