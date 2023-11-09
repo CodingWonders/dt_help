@@ -19,7 +19,7 @@ The following dialogs let you get specific information from a Windows image or i
 | [Feature information](./feat_info.md) | Lets you get the information of all features present in a Windows image | <p align="center">-</p> |
 | [AppX package information](./appxpkg_info.md) | Lets you get the information of installed AppX packages | <ul><li>This action is only supported on Windows 8 and newer systems</li><li>You can't get information of the AppX packages you want to add</li></ul> |
 | [Capability information](./cap_info.md) | Lets you get the information of all capabilities present in a Windows image | <ul><li>This action is only supported on Windows 10 and newer</li></ul> |
-| Driver information | Lets you get the information of either installed drivers or the driver packages you want to add | <ul><li>The amount of installed drivers depends on the settings of the background processes</li></ul> |
+| [Driver information](./drv_info.md) | Lets you get the information of either installed drivers or the driver packages you want to add | <ul><li>The amount of installed drivers depends on the settings of the background processes</li></ul> |
 | Windows PE information | Lets you get the information of the target path and the scratch space amount on a Windows PE image | <ul><li>This action is only supported on Windows PE images</li></ul> |
 
 ## Saving image information
