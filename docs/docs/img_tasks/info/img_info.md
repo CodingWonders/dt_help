@@ -16,3 +16,7 @@ _This action is supported on DISMTools 0.3.1 and later._
 ## Saving this information
 
 You can also save this information by clicking the Save button on the bottom right and specifying the target path.
+
+## Related content
+
+- [Image information dialogs](../info/infodlgs.md)
