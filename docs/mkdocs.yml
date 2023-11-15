@@ -23,6 +23,7 @@ nav:
       - AppX package information: img_tasks/info/appxpkg_info.md
       - Capability information: img_tasks/info/cap_info.md
       - Driver information: img_tasks/info/drv_info.md
+      - Windows PE configuration information: img_tasks/info/winpe_info.md
   - OS packages:
     - Overview: img_tasks/packages/pkgs.md
     - Adding packages: img_tasks/packages/add_package.md
