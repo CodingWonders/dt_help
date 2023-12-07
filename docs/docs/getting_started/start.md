@@ -20,13 +20,13 @@ With the program up and running, you'll begin by **creating a project**. Use the
 You'll see the following screen, in which you need to provide a name and a location.
 
 <p align="center">
-	<img src="../../../res/getting_started/create_a_project.png"/>
+	<img src="../../res/getting_started/create_a_project.png"/>
 </p>
 
 After providing data on both fields, click OK. The project will be created and you'll be at the project screen.
 
 <p align="center">
-	<img src="../../../res/getting_started/project_view.png"/>
+	<img src="../../res/getting_started/project_view.png"/>
 </p>
 
 To load this project later, go to "Open an existing project..." and specify the project location.
@@ -42,7 +42,7 @@ The first thing you need to do after creating a project is to load an image to i
 To mount a Windows image, either click the "Mount image..." button, or click the link in the left panel. You'll see this screen:
 
 <p align="center">
-	<img src="../../../res/getting_started/mount_an_image.png" />
+	<img src="../../res/getting_started/mount_an_image.png" />
 </p>
 
 Specify the source image file you want to mount and the path you want to mount the image to. You can also configure more settings from this dialog, if you wish. Follow the image mount guide for more information.
@@ -58,7 +58,7 @@ Since DISMTools 0.2, the program lets you load a mount directory and use it in y
 To do this, switch to the "Image" tab on the left and click the link on the bottom. Next, specify the mount directory and click OK. That's it!
 
 <p align="center">
-	<img src="../../../res/getting_started/load_mount_directory.png" />
+	<img src="../../res/getting_started/load_mount_directory.png" />
 </p>
 
 To look for available mounted images, use the [**mounted image manager**](../img_tasks/tools/mimgmgr.md).
@@ -66,7 +66,7 @@ To look for available mounted images, use the [**mounted image manager**](../img
 **NOTE:** since version 0.3.2, the aforementioned link will open a popup mounted image picker, instead of a folder browser, that makes this process easier. Simply select a mounted image from the list and click OK:
 
 <p align="center">
-	<img src="../../../res/getting_started/load_mount_directory_new.png" />
+	<img src="../../res/getting_started/load_mount_directory_new.png" />
 </p>
 
 ## Best practices
