@@ -7,13 +7,13 @@ With DISMTools you can perform a variety of tasks, which are organized depending
 Every task can be accessed from the "Commands" menu.
 
 <p align="center">
-	<img src="../../../res/img_tasks/cmd_menu.png"/>
+	<img src="../../res/img_tasks/cmd_menu.png"/>
 </p>
 
 You also have access to the most essential tasks in the center of the screen.
 
 <p align="center">
-	<img src="../../../res/img_tasks/quick_actions.png"/>
+	<img src="../../res/img_tasks/quick_actions.png"/>
 </p>
 
 Do note that these options become accessible when you create a project and mount an image to it. To do those actions, follow the [Getting started](../getting_started/start.md) guide for more information.

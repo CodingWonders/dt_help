@@ -5,6 +5,8 @@ nav:
 - Getting started: getting_started/start.md
 - Image tasks:
   - Overview: img_tasks/img_tasks.md
+  - Online installation management mode: img_tasks/online_inst_mgmt.md
+  - Offline installation management mode: img_tasks/offline_inst_mgmt.md
   - Image management:
     - Overview: img_tasks/mgmt.md
     - Applying an image: img_tasks/mgmt/apply_image.md
