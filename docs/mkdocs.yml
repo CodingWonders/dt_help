@@ -12,7 +12,6 @@ nav:
     - Applying an image: img_tasks/mgmt/apply_image.md
     - Capturing an image: img_tasks/mgmt/capture_image.md
     - Removing volume images from an image file: img_tasks/mgmt/delete_image.md
-    - Getting image information: img_tasks/mgmt/get_imginfo.md
     - Mounting an image: img_tasks/mgmt/mount_image.md
     - Remounting an image: img_tasks/mgmt/remount_image.md
     - Splitting an image: img_tasks/mgmt/split_image.md
