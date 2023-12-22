@@ -33,6 +33,7 @@ There are some differences between managing an online installation and a standar
 
 - You can't save in the online installation management mode, because all commit operations are disabled
 - You will only be able to perform the actions your OS supports
+- All Windows Update-related settings are disabled if you're managing your active installation in Safe Mode (without networking capabilities)
 
 ## Risks of online installation management
 

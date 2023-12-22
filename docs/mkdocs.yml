@@ -54,7 +54,7 @@ nav:
     - Mounted image manager: img_tasks/tools/mimgmgr.md
     - Image conversion: img_tasks/tools/wim2esd.md
     - SWM file merger: img_tasks/tools/swm2wim.md
-    - DISM Configuration List Editor: img_tasks/tools/wimscript_editor.md
+    - DISM Configuration List Editor: img_tasks/tools/configlisteditor.md
 - Command-line tools:
   - Overview: cli_tools/cli_tools.md
   - Command Console:
