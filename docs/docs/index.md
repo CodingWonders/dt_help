@@ -1,10 +1,16 @@
 # Welcome to DISMTools
 
-The free and open-source GUI for DISM operations.
-
 <p align="center">
-	<img src="./res/product.png">
+	<img src="./res/product.png" />
 </p>
 
 
-**NOTE:** this documentation is not complete and is subject to change. Check out the entries on the side panel for more information.
+Welcome to the DISMTools Help Documentation! With DISMTools you can easily manage your Windows images and installations.
+
+<p align="center">
+	<img src="./res/product_overview.png" />
+</p>
+
+To begin browsing the help documentation contents, check out the entries on the side panel.
+
+If you want to help improve this documentation, learn more [here](https://github.com/CodingWonders/dt_help).
