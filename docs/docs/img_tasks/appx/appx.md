@@ -85,7 +85,10 @@ You can view the reference of App Installer files [here](https://learn.microsoft
 
 ## Available tasks
 
-This is what you can do with AppX packages in DISMTools:
+- [Adding provisioned AppX packages](../add_provisionedappxpackage)
+- [Getting AppX package information](../../info/appxpkg_info)
+- [Removing provisioned AppX packages](../remove_provisionedappxpackage)
 
-- [Add provisioned AppX packages](./add_provisionedappxpackage.md)
-- [Remove provisioned AppX packages](./remove_provisionedappxpackage.md)
+<p align="center">
+	<img src="../../../res/img_tasks/appx/appx.png" />
+</p>

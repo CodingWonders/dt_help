@@ -1,4 +1,4 @@
-site_name: DISMTools
+site_name: DISMTools Help Documentation
 theme: readthedocs
 nav:
 - Home: index.md
@@ -8,7 +8,7 @@ nav:
   - Online installation management mode: img_tasks/online_inst_mgmt.md
   - Offline installation management mode: img_tasks/offline_inst_mgmt.md
   - Image management:
-    - Overview: img_tasks/mgmt.md
+#    - Overview: img_tasks/mgmt.md
     - Applying an image: img_tasks/mgmt/apply_image.md
     - Capturing an image: img_tasks/mgmt/capture_image.md
     - Removing volume images from an image file: img_tasks/mgmt/delete_image.md
@@ -44,12 +44,12 @@ nav:
   - Drivers:
     - Overview: img_tasks/drivers/drvs.md
     - Adding drivers: img_tasks/drivers/add_driver.md
-    - Removing drivers: img_tasks/drivers/remove_driver.md
     - Exporting drivers: img_tasks/drivers/export_driver.md
+    - Removing drivers: img_tasks/drivers/remove_driver.md
   - Windows PE servicing:
     - Setting the target path: img_tasks/winpe/set_targetpath.md
     - Setting the scratch space: img_tasks/winpe/set_scratchspace.md
-  - Command-line help: img_tasks/cli_tools/cli_help
+#  - Command-line help: img_tasks/cli_tools/cli_help
   - Tools:
     - Mounted image manager: img_tasks/tools/mimgmgr.md
     - Image conversion: img_tasks/tools/wim2esd.md

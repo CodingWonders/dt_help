@@ -16,4 +16,5 @@ This task begins an image export operation with all necessary settings to merge 
 
 ## Related content
 
+- [Splitting a WIM file into SWM files](../../mgmt/split_image)
 - [Learn how to do it manually](https://linustechtips.com/topic/1318158-merge-two-swm-files/)
