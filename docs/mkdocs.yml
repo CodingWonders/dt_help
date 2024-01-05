@@ -61,5 +61,4 @@ nav:
     - Overview: cli_tools/cmd_console.md
     - Tools:
       - Command help: cli_tools/cmdhelp.md
-      - Mounted image manager (CLI version): cli_tools/mimgmgr.md
       - Extended AppX package getter: cli_tools/extappx.md

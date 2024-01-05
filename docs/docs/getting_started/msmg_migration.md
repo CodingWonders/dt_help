@@ -1,7 +1,7 @@
 # Coming from MSMG Toolkit
 
 <p align="center">
-	<img src="../../../res/getting_started/msmg_toolkit.png" />
+	<img src="../../res/getting_started/msmg_toolkit.png" />
 </p>
 
 MSMG Toolkit is a free and open-source UI for DISM operations, which lets you integrate packages, manage features, and more. If you are coming from this utility to DISMTools, here are some changes:
@@ -11,7 +11,7 @@ MSMG Toolkit is a free and open-source UI for DISM operations, which lets you in
 MSMG Toolkit is a terminal user interface (TUI) front-end with menus that you can operate by pressing a keyboard button. This is still intuitive, but not as much as a graphical user interface (GUI) front-end; which DISMTools and other UIs are.
 
 <p align="center">
-	<img src="../../../res/product.png" />
+	<img src="../../res/product.png" />
 </p>
 
 ## Operations
