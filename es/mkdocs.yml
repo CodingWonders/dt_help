@@ -30,25 +30,25 @@ nav:
     - Añadir paquetes: img_tasks/packages/add_package.md
     - Eliminar paquetes: img_tasks/packages/remove_package.md
   - Características:
-    - Overview: img_tasks/features/features.md
-    - Enabling features: img_tasks/features/enable_feature.md
-    - Disabling features: img_tasks/features/disable_feature.md
+    - Resumen: img_tasks/features/features.md
+    - Habilitar características: img_tasks/features/enable_feature.md
+    - Deshabilitar características: img_tasks/features/disable_feature.md
   - Paquetes AppX:
-    - Overview: img_tasks/appx/appx.md
-    - Adding AppX packages: img_tasks/appx/add_provisionedappxpackage.md
-    - Removing AppX packages: img_tasks/appx/remove_provisionedappxpackage.md
+    - Resumen: img_tasks/appx/appx.md
+    - Añadir paquetes AppX: img_tasks/appx/add_provisionedappxpackage.md
+    - Eliminar paquetes AppX: img_tasks/appx/remove_provisionedappxpackage.md
   - Funcionalidades:
-    - Overview: img_tasks/capabilities/caps.md
-    - Adding capabilities: img_tasks/capabilities/add_capability.md
-    - Removing capabilities: img_tasks/capabilities/remove_capability.md
+    - Resumen: img_tasks/capabilities/caps.md
+    - Añadir funcionalidades: img_tasks/capabilities/add_capability.md
+    - Eliminar funcionalidades: img_tasks/capabilities/remove_capability.md
   - Controladores:
-    - Overview: img_tasks/drivers/drvs.md
-    - Adding drivers: img_tasks/drivers/add_driver.md
-    - Exporting drivers: img_tasks/drivers/export_driver.md
-    - Removing drivers: img_tasks/drivers/remove_driver.md
+    - Resumen: img_tasks/drivers/drvs.md
+    - Añadir controladores: img_tasks/drivers/add_driver.md
+    - Exportar controladores: img_tasks/drivers/export_driver.md
+    - Eliminar controladores: img_tasks/drivers/remove_driver.md
   - Servicio de Windows PE:
-    - Setting the target path: img_tasks/winpe/set_targetpath.md
-    - Setting the scratch space: img_tasks/winpe/set_scratchspace.md
+    - Establecer la ruta de destino: img_tasks/winpe/set_targetpath.md
+    - Establecer el espacio temporal: img_tasks/winpe/set_scratchspace.md
 #  - Command-line help: img_tasks/cli_tools/cli_help
   - Herramientas:
     - Administrador de imágenes montadas: img_tasks/tools/mimgmgr.md

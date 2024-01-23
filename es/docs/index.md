@@ -1,16 +1,16 @@
-# Welcome to DISMTools
+# Le damos la bienvenida a DISMTools
 
 <p align="center">
 	<img src="./res/product.png" />
 </p>
 
 
-Welcome to the DISMTools Help Documentation! With DISMTools you can easily manage your Windows images and installations.
+¡Le damos la bienvenida a la ayuda de DISMTools! Con este programa puede administrar fácilmente sus imágenes e instalaciones de Windows.
 
 <p align="center">
 	<img src="./res/product_overview.png" />
 </p>
 
-To begin browsing the help documentation contents, check out the entries on the side panel.
+Para comenzar a navegar por los contenidos de la ayuda, compruebe las entradas en el panel lateral.
 
-If you want to help improve this documentation, learn more [here](https://github.com/CodingWonders/dt_help).
+Si desea ayudar a mejorar esta documentación, puede aprender más [aquí](https://github.com/CodingWonders/dt_help).

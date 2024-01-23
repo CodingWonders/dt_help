@@ -1,90 +1,90 @@
-# Getting started
+# Comencemos
 
-If you don't know anything about Windows servicing, or come from other servicing tools, click on a section below to know what's different in this utility:
+Si no sabe nada acerca del servicio de Windows, o si viene de otras herramientas, haga clic en una sección de abajo para aprender más:
 
-- [Getting started with Windows servicing](./new_to_servicing.md)
-- I come from other tools
-	- [Coming from NTLite](https://example.com)
-	- [Coming from MSMG Toolkit](./msmg_migration.md)
+- [Comenzar con el servicio de Windows](./new_to_servicing.md)
+- Vengo de otras herramientas
+	- [Viniendo de NTLite](https://example.com)
+	- [Viniendo de MSMG Toolkit](./msmg_migration.md)
 
-If you want to know about something else, keep on reading.
+Si quiere saber acerca de algo más, continúe leyendo.
 
-## First steps
+## Primeros pasos
 
-After installation has completed, you may run the program. The following steps are recommended to be done in order to get started
+Tras finalizar la instalación, puede ejecutar el programa. Se recomienda realizar los siguientes pasos para comenzar
 
-### Creating your first project
+### Crear su primer proyecto
 
-With the program up and running, you'll begin by **creating a project**. Use the first link in the main screen, or go to File -> New project...
+Con el programa cargado, puede comenzar **creando un proyecto**. Utilice el primer enlace de la pantalla principal, o vaya a Archivo -> Nuevo proyecto...
 
-You'll see the following screen, in which you need to provide a name and a location.
+Verá la siguiente pantalla, en la que necesita proporcionar un nombre y una ubicación.
 
 <p align="center">
 	<img src="../../res/getting_started/create_a_project.png"/>
 </p>
 
-After providing data on both fields, click OK. The project will be created and you'll be at the project screen.
+Tras especificar ambos campos, haga clic en Aceptar. El proyecto será creado y usted estará en la pantalla de proyectos.
 
 <p align="center">
 	<img src="../../res/getting_started/project_view.png"/>
 </p>
 
-To load this project later, go to "Open an existing project..." and specify the project location.
+Para cargar este proyecto más tarde, vaya a "Abrir un proyecto existente..." y especifique la ubicación del proyecto.
 
-**NOTE:** in the future, a Recents list will be implemented
+**NOTA:** en el futuro se implementará una lista de Recientes
 
-### Loading a Windows image
+### Cargar una imagen de Windows
 
-The first thing you need to do after creating a project is to load an image to it. There are 2 ways to do this:
+Lo primero que debe hacer después de crear un proyecto es cargar una imagen en él. Hay 2 maneras de hacerlo:
 
-#### Mounting a Windows image
+#### Montando una imagen de Windows
 
-To mount a Windows image, either click the "Mount image..." button, or click the link in the left panel. You'll see this screen:
+Para montar una imagen de Windows, haga clic en "Montar imagen..." o haga clic en el enlace del panel de la izquierda. Verá esta pantalla:
 
 <p align="center">
 	<img src="../../res/getting_started/mount_an_image.png" />
 </p>
 
-Specify the source image file you want to mount and the path you want to mount the image to. You can also configure more settings from this dialog, if you wish. Follow the image mount guide for more information.
+Especifique el archivo de imagen de origen que desea montar y la ubicación en la que desea montar la imagen. También puede configurar más opciones en este diálogo si lo desea. Siga la guía de montaje de imágenes para más información.
 
-**INFO:** the easiest way of getting a Windows image is by extracting the `sources\install.wim` file from Windows installation media. This can be easily done by mounting the ISO in the File Explorer or by using 3rd party tools, like 7-Zip.
+**INFORMACIÓN:** la manera más sencilla de obtener una imagen de Windows es extrayendo el archivo `sources\install.wim` de los medios de instalación de Windows. Esto puede ser realizado con facilidad montando la imagen ISO en el Explorador de archivos o utilizando programas de terceros, como 7-Zip.
 
-Once you're done, click OK and wait for the image to be mounted. Finally, you have finished!
+Cuando haya terminado, haga clic en Aceptar y espere hasta que se haya montado la imagen. ¡Terminó!
 
-#### Loading an already existing mount directory
+#### Cargando un directorio de montaje existente
 
-Since DISMTools 0.2, the program lets you load a mount directory and use it in your project if you've already mounted a Windows image to it.
+Desde la versión 0.2, el programa le permite cargar un directorio de montaje y usarlo en su proyecto si ya montó una imagen de Windows en él.
 
-To do this, switch to the "Image" tab on the left and click the link on the bottom. Next, specify the mount directory and click OK. That's it!
+Para ello, cambie a la pestaña "Imagen" en la izquierda y haga clic en el enlace de abajo. Después, especifique el directorio de montaje y haga clic en Aceptar. ¡Eso es todo!
 
 <p align="center">
 	<img src="../../res/getting_started/load_mount_directory.png" />
 </p>
 
-To look for available mounted images, use the [**mounted image manager**](../img_tasks/tools/mimgmgr.md).
+Para consultar las imágenes montadas, utilice el [**administrador de imágenes montadas**](../img_tasks/tools/mimgmgr.md).
 
-**NOTE:** since version 0.3.2, the aforementioned link will open a popup mounted image picker, instead of a folder browser, that makes this process easier. Simply select a mounted image from the list and click OK:
+**NOTA:** desde la versión 0.3.2, el enlace anteriormente mencionado abrirá un escogedor de imágenes, en vez de un examinador de carpetas, que hace este proceso más fácil. Simplemente escoja una imagen montada de la lista y haga clic en Aceptar:
 
 <p align="center">
 	<img src="../../res/getting_started/load_mount_directory_new.png" />
 </p>
 
-## Best practices
+## Mejores prácticas
 
-When creating a project and/or managing Windows images, consider these best practices:
+Cuando crea un projecto y/o administra imágenes de Windows, considere estas mejores prácticas:
 
-### Project paths
+### Rutas de proyectos
 
-- Store your project on a location whose length is not greater than the `MAX_PATH` [path length limitation](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation) (260 characters)
+- Almacene su proyecto en una ubicación cuya longitud no exceda la [limitación de longitud de rutas](https://learn.microsoft.com/es-es/windows/win32/fileio/maximum-file-path-limitation) `MAX_PATH` (260 caracteres)
 
-	- A great place to store your project on would be at the root of your preferred drive, or in a folder 1 level deep. Such examples would be: `D:\` or `E:\Projects\`
-	- You can disable this limitation if you're using Windows 10, version 1607 or later, by following [these guides](https://learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?tabs=registry#enable-long-paths-in-windows-10-version-1607-and-later)
+	- Un buen lugar donde almacenar su proyecto puede estar en la raíz de su disco preferido o en una carpeta con 1 nivel de profundidad. Dichos ejemplos pueden ser: `D:\` o `E:\Projects\`
+	- Puede deshabilitar esta limitación si utiliza Windows 10, versión 1607 o posterior, siguiendo [estas guías](https://learn.microsoft.com/es-es/windows/win32/fileio/maximum-file-path-limitation?tabs=registry#enable-long-paths-in-windows-10-version-1607-and-later)
 
-### DISM operations
+### Operaciones de DISM
 
-- An antivirus program may prevent you from doing an image task, so it's recommended to set an exclusion to the mount path of the image
-- It's not recommended to mount more than 20 images at the same time, as it can cause significant performance degradation
-- You must run this program and, at any time, DISM as an administrator, no matter what privileges you may have
+- Un programa de antivirus podría no dejarle hacer una tarea de imagen, así que se recomienda establecer una exclusión a la ruta de montaje de la imagen
+- No se recomienda montar más de 20 imágenes al mismo tiempo, porque podría causar en una ralentización del sistema.
+- Debe ejecutar este programa y, en cualquier momento, DISM como un administrador, independientemente de los privilegios que posea
 - If you have mounted the image with write privileges enabled, it's best to commit your changes often. That way, if the image becomes corrupt, it's easier to recover it
 - It's not recommended to store files on network shares, as it can be faster to perform most operations if the files are copied to a local disk
 
