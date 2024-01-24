@@ -6,7 +6,7 @@ In 2007, Microsoft introduced Windows Vista, which would make lots of changes to
 
 With Windows Vista, Microsoft also introduced the Automated Installation Kit (AIK), which contains the deployment tools necessary for that operating system. Tools, such as ImageX (deploys images), Package Manager (deploys packages), IntlCfg (configures regional settings) or more; were included with this kit. However, Microsoft wanted to create a solution that would streamline the deployment process.
 
-Their answer was the **Deployment Image Servicing and Management** (DISM) tool, which does every action performed by the aforementioned utilities in a single command-line program. DISM was released alongside Windows 7, and has been improved since; with the addition of the API and PowerShell cmdlets and more.
+Their answer was the **Deployment Image Servicing and Management** (DISM) tool, which does every action performed by the aforementioned utilities in a single command-line program. DISM was released alongside Windows 7, and has been improved since; with the addition of the API, PowerShell cmdlets and more.
 
 Nowadays, if you want to manage Windows images, DISM is one tool to master.
 
@@ -20,7 +20,7 @@ Open-source alternatives are also available, such as:
 - [DISM GUI](https://github.com/mikecel79/DISMGUI)
 - [DISM++](https://github.com/Chuyu-Team/Dism-Multi-language)
 
-And, since you're browsing this site, **DISMTools** is another new alternative. If you want to try it out, or you're moving your workflow to this program, follow the "Coming from..." links in the Getting started section.
+And, since you're browsing this site, **DISMTools** is another new alternative.
 
 ## Useful resources
 

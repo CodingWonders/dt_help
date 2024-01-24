@@ -15,6 +15,20 @@ This is the in-progress help documentation content for DISMTools, which will be 
 5. Create your changes and test
 6. Once you've done your contributions, create a pull request
 
+### Building the final site
+
+To build the final sites for all languages, do the following:
+
+1. Open a terminal window in the directory you have cloned the repo to
+2. Type `powershell .\site_gen.ps1`
+
+> [!NOTE]
+> If you see a security warning, you need to unblock the file. To do this:
+> 1. Select the file, go to Properties and click "Unblock"
+> 2. Type in that terminal window the following: `powershell -command Unblock-File .\site_gen.ps1`
+
+Finally, you'll have all languages in the `site` folders of all languages.
+
 ## Additional notes
 
 - When adding full-window screenshots, ShareX is recommended and must be configured for window transparency capture. Go to the capture settings and enable such option

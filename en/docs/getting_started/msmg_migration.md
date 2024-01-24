@@ -20,4 +20,4 @@ With MSMG Toolkit, you have to copy the files from a Windows Setup disc to the `
 
 If you've loaded a Windows image into MSMG Toolkit and closed it, the program will unmount it. If you force the closure of the program and launch it again, it will remove EVERY file from the Windows image, making it **invalid** and **unrepairable**. This can be done because the Toolkit is launched as `TrustedInstaller` by default. You don't need to worry about that with DISMTools. After mounting an image to a project, it will stay there, even if you close the program; until you want to unmount it. Also, the program will **leave the mounted images alone** when starting up, apart from [reloading their servicing sessions](../img_tasks/mgmt/remount_image.md) if the images need a remount.
 
-With MSMG Toolkit, you can only manage Windows images. However, with DISMTools, you can manage Windows images and (active) installations.
+With MSMG Toolkit, you can only manage Windows images. However, with DISMTools, you can manage Windows images and installations of any kind.

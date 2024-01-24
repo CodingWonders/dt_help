@@ -1,14 +1,14 @@
-# Online installation management mode
+# Modo de administración de imágenes en línea
 
-DISMTools 0.3 and later let you manage your active installation (referred to as an "online installation") using the same interface you are used to when managing standard projects and Windows images.
+DISMTools 0.3 y posteriores versiones le permiten administrar su instalación activa (referida como una "instalación en línea") utilizando la misma interfaz a la que está acostumbrado al administrar proyectos e imágenes de Windows.
 
 <p align="center">
 	<img src="../../res/img_tasks/online_inst_mgmt/online_inst_mgmt.png" />
 </p>
 
-## Accessing this mode
+## Acceder a este modo
 
-You can access this mode in 2 ways: by clicking "Manage online installation" in the home screen or in the File menu.
+Puede acceder a este modo de 2 maneras: haciendo clic en el enlace "Administrar instalación activa" en la pantalla de inicio o en el menú Archivo.
 
 <p align="center">
 	<td>
@@ -21,29 +21,29 @@ You can access this mode in 2 ways: by clicking "Manage online installation" in 
 	</td>
 </p>
 
-You'll then be presented by this warning explaining you the risks of managing an active installation:
+Luego verá la siguiente advertencia que le explica los riesgos de la administración de instalaciones activas:
 
 <p align="center">
 	<img src="../../res/img_tasks/online_inst_mgmt/on_inst_mgmt_risk.png" />
 </p>
 
-## Differences with standard project management
+## Diferencias entre la administración de proyectos
 
-There are some differences between managing an online installation and a standard project, which will be mentioned below:
+Hay algunas diferencias entre la administración de proyectos e instalaciones en línea, que se mencionarán ahora:
 
-- You can't save in the online installation management mode, because all commit operations are disabled
-- You will only be able to perform the actions your OS supports
-- All Windows Update-related settings are disabled if you're managing your active installation in Safe Mode (without networking capabilities)
+- No puede guardar en el modo de administración de instalaciones en línea porque todas las opciones de guardado están deshabilitadas
+- Usted será capaz de realizar todas las tareas soportadas por su sistema operativo
+- Todas las configuraciones relacionadas con Windows Update están deshabilitadas si está administrando su instalación activa en el Modo Seguro (sin funciones de red)
 
-## Risks of online installation management
+## Riesgos de administración de instalaciones en línea
 
-**NOTE:** read this section *only* if the aforementioned warning didn't make it clear.
+**NOTA:** lea esta sección *solo* si la advertencia anterior no le quedó claro.
 
-Before managing your active installation, you **must** take some risks into account:
+Antes de administrar su instalación activa, **debe** considerar algunos riesgos:
 
-- We recommend **backing up your system** in case something goes wrong with the management process
-- **Don't act carelessly**. This is *your* system, after all, with your files and settings; so performing a bad management action can break it, up to the point of making it unbootable
+- Recomendamos **hacer una copia de seguridad de su sistema** en el caso de que algo vaya mal con el proceso de administración
+- **No realice tareas sin ser cuidadoso**. Este es *su* sistema, después de todo, con sus archivos y configuraciones; así que realizar una mala acción de administración puede romper su sistema, o evitar que arranque
 
-And, most importantly:
+Y, lo más importante:
 
-<p align="center"><b><u>WE ARE NOT RESPONSIBLE FOR ANY DAMAGE DONE TO YOUR SYSTEM</u></b></p>
+<p align="center"><b><u>NOSOTROS NO SOMOS RESPONSABLES DE CUALQUIER DAÑO REALIZADO A SU SISTEMA</u></b></p>

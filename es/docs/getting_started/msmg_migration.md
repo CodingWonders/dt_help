@@ -1,23 +1,23 @@
-# Coming from MSMG Toolkit
+# Viniendo de MSMG Toolkit
 
 <p align="center">
 	<img src="../../res/getting_started/msmg_toolkit.png" />
 </p>
 
-MSMG Toolkit is a free and open-source UI for DISM operations, which lets you integrate packages, manage features, and more. If you are coming from this utility to DISMTools, here are some changes:
+MSMG Toolkit es una interfaz de usuario gratuita y de código abierto para operaciones de DISM, que le permite integrar paquetes, administrar características, y más. Si viene de esta herramienta, le interesaría saber algunos cambios:
 
-## User interfaces
+## Interfaces de usuario
 
-MSMG Toolkit is a terminal user interface (TUI) front-end with menus that you can operate by pressing a keyboard button. This is still intuitive, but not as much as a graphical user interface (GUI) front-end; which DISMTools and other UIs are.
+MSMG Toolkit es una interfaz de usuario de terminal (TUI) con menús que puede operar pulsando una tecla. Esto es intuitivo, pero no tan intuitivo como una interfaz gráfica de usuario (GUI), que DISMTools y otras interfaces son.
 
 <p align="center">
 	<img src="../../res/product.png" />
 </p>
 
-## Operations
+## Operaciones
 
-With MSMG Toolkit, you have to copy the files from a Windows Setup disc to the `ISO` folder of the Toolkit launch directory and specify a Windows image to customize. With DISMTools, however, you don't have to. You only have to copy the Windows image you want from the `sources` directory of the Windows Setup disc to any location, create a project, and mount the image to it.
+Con MSMG Toolkit, debe copiar los archivos de un disco de instalación de Windows a la carpeta `ISO` del directorio del programa y especificar una imagen de Windows a personalizar. En cambio, con DISMTools, no tiene que hacer eso. Solo debe copiar la imagen de Windows que desee de la carpeta `sources` del disco de instalación de Windows a cualquier ubicación, crear un proyecto, y montar una imagen en él.
 
-If you've loaded a Windows image into MSMG Toolkit and closed it, the program will unmount it. If you force the closure of the program and launch it again, it will remove EVERY file from the Windows image, making it **invalid** and **unrepairable**. This can be done because the Toolkit is launched as `TrustedInstaller` by default. You don't need to worry about that with DISMTools. After mounting an image to a project, it will stay there, even if you close the program; until you want to unmount it. Also, the program will **leave the mounted images alone** when starting up, apart from [reloading their servicing sessions](../img_tasks/mgmt/remount_image.md) if the images need a remount.
+Si usted ha cargado una imagen de Windows en MSMG Toolkit y cerró el programa, lo desmontará. Si fuerza el cierre del programa y lo inicia de nuevo, eliminará TODOS los archivos de la imagen de Windows, haciéndola **inválida** e **imposible de reparar**. Esto puede ser realizado porque el programa se inicia como `TrustedInstaller` por defecto. Con DISMTools no debe preocuparse de eso. Tras montar una imagen en un proyecto, permanecerá ahí, incluso si cierra el programa; hasta que decida desmontarla. También, el programa **no modificará la imagen** al iniciarse, excepto cuando se [recargue la sesión de servicio](../img_tasks/mgmt/remount_image.md) si las imágenes necesitan una recarga.
 
-With MSMG Toolkit, you can only manage Windows images. However, with DISMTools, you can manage Windows images and (active) installations.
+Con MSMG Toolkit, usted solo puede administrar imágenes de Windows. En cambio, con DISMTools, usted puede administrar imágenes de Windows e instalaciones de cualquier tipo.

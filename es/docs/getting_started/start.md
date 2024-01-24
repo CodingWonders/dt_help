@@ -85,14 +85,14 @@ Cuando crea un projecto y/o administra imágenes de Windows, considere estas mej
 - Un programa de antivirus podría no dejarle hacer una tarea de imagen, así que se recomienda establecer una exclusión a la ruta de montaje de la imagen
 - No se recomienda montar más de 20 imágenes al mismo tiempo, porque podría causar en una ralentización del sistema.
 - Debe ejecutar este programa y, en cualquier momento, DISM como un administrador, independientemente de los privilegios que posea
-- If you have mounted the image with write privileges enabled, it's best to commit your changes often. That way, if the image becomes corrupt, it's easier to recover it
-- It's not recommended to store files on network shares, as it can be faster to perform most operations if the files are copied to a local disk
+- Si ha montado una imagen con permisos de escritura, es mejor guardar sus cambios de vez en cuando. Así, si la imagen se corrompe, es más fácil recuperarla
+- No se recomienda almacenar archivos que quiera utilizar en unidades de red, dado a que puede ser más rápido realizar la mayoría de operaciones si dichos archivos están copiados a un disco local
 
-### Servicing from Windows PE
+### Servicio de Windows PE
 	
-If you plan on servicing images from a Windows Preinstallation Environment (WinPE), consider these requirements while planning your strategy:
+Si planea ofrecer servicio a imágenes desde el entorno de preinstalación de Windows (WinPE), considere estos requisitos al planear su estrategia:
 
-- **Booting Windows PE from a local disk:** you can allocate additional memory to your Windows PE installation when booting it from a local disk, to increase performance; and you can create temporary folders to store large updates
-- **Booting Windows PE from read-only media:** if you plan on booting the Windows PE installation from optical media, ensure that your computer has enough memory
-- **Add a page file to your PE installation:** to improve memory management, consider creating a page file. See the [`wpeutil` command reference](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/wpeutil-command-line-options?view=windows-11#createpagefile) for more information
-- **Specify a scratch directory:** for some operations, like adding packages, it is best to create and specify a scratch directory to store temporary files on. If not specified, Windows PE creates a scratch directory of the size you specified when [setting the scratch space](../img_tasks/winpe/set_scratchspace.md). However, you may run out of space on your PE environment
+- **Iniciar Windows PE desde un disco local:** puede alocar memoria adicional a su instalación de Windows PE al iniciarla desde un disco local, para aumentar el rendimiento; y puede crear carpetas temporales para almacenar actualizaciones grandes
+- **Iniciar Windows PE desde medios de solo lectura:** si piensa iniciar la instalación de Windows PE desde medios ópticos, asegúrese de que su equipo tenga suficiente memoria
+- **Añadir un archivo de paginación a su instalación de Windows PE:** para mejorar la administración de memoria, considere crear un archivo de paginación. Consulte la [referencia del comando `wpeutil`](https://learn.microsoft.com/es-es/windows-hardware/manufacture/desktop/wpeutil-command-line-options?view=windows-11#createpagefile) para más información
+- **Especificar un directorio temporal:** para algunas operaciones, como añadir paquetes, es mejor crear y especificar un directorio temporal en la que almacenar archivos temporales. Si no se especifica, Windows PE crea un directorio temporal del tamaño que especificó al [establecer el espacio temporal](../img_tasks/winpe/set_scratchspace.md). Sin embargo, se puede quedar sin espacio en su entorno de Windows PE
