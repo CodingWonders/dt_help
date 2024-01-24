@@ -24,8 +24,8 @@ To build the final sites for all languages, do the following:
 
 > [!NOTE]
 > If you see a security warning, you need to unblock the file. To do this:
-> 1. Select the file, go to Properties and click "Unblock"
-> 2. Type in that terminal window the following: `powershell -command Unblock-File .\site_gen.ps1`
+> - Select the file, go to Properties and click "Unblock"
+> - Type in that terminal window the following: `powershell -command Unblock-File .\site_gen.ps1`
 
 Finally, you'll have all languages in the `site` folders of all languages.
 
