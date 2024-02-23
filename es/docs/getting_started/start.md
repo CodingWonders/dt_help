@@ -31,7 +31,11 @@ Tras especificar ambos campos, haga clic en Aceptar. El proyecto será creado y 
 
 Para cargar este proyecto más tarde, vaya a "Abrir un proyecto existente..." y especifique la ubicación del proyecto.
 
-**NOTA:** en el futuro se implementará una lista de Recientes
+Si ha cargado un proyecto recientemente, se añade al listado de Recientes. Para acceder a un proyecto, haga doble-clic en su entrada en la lista; y para eliminarlo, seleccione la entrada y haga clic en Eliminar entrada.
+
+<p align="center">
+	<img src="../../res/getting_started/recents_list.png"/>
+</p>
 
 ### Cargar una imagen de Windows
 

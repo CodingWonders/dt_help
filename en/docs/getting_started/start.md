@@ -31,7 +31,11 @@ After providing data on both fields, click OK. The project will be created and y
 
 To load this project later, go to "Open an existing project..." and specify the project location.
 
-**NOTE:** in the future, a Recents list will be implemented
+If you have loaded a project recently, it's added to the Recents list. To access a project, double-click its entry in the list; and to remove an entry select it and click Remove entry.
+
+<p align="center">
+	<img src="../../res/getting_started/recents_list.png"/>
+</p>
 
 ### Loading a Windows image
 
