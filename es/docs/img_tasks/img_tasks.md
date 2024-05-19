@@ -1,53 +1,63 @@
-# Image tasks
+# Tareas de la imagen
 
-With DISMTools you can perform a variety of tasks, which are organized depending on what action they perform to an image.
+Con DISMTools puede realizar una variedad de tareas, que están organizadas dependiendo de qué hacen en la imagen.
 
-## Where do I find the tasks?
+## ¿Dónde puedo encontrar las tareas?
 
-Every task can be accessed from the "Commands" menu.
+Todas las tareas son accesibles desde el menú "Comandos".
 
 <p align="center">
 	<img src="../../res/img_tasks/cmd_menu.png"/>
 </p>
 
-You also have access to the most essential tasks in the center of the screen.
+También tiene acceso a las tareas más esenciales en el centro de la pantalla.
 
 <p align="center">
 	<img src="../../res/img_tasks/quick_actions.png"/>
 </p>
 
-Do note that these options become accessible when you create a project and mount an image to it. To do those actions, follow the [Getting started](../getting_started/start.md) guide for more information.
+Dese cuenta de que estas opciones son accesibles cuando crea un proyecto y monta una imagen en él. Para hacer estas acciones, siga la guía de [Introducción](../getting_started/start.md) para más información.
 
-## Available tasks
+## Tareas disponibles
 
-- Image management
+- Administración de imágenes
 
-	- Applying Windows images
-	- Capturing Windows images
-	- Performing image cleanup
+	- Anexar cambios a un nuevo índice en la imagen de Windows
+	- Aplicar imágenes de Windows
+	- Capturar imágenes de Windows
+	- Limpiar puntos de montaje
+	- Exportar imágenes de Windows
+	- Obtener información del archivo de imagen
+	- Realizar limpieza de imágenes
 	
-- Package management
+- Administración de paquetes
 
-	- Adding packages
-	- Removing packages
+	- Añadir paquetes
+	- Eliminar paquetes
+	- Obtener información de paquetes
 
-- Feature management
+- Administración de características
 
-	- Enabling features
-	- Disabling features
+	- Habilitar características
+	- Deshabilitar características
+	- Obtener información de características
 
-- AppX package management
+- Administración de paquetes AppX
 
-	- AppX package documentation
-	- Adding AppX packages
-	- Removing AppX packages
+	- Añadir paquetes AppX
+	- Eliminar paquetes AppX
+	- Obtener información de paquetes AppX instalados
 	
-- Capability management
+- Administración de funcionalidades
 
-	- Adding capabilities
-	- Removing capabilities
+	- Añadir funcionalidades
+	- Eliminar funcionalidades
+	- Obtener información de funcionalidades
 
-- Driver management
+- Administración de controladores
 
-	- Adding drivers
-	- Removing drivers
+	- Añadir controladores
+	- Eliminar controladores
+	- Exportar controladores a una carpeta
+	- Importar controladores de otra imagen o instalación
+	- Obtener información de controladores

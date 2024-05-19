@@ -78,7 +78,7 @@ What we're interested in is the `<MainBundle>` section, which defines the packag
 The `Uri` property is what matters. DISMTools versions from 0.3.2 onwards read these files, detect a URL, and perform a file download.
 
 <p align="center">
-	<img src="https://github.com/CodingWonders/DISMTools/assets/101426328/574fcec6-78c9-4211-a28c-129ee5f0cd05" />
+	<img src="../../../res/img_tasks/appx/appinstaller_down.png" />
 </p>
 
 You can view the reference of App Installer files [here](https://learn.microsoft.com/en-us/uwp/schemas/appinstallerschema/schema-root).

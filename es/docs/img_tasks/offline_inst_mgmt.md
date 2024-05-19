@@ -1,14 +1,14 @@
-# Offline installation management mode
+# Modo de administración de imágenes fuera de línea
 
-DISMTools 0.4 lets you manage installations in any partition (referred to as an "offline installation") using the same interface you are used to when managing standard projects and Windows images.
+DISMTools 0.4 y versiones posteriores le permiten administrar instalaciones en cualquier partición (referido como una "instalación fuera de línea") usando la misma interfaz a la que está acostumbrado cuando administra proyectos estándar e imágenes de Windows.
 
 <p align="center">
 	<img src="../../res/img_tasks/offline_inst_mgmt/offline_inst_mgmt.png" />
 </p>
 
-## Accessing this mode
+## Acceder a este modo
 
-You can access this mode in 2 ways: by clicking "Manage offline installation" in the home screen or in the File menu.
+Puede acceder a este modo de 2 formas: haciendo clic en "Administrar instalación fuera de línea" en la pantalla principal o en el menú Archivo.
 
 <p align="center">
 	<td>
@@ -21,23 +21,23 @@ You can access this mode in 2 ways: by clicking "Manage offline installation" in
 	</td>
 </p>
 
-Then, you have to choose the disk containing the Windows installation you want to manage:
+Luego, tiene que escoger el disco que contenga la instalación de Windows que desea administrar:
 
 <p align="center">
 	<img src="../../res/img_tasks/offline_inst_mgmt/off_inst_mgmt_choose_disk.png" />
 </p>
 
-### Unsupported drives
+### Discos no soportados
 
-You can't perform management of an installation on a drive if it meets at least one criterion out of the following:
+No puede realizar administración de una instalación en un disco si cumple al menos uno de los siguientes criterios:
 
-- The drive contains an installation of Windows Vista or an earlier version of Windows
-- The drive containing the installation is not formatted as NTFS
-- The drive containing the installation is mounted as a removable medium
-- The drive containing the installation is mounted with read-only privileges
+- El disco contiene una instalación de Windows Vista o anterior de Windows
+- El disco que contenga la instalación no está formateado con NTFS
+- El disco que contenga la instalación se ha montado como un medio removible
+- El disco que contenga la instalación se ha montado con privilegios de solo lectura
 
-## Differences with standard project management
+## Diferencias con la administración de proyectos estándar
 
-There are some differences between managing an offline installation and a standard project, which will be mentioned below:
+Hay algunas diferencias entre la administración de instalaciones fuera de línea y un proyecto estándar, que serán mencionadas abajo:
 
-- You can't save in the offline installation management mode, because all commit operations are disabled
+- No puede guardar en el modo de administración de instalaciones fuera de línea debido a que todas las opciones de guardado están deshabilitadas
