@@ -54,6 +54,10 @@ You can save this information to a report file by clicking the Save button on th
 
 Also note that, if you have background processes configured to not detect all drivers, you will be asked if you want to save the information of all of them.
 
+## Additional search functionality
+
+With the Search functionality introduced in DISMTools 0.5 you can search through your installed drivers more easily. This will default to the first column. However, if you want to search through installed drivers based on their original file names (second column), you can **prepend your search query with `og:`**.
+
 ## Related content
 
 - [Image information dialogs](../info/infodlgs.md)

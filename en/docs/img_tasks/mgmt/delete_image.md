@@ -16,3 +16,7 @@ Do note that, if the image is mounted, it will be unmounted **discarding changes
 ## Options
 
 - You can check the integrity of the image before proceeding
+
+## Remarks
+
+While this streamlines the Windows image to only contain the indexes you want, it is not a way to reduce the image file in size. If you want to do that, consider [exporting the image](../export_image).

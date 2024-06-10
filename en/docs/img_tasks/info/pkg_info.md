@@ -37,6 +37,14 @@ You can save this information to a report file by clicking the Save button on th
 - **Q: Why can't I drop files from a normal program?**
 - **A:** this is a common issue where you can't drop content from a non-elevated program to an elevated program. The workaround is to run the program you're dropping the content from as an administrator. If you opened the program from the Run dialog, you can easily launch it as Admin by holding the CTRL + Shift keys and pressing Enter
 
+## A better way of viewing custom properties
+
+DISMTools 0.5 introduces a new way of viewing custom properties of features. This new view allows you to better understand the hierarchy of the properties in a tree view.
+
+<p align="center">
+    <img src="../../../res/img_tasks/info/cprop_viewer.png" />
+</p>
+
 ## Related content
 
 - [Image information dialogs](../info/infodlgs.md)

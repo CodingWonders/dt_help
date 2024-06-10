@@ -1,5 +1,7 @@
 site_name: DISMTools Help Documentation
-theme: readthedocs
+theme:
+  name: readthedocs
+  sticky_navigation: False
 nav:
 - Home: index.md
 - Getting started: getting_started/start.md
@@ -9,9 +11,11 @@ nav:
   - Offline installation management mode: img_tasks/offline_inst_mgmt.md
   - Image management:
 #    - Overview: img_tasks/mgmt.md
+    - Appending to an image: img_tasks/mgmt/append_image.md
     - Applying an image: img_tasks/mgmt/apply_image.md
     - Capturing an image: img_tasks/mgmt/capture_image.md
     - Removing volume images from an image file: img_tasks/mgmt/delete_image.md
+    - Exporting a Windows image: img_tasks/mgmt/export_image.md
     - Mounting an image: img_tasks/mgmt/mount_image.md
     - Remounting an image: img_tasks/mgmt/remount_image.md
     - Splitting an image: img_tasks/mgmt/split_image.md
@@ -55,6 +59,7 @@ nav:
     - Image conversion: img_tasks/tools/wim2esd.md
     - SWM file merger: img_tasks/tools/swm2wim.md
     - DISM Configuration List Editor: img_tasks/tools/configlisteditor.md
+    - ISO creation tools: img_tasks/tools/isocreator.md
 - Command-line tools:
   - Overview: cli_tools/cli_tools.md
   - Command Console:

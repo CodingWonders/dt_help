@@ -33,6 +33,20 @@ DISMTools 0.3.2 expands the AppX addition capabilities by supporting App Install
 
 You can learn more about App Installer files [here](./appx.md#app-installer-files).
 
+### Encrypted application support
+
+DISMTools 0.5 introduces the ability to add encrypted application packages (`.eappx`, `.emsix`, `.eappxbundle`, and `.emsixbundle` files) to **active installations**. Simply add those, just like you would with regular applications.
+
+For standard encrypted applications (not bundles), you can also view standard information about them, thanks to a modified version of [UnpEax](https://github.com/dalion619/UnpEax):
+
+<p align="center">
+    <img src="../../../res/img_tasks/appx/eappx_support.png" />
+</p>
+
+*Encrypted application bundle package support will come in a future version.*
+
+You may notice that all options are disabled. This is because the program uses a PowerShell command to add these applications, as they can't be added using DISM.
+
 ## Options
 
 - A **license file** may be required for an application to be installed, which you can specify in the license file text box. Otherwise, select "Skip license"

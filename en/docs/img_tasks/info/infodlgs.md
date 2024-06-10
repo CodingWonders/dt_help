@@ -41,3 +41,25 @@ DISMTools 0.4 expands this functionality by showing a preview of the information
 <p align="center">
     <img src="https://github.com/CodingWonders/DISMTools/assets/101426328/c236375b-ce3d-46bb-8ef4-e9749205265d" />
 </p>
+
+## Searching through this information
+
+DISMTools 0.5 introduces **Search capabilities** to the information dialogs, allowing you to get the results you want more easily.
+
+This search technology uses **linear search**, a method that is easy to implement (code-wise) and fast at returning results.
+
+<!-- Anything is better than Windows Search though! -->
+
+To get started, simply click on the search box text and start typing.
+
+<p align="center">
+    <img src="../../../res/img_tasks/info/search_example.gif" />
+</p>
+
+The following items support this functionality:
+
+- Installed packages
+- Features
+- Installed AppX packages (only if the extended AppX getter script is not run)
+- Capabilities
+- Installed drivers

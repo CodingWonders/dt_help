@@ -22,6 +22,16 @@ When using the graphical interface, you can specify any entry using the file pic
 	<img src="../../../res/img_tasks/tools/configlisteditor/new_entry.png" />
 </p>
 
+### Excluding OneDrive folders
+
+DISMTools 0.4.2 introduces the ability to automatically exclude user OneDrive folders, which might cause errors in the tasks in which you can specify these files:
+
+<p align="center">
+	<img src="../../../res/img_tasks/tools/configlisteditor/onedrive_exclusion.png" />
+</p>
+
+To exclude user OneDrive folders in a drive, simply browse through your computer until you find it, and then click Exclude. User OneDrive folders will be automatically detected and added to the configuration list file.
+
 ## Related content
 
 - [Configuration list reference](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/dism-configuration-list-and-wimscriptini-files-winnext?view=windows-11)
