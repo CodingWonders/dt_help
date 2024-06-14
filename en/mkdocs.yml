@@ -5,6 +5,7 @@ theme:
 nav:
 - Home: index.md
 - Getting started: getting_started/start.md
+- What's new: whats_new/highlights.md
 - Image tasks:
   - Overview: img_tasks/img_tasks.md
   - Online installation management mode: img_tasks/online_inst_mgmt.md
