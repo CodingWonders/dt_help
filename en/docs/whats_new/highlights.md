@@ -49,7 +49,7 @@ The following people have helped shape this version of DISMTools by reporting is
 
 - [pm67310](https://forums.mydigitallife.net/members/pm67310.238741/) for spotting an issue with AppX package addition,
 - [Fraaaaaunimib](https://github.com/Fraaaaaunimib) for spotting issues with the program and custom themes,
-- [CodenameFlux](https://reddit.com/u/CodenameFlux) for spotting a CSS layout issue in the Help documentation and suggesting a change in the log view font and said contents,
+- [CodenameFlux](https://reddit.com/u/CodenameFlux) for spotting a CSS layout issue in the Help documentation and suggesting a change in the log view font and said documentation contents,
 - [arielsil](https://github.com/arielsil) for spotting an issue in the AppX package information dialog,
 - [AnubyteCode](https://github.com/AnubyteCode) for spotting issues regarding DISM component listings,
 - [liliactr](https://forums.mydigitallife.net/members/liliactr.89713/) for spotting splash screen issues, and

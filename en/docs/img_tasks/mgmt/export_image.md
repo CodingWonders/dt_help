@@ -10,8 +10,6 @@ If you want to separate your work made on a Windows image from the rest of the i
 
 ## Usage
 
-This procedure is similar to the one you would follow when [capturing a directory or a drive to an image](../capture_image).
-
 1. Specify the source image file from which to export the Windows image you have made changes to
 2. Specify a location for the exported Windows image
 3. Choose the index to export using the index picker
