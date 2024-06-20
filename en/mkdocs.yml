@@ -50,6 +50,7 @@ nav:
     - Overview: img_tasks/drivers/drvs.md
     - Adding drivers: img_tasks/drivers/add_driver.md
     - Exporting drivers: img_tasks/drivers/export_driver.md
+    - Importing drivers: img_tasks/drivers/import_driver.md
     - Removing drivers: img_tasks/drivers/remove_driver.md
   - Windows PE servicing:
     - Setting the target path: img_tasks/winpe/set_targetpath.md

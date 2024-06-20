@@ -16,7 +16,7 @@ This action is supported on the following platforms:
 | Windows 8/Server 2012 | ✔ |
 | Windows 8.1/Server 2012 R2 | ✔ |
 | Windows 10/Server 2016/2019/2022 | ✔ |
-| Windows 11/Server vNext | ✔ |
+| Windows 11/Server 2025 | ✔ |
 
 **NOTE:** if you are adding provisioned AppX packages to an online installation, you may need to enable sideloading of applications. Otherwise, you may get error code `0xc1570113`. More information can be found [here](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/sideload-apps-with-dism-s14?view=windows-11#configure-pcs-for-developing-windows-apps). You may also need to properly **register the application to the operating system** for it to fully work, a guide for which is explained later in this page.
 

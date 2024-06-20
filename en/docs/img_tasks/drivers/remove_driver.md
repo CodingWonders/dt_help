@@ -16,7 +16,7 @@ This action is supported on the following platforms:
 | Windows 8/Server 2012 | ✔ |
 | Windows 8.1/Server 2012 R2 | ✔ |
 | Windows 10/Server 2016/2019/2022 | ✔ |
-| Windows 11/Server vNext | ✔ |
+| Windows 11/Server 2025 | ✔ |
 
 <i>This action is supported on DISMTools 0.3 and newer</i>
 
