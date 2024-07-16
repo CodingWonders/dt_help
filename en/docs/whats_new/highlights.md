@@ -14,6 +14,8 @@ With the new ISO creation tools, you can test your Windows images quickly and ea
 
 <!-- This will also turn that system into a guinea pig. -->
 
+New to **Update 1** is the Driver Installation Module, which assists you in installing device drivers on Windows Preinstallation Environments. These drivers are later added to the target image.
+
 [Check it out](../../img_tasks/tools/isocreator)
 
 ## Search through items quickly
