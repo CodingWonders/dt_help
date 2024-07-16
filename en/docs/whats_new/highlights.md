@@ -4,42 +4,42 @@ This new version of DISMTools comes with new features that enhance image managem
 
 If you want to take a look at everything that has changed though, check out the [release notes page](https://github.com/CodingWonders/DISMTools/releases/latest) for more information.
 
-## Quickly test your Windows images
+## Test your Windows images with more confidence
 
-With the new ISO creation tools, you can test your Windows images quickly and easily by simulating a deployment to a virtual machine (VM) or a system that you may have lying around. This will let you verify everything is good with your Windows image before moving on to larger deployments or to further customizations.
+The ISO creation tools have seen several improvements with the addition of 2 new features. The **Driver Installation Module** lets you add drivers to Windows Preinstallation Environments to add support for devices that are not compatible by default, and the **Extensibility Suite** lets you perform further customizations to the DISMTools Preinstallation Environment to include your applications (either the ones that you have made or the ones that you find useful to include).
 
 <p align="center">
 	<img src="../../res/whats_new/WhatsNew_1.png" />
 </p>
 
-<!-- This will also turn that system into a guinea pig. -->
+[Check out the new features](../../img_tasks/tools/isocreator)
 
-[Check it out](../../img_tasks/tools/isocreator)
+## Task additions and improvements
 
-## Search through items quickly
+DISMTools 0.5.1 comes with improvements to existing tasks and some newcomers. For example, you can now configure stub package preferences for AppX packages, so that you can either explicitly install the full version of an application, its stub version (meaning that the full application will be downloaded on first launch), or go with the defaults for the application package.
 
-The new search capabilities in the information dialogs of DISMTools 0.5 let you get the results that **you want** out of the rest, which may not be interesting for you.
+Also, you can now list the contents of Windows images (even the ones that haven't been mounted) with the **Windows Image Explorer**, which is also available as a standalone download.
 
-Simply type your query into the search box and you'll then get the results you wanted.
+Finally, package addition has received the ability to add Microsoft Update Manifest (MUM) files.
 
 <p align="center">
 	<img src="../../res/whats_new/WhatsNew_2.png" />
 </p>
 
+
 [Learn more](../../img_tasks/info/infodlgs)
 
-## Improvements in AppX addition
+## Overall refinements
 
-This new release improves the AppX addition technologies, supporting new application types and giving you more information.
+<!-- Think of this release as the "Mac OS X Snow Leopard" of DISMTools - 0 new features, and lots of enhancements -->
 
-AppX addition now supports encrypted application packages during the management of active installations, and the downloader for App Installer (`.appinstaller`) packages now reports more information regarding the transfer, like the download speed or the download URL. The downloader now reports download errors as well.
+This release also focuses on refining existing tasks and functionality to improve the user experience. For example, you can now get a description of operation errors instead of generic instructions telling you to look at the error codes online. We have updated the dependencies of the program, simplified the logic of some tasks, and improved detection of Assessment and Deployment Kits as well.
 
-<p align="center">
-	<img src="../../res/whats_new/WhatsNew_3.png" />
-</p>
+## New translations
 
-- [Learn more about encrypted application support](../../img_tasks/appx/add_provisionedappxpackage)
-- [Learn more about App Installer files](../../img_tasks/appx/appx)
+*Ciao!* We have travelled to a place with amazing places like Rome or Venice, with amazing food like spaghetti or *ravioli*, and with tourist attractions like the Colosseum or the leaning tower of Pisa.
+
+Jokes aside, we have added Italian translations to this version, making it the fifth supported language.
 
 <!-- Room for more features -->
 
