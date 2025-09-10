@@ -4,7 +4,7 @@ Si no sabe nada acerca del servicio de Windows, o si viene de otras herramientas
 
 - [Comenzar con el servicio de Windows](./new_to_servicing.md)
 - Vengo de otras herramientas
-	- [Viniendo de NTLite](https://example.com)
+	- [Viniendo de NTLite](./ntlite_migration.md)
 	- [Viniendo de MSMG Toolkit](./msmg_migration.md)
 
 Si quiere saber acerca de algo más, continúe leyendo.
