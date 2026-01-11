@@ -1,0 +1,412 @@
+site_name: DISMTools Help Documentation
+theme:
+  name: readthedocs
+  sticky_navigation: False
+  prev_next_buttons_location: none
+  logo: logo.png
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+markdown_extensions:
+  - mdx_math
+use_directory_urls: false
+plugins:
+  - search
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: en
+          name: English
+          default: true
+          build: true
+        - locale: es
+          name: Español
+          build: true
+          nav_translations:
+            Home: Inicio
+            Getting started: Comienzo
+            What's new: Novedades
+            Image tasks: Operaciones con imágenes
+            Tools: Herramientas
+            External tools: Herramientas externas
+            Overview: Resumen
+            Online installation management mode: Modo de administración de imágenes en línea
+            Offline installation management mode: Modo de administración de imágenes fuera de línea
+            Image management: Administración de imágenes
+            Appending to an image: Anexar a una imagen
+            Applying an image: Aplicar una imagen
+            Capturing an image: Capturar una imagen
+            Removing volume images from an image file: Eliminar archivos de volumen de un archivo de imagen
+            Exporting a Windows image: Exportar una imagen de Windows
+            Listing the contents of Windows images: Listar contenidos de imágenes de Windows
+            Mounting an image: Montar una imagen
+            Remounting an image: Remontar una imagen
+            Splitting an image: Dividir una imagen
+            Unmounting an image: Desmontar una imagen
+            Image information dialogs: Diálogos de información de imagen
+            Image file information: Información de archivos de imagen
+            Package information: Información de paquetes
+            Feature information: Información de características
+            AppX package information: Información de paquetes AppX
+            Capability information: Información de funcionalidades
+            Driver information: Información de controladores
+            Windows PE configuration information: Información de configuración de Windows PE
+            OS packages: Paquetes del sistema operativo
+            Adding packages: Añadir paquetes
+            Removing packages: Eliminar paquetes
+            Features: Características
+            Enabling features: Habilitar características
+            Disabling features: Deshabilitar características
+            AppX packages: Paquetes AppX
+            Adding AppX packages: Añadir paquetes AppX
+            Removing AppX packages: Eliminar paquetes AppX
+            Edition servicing: Servicio de ediciones
+            Upgrading an image to a higher edition: Actualizar imagen a una edición superior
+            Setting the product key: Establecer la clave de producto
+            Languages and regional servicing: Servicio de idiomas y regional
+            Setting keyboard layered drivers: Establecer controladores de capas de teclado
+            Capabilities: Funcionalidades
+            Adding capabilities: Añadir funcionalidades
+            Removing capabilities: Eliminar funcionalidades
+            Drivers: Controladores
+            Adding drivers: Añadir controladores
+            Exporting drivers: Exportar controladores
+            Importing drivers: Importar controladores
+            Removing drivers: Eliminar controladores
+            Mounted image manager: Administrador de imágenes montadas
+            Image conversion: Conversión de imágenes
+            SWM file merger: Combinación de archivos SWM
+            DISM Configuration List Editor: Editor de listas de configuración de DISM
+            ISO creation tools: Herramientas de creación de ISO
+            Creating ISO files: Creación de archivos ISO
+            Installing the operating system: Instalación del sistema operativo
+            Local installations: Instalaciones locales
+            Network-based installations: Instalaciones basadas en red
+            Windows Deployment Services (WDS) Helper: Ayudante de WDS
+            Driver Installation Module: Módulo de instalación de controladores
+            Extensibility Suite: Suite de extensibilidad
+            SysPrep Preparation Tool: Herramienta de preparación de SysPrep
+            Image registry control panel: Panel de control del registro de imágenes
+            System service manager: Administrador de servicios del sistema
+            System environment variable manager: Administrador de variables de entorno del sistema
+            Unattended answer files: Archivos de respuesta desatendida
+            Unattended answer file manager: Administrador de archivos de respuesta desatendida
+            Unattended answer file creator: Creador de archivos de respuesta desatendida
+            Applying unattended answer files: Aplicar archivos de respuesta desatendida
+            Creating your themes: Creando tus temas
+            Viewing diagnostic logs: Ver registros de diagnóstico
+        - locale: fr
+          name: Français
+          build: true
+          nav_translations:
+            Home: Accueil
+            Getting started: Commencer
+            What's new: Nouveautés
+            Image tasks: Tâches d'image
+            Tools: Outils
+            External tools: Outils externes
+            Overview: Aperçu
+            Online installation management mode: Mode de gestion de l'installation en ligne
+            Offline installation management mode: Mode de gestion de l'installation hors ligne
+            Image management: Gestion des images
+            Appending to an image: Ajouter à une image
+            Applying an image: Appliquer une image
+            Capturing an image: Capturer une image
+            Removing volume images from an image file: Supprimer les images de volume d'un fichier image
+            Exporting a Windows image: Exporter une image Windows
+            Listing the contents of Windows images: Lister le contenu des images Windows
+            Mounting an image: Monter une image
+            Remounting an image: Remonter une image
+            Splitting an image: Fractionner une image
+            Unmounting an image: Démonter une image
+            Image information dialogs: Boîtes de dialogue d'informations d'image
+            Image file information: Informations du fichier image
+            Package information: Informations sur les packages
+            Feature information: Informations sur les fonctionnalités
+            AppX package information: Informations sur les packages AppX
+            Capability information: Informations sur les capacités
+            Driver information: Informations sur les pilotes
+            Windows PE configuration information: Informations de configuration de Windows PE
+            OS packages: Packages du système d'exploitation
+            Adding packages: Ajout de packages
+            Removing packages: Suppression de packages
+            Features: Fonctionnalités
+            Enabling features: Activation des fonctionnalités
+            Disabling features: Désactivation des fonctionnalités
+            AppX packages: Packages AppX
+            Adding AppX packages: Ajout de packages AppX
+            Removing AppX packages: Suppression de packages AppX
+            Edition servicing: Maintenance des éditions
+            Upgrading an image to a higher edition: Mettre à niveau une image vers une édition supérieure
+            Setting the product key: Définir la clé de produit
+            Languages and regional servicing: Maintenance des langues et régionales
+            Setting keyboard layered drivers: Définir les pilotes de clavier en couches
+            Capabilities: Capacités
+            Adding capabilities: Ajout de capacités
+            Removing capabilities: Suppression de capacités
+            Drivers: Pilotes
+            Adding drivers: Ajout de pilotes
+            Exporting drivers: Export de pilotes
+            Importing drivers: Import de pilotes
+            Removing drivers: Suppression de pilotes
+            Mounted image manager: Gestionnaire d'images montées
+            Image conversion: Conversion d'image
+            SWM file merger: Fusion de fichiers SWM
+            DISM Configuration List Editor: Éditeur de liste de configuration DISM
+            ISO creation tools: Outils de création d'ISO
+            Creating ISO files: Création de fichiers ISO
+            Installing the operating system: Installation du système d'exploitation
+            Local installations: Installations locales
+            Network-based installations: Installations basées sur le réseau
+            Windows Deployment Services (WDS) Helper: Assistant des services de déploiement Windows (WDS)
+            Driver Installation Module: Module d'installation des pilotes
+            Extensibility Suite: Suite d'extensibilité
+            SysPrep Preparation Tool: Outil de préparation SysPrep
+            Image registry control panel: Panneau de contrôle du registre d'image
+            System service manager: Gestionnaire de services système
+            System environment variable manager: Gestionnaire de variables d'environnement système
+            Unattended answer files: Fichiers de réponse sans assistance
+            Unattended answer file manager: Gestionnaire de fichiers de réponse sans assistance
+            Unattended answer file creator: Créateur de fichiers de réponse sans assistance
+            Applying unattended answer files: Application des fichiers de réponse sans assistance
+            Creating your themes: Création de vos thèmes
+            Viewing diagnostic logs: Affichage des journaux de diagnostic
+        - locale: pt
+          name: Português
+          build: true
+          nav_translations:
+            Home: Início
+            Getting started: Iniciando
+            What's new: Novidades
+            Image tasks: Tarefas de imagem
+            Tools: Ferramentas
+            External tools: Ferramentas externas
+            Overview: Visão geral
+            Online installation management mode: Modo de gerenciamento de instalação on-line
+            Offline installation management mode: Modo de gerenciamento de instalação off-line
+            Image management: Gerenciamento de imagem
+            Appending to an image: Anexar a uma imagem
+            Applying an image: Aplicar uma imagem
+            Capturing an image: Capturando uma imagem
+            Removing volume images from an image file: Removendo imagens de volume de um arquivo de imagem
+            Exporting a Windows image: Exportando uma imagem do Windows
+            Listing the contents of Windows images: Listando o conteúdo das imagens do Windows
+            Mounting an image: Montando uma imagem
+            Remounting an image: Remontando uma imagem
+            Splitting an image: Dividindo uma imagem
+            Unmounting an image: Desmontando uma imagem
+            Image information dialogs: Caixas de diálogo de informações de imagem
+            Image file information: Informações de arquivo de imagem
+            Package information: Informações do pacote
+            Feature information: Informações de recursos
+            AppX package information: Informações do pacote AppX
+            Capability information: Informações de capacidade
+            Driver information: Informações do driver
+            Windows PE configuration information: Informações de configuração do Windows PE
+            OS packages: Pacotes do sistema operacional
+            Adding packages: Adicionando pacotes
+            Removing packages: Removendo pacotes
+            Features: Recursos
+            Enabling features: Habilitando recursos
+            Disabling features: Desabilitando recursos
+            AppX packages: Pacotes AppX
+            Adding AppX packages: Adicionando pacotes AppX
+            Removing AppX packages: Removendo pacotes AppX
+            Edition servicing: Manutenção de edição
+            Upgrading an image to a higher edition: Atualizando uma imagem para uma edição superior
+            Setting the product key: Definindo a chave do produto
+            Languages and regional servicing: Manutenção de idiomas e regional
+            Setting keyboard layered drivers: Configurando drivers de teclado em camadas
+            Capabilities: Capacidades
+            Adding capabilities: Adicionando capacidades
+            Removing capabilities: Removendo capacidades
+            Drivers: Drivers
+            Adding drivers: Adicionando drivers
+            Exporting drivers: Exportando drivers
+            Importing drivers: Importando drivers
+            Removing drivers: Removendo drivers
+            Mounted image manager: Gerenciador de imagem montada
+            Image conversion: Conversão de imagem
+            SWM file merger: Fusão de arquivo SWM
+            DISM Configuration List Editor: Editor de lista de configuração DISM
+            ISO creation tools: Ferramentas de criação de ISO
+            Creating ISO files: Criando arquivos ISO
+            Installing the operating system: Instalando o sistema operacional
+            Local installations: Instalações locais
+            Network-based installations: Instalações baseadas em rede
+            Windows Deployment Services (WDS) Helper: Assistente do Windows Deployment Services (WDS)
+            Driver Installation Module: Módulo de instalação do driver
+            Extensibility Suite: Suite de extensibilidade
+            SysPrep Preparation Tool: Ferramenta de preparação do SysPrep
+            Image registry control panel: Painel de controle do registro de imagem
+            System service manager: Gerenciador de serviço do sistema
+            System environment variable manager: Gerenciador de variável de ambiente do sistema
+            Unattended answer files: Arquivos de resposta autônoma
+            Unattended answer file manager: Gerenciador de arquivo de resposta autônoma
+            Unattended answer file creator: Criador de arquivo de resposta autônoma
+            Applying unattended answer files: Aplicando arquivos de resposta autônoma
+            Creating your themes: Criando seus temas
+            Viewing diagnostic logs: Visualizando logs de diagnóstico
+        - locale: it
+          name: Italiano
+          build: true
+          nav_translations:
+            Home: Home
+            Getting started: Iniziare
+            What's new: Novità
+            Image tasks: Attività immagine
+            Tools: Strumenti
+            External tools: Strumenti esterni
+            Overview: Panoramica
+            Online installation management mode: Modalità di gestione dell'installazione online
+            Offline installation management mode: Modalità di gestione dell'installazione offline
+            Image management: Gestione immagini
+            Appending to an image: Aggiunta a un'immagine
+            Applying an image: Applicazione di un'immagine
+            Capturing an image: Acquisizione di un'immagine
+            Removing volume images from an image file: Rimozione delle immagini del volume da un file immagine
+            Exporting a Windows image: Esportazione di un'immagine Windows
+            Listing the contents of Windows images: Elencazione del contenuto delle immagini di Windows
+            Mounting an image: Montaggio di un'immagine
+            Remounting an image: Rimontaggio di un'immagine
+            Splitting an image: Suddivisione di un'immagine
+            Unmounting an image: Smontaggio di un'immagine
+            Image information dialogs: Finestre di dialogo informazioni immagine
+            Image file information: Informazioni file immagine
+            Package information: Informazioni pacchetto
+            Feature information: Informazioni funzione
+            AppX package information: Informazioni pacchetto AppX
+            Capability information: Informazioni capacità
+            Driver information: Informazioni driver
+            Windows PE configuration information: Informazioni configurazione Windows PE
+            OS packages: Pacchetti del sistema operativo
+            Adding packages: Aggiunta di pacchetti
+            Removing packages: Rimozione di pacchetti
+            Features: Funzioni
+            Enabling features: Abilitazione delle funzioni
+            Disabling features: Disabilitazione delle funzioni
+            AppX packages: Pacchetti AppX
+            Adding AppX packages: Aggiunta di pacchetti AppX
+            Removing AppX packages: Rimozione di pacchetti AppX
+            Edition servicing: Manutenzione edizione
+            Upgrading an image to a higher edition: Aggiornamento di un'immagine a un'edizione superiore
+            Setting the product key: Impostazione del codice prodotto
+            Languages and regional servicing: Manutenzione lingue e area geografica
+            Setting keyboard layered drivers: Impostazione dei driver della tastiera in livelli
+            Capabilities: Capacità
+            Adding capabilities: Aggiunta di capacità
+            Removing capabilities: Rimozione di capacità
+            Drivers: Driver
+            Adding drivers: Aggiunta di driver
+            Exporting drivers: Esportazione di driver
+            Importing drivers: Importazione di driver
+            Removing drivers: Rimozione di driver
+            Mounted image manager: Gestore immagini montate
+            Image conversion: Conversione immagini
+            SWM file merger: Fusione file SWM
+            DISM Configuration List Editor: Editor elenco configurazione DISM
+            ISO creation tools: Strumenti creazione ISO
+            Creating ISO files: Creazione di file ISO
+            Installing the operating system: Installazione del sistema operativo
+            Local installations: Installazioni locali
+            Network-based installations: Installazioni basate su rete
+            Windows Deployment Services (WDS) Helper: Assistente Servizi di distribuzione Windows (WDS)
+            Driver Installation Module: Modulo installazione driver
+            Extensibility Suite: Suite di estensibilità
+            SysPrep Preparation Tool: Strumento di preparazione SysPrep
+            Image registry control panel: Pannello di controllo del Registro di sistema immagini
+            System service manager: Gestore servizi di sistema
+            System environment variable manager: Gestore variabili di ambiente di sistema
+            Unattended answer files: File di risposta automatica
+            Unattended answer file manager: Gestore file di risposta automatica
+            Unattended answer file creator: Creatore file di risposta automatica
+            Applying unattended answer files: Applicazione dei file di risposta automatica
+            Creating your themes: Creazione dei temi
+            Viewing diagnostic logs: Visualizzazione dei log di diagnostica
+nav:
+- Home: index.md
+- Getting started: getting_started/start.md
+- What's new: whats_new/highlights.md
+- Image tasks:
+  - Overview: img_tasks/img_tasks.md
+  - Online installation management mode: img_tasks/online_inst_mgmt.md
+  - Offline installation management mode: img_tasks/offline_inst_mgmt.md
+  - Image management:
+    - Appending to an image: img_tasks/mgmt/append_image.md
+    - Applying an image: img_tasks/mgmt/apply_image.md
+    - Capturing an image: img_tasks/mgmt/capture_image.md
+    - Removing volume images from an image file: img_tasks/mgmt/delete_image.md
+    - Exporting a Windows image: img_tasks/mgmt/export_image.md
+    - Listing the contents of Windows images: img_tasks/mgmt/list_image.md
+    - Mounting an image: img_tasks/mgmt/mount_image.md
+    - Remounting an image: img_tasks/mgmt/remount_image.md
+    - Splitting an image: img_tasks/mgmt/split_image.md
+    - Unmounting an image: img_tasks/mgmt/unmount_image.md
+    - Image information dialogs:
+      - Overview: img_tasks/info/infodlgs.md
+      - Image file information: img_tasks/info/img_info.md
+      - Package information: img_tasks/info/pkg_info.md
+      - Feature information: img_tasks/info/feat_info.md
+      - AppX package information: img_tasks/info/appxpkg_info.md
+      - Capability information: img_tasks/info/cap_info.md
+      - Driver information: img_tasks/info/drv_info.md
+      - Windows PE configuration information: img_tasks/info/winpe_info.md
+  - OS packages:
+    - Overview: img_tasks/packages/pkgs.md
+    - Adding packages: img_tasks/packages/add_package.md
+    - Removing packages: img_tasks/packages/remove_package.md
+  - Features:
+    - Overview: img_tasks/features/features.md
+    - Enabling features: img_tasks/features/enable_feature.md
+    - Disabling features: img_tasks/features/disable_feature.md
+  - AppX packages:
+    - Overview: img_tasks/appx/appx.md
+    - Adding AppX packages: img_tasks/appx/add_provisionedappxpackage.md
+    - Removing AppX packages: img_tasks/appx/remove_provisionedappxpackage.md
+  - Edition servicing:
+    - Overview: img_tasks/editions/editions.md
+    - Upgrading an image to a higher edition: img_tasks/editions/set_edition.md
+    - Setting the product key: img_tasks/editions/set_productkey.md
+  - Languages and regional servicing:
+    - Setting keyboard layered drivers: img_tasks/langs/set_layereddriver.md
+  - Capabilities:
+    - Overview: img_tasks/capabilities/caps.md
+    - Adding capabilities: img_tasks/capabilities/add_capability.md
+    - Removing capabilities: img_tasks/capabilities/remove_capability.md
+  - Drivers:
+    - Overview: img_tasks/drivers/drvs.md
+    - Adding drivers: img_tasks/drivers/add_driver.md
+    - Exporting drivers: img_tasks/drivers/export_driver.md
+    - Importing drivers: img_tasks/drivers/import_driver.md
+    - Removing drivers: img_tasks/drivers/remove_driver.md
+- Tools:
+  - Mounted image manager: img_tasks/tools/mimgmgr.md
+  - Image conversion: img_tasks/tools/wim2esd.md
+  - SWM file merger: img_tasks/tools/swm2wim.md
+  - DISM Configuration List Editor: img_tasks/tools/configlisteditor.md
+  - ISO creation tools:
+    - Overview: img_tasks/tools/isocreator.md
+    - Creating ISO files: img_tasks/tools/isocreator/isocreate.md
+    - Installing the operating system:
+      - Local installations: img_tasks/tools/isocreator/install/localinstall.md
+      - Network-based installations:
+        - Overview: img_tasks/tools/isocreator/install/netinst/pxehelpers.md
+        - Creating a basic network setup (Hyper-V): img_tasks/tools/isocreator/install/netinst/setup.md
+        - Windows Deployment Services (WDS) Helper: img_tasks/tools/isocreator/install/netinst/wds.md
+      - External Tools:
+        - Driver Installation Module: img_tasks/tools/isocreator/exttools/dim.md
+        - Extensibility Suite: img_tasks/tools/isocreator/exttools/dtpe_es.md
+        - SysPrep Preparation Tool: img_tasks/tools/isocreator/exttools/sysprep.md
+      - Command-line:
+        - Overview: img_tasks/tools/isocreator/cmdline/cmdline.md
+        - Administration Script Reference: img_tasks/tools/isocreator/cmdline/scriptref.md
+  - Image registry control panel: img_tasks/tools/regcpl.md
+  - System service manager: img_tasks/tools/servicemgr.md
+  - System environment variable manager: img_tasks/tools/envvarmgr.md
+  - Unattended answer files:
+    - Overview: img_tasks/unattend/unattend.md
+    - Unattended answer file manager: img_tasks/unattend/unatt_man.md
+    - Unattended answer file creator: img_tasks/unattend/unatt_create.md
+    - Applying unattended answer files: img_tasks/unattend/unatt_apply.md
+  - External tools:
+    - Creating your themes: img_tasks/exttools/themedesigner.md
+    - Viewing diagnostic logs: img_tasks/exttools/dynaviewer.md
