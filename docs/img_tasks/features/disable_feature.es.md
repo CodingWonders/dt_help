@@ -4,7 +4,7 @@
 <img src="/res/img_tasks/features/disable_feature.png" />
 </p>
 
-Con DISMTools puedes deshabilitar características de una imagen para eliminar componentes opcionales de una instalación de Windows o cancelar la adición de componentes opcionales previamente instalados. Esta acción está disponible en Comandos > OS packages > Disable feature... o mediante el botón "Disable feature...".
+Con DISMTools puedes deshabilitar características de una imagen para eliminar componentes opcionales de una instalación de Windows o cancelar la adición de componentes opcionales previamente instalados. Esta acción está disponible en Comandos > Paquetes del sistema operativo > Deshabilitar característica... o mediante el botón "Deshabilitar característica...".
 
 ## Compatibilidad del sistema operativo destino
 

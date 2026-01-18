@@ -4,13 +4,13 @@
     <img src="/res/img_tasks/drivers/import_driver.png" />
 </p>
 
-Con DISMTools puedes importar controladores de terceros de una imagen a otra, garantizando compatibilidad hardware similar a la imagen origen. Accede a Comandos > Drivers > Import driver packages...
+Con DISMTools puedes importar controladores de terceros de una imagen a otra, garantizando compatibilidad hardware similar a la imagen origen. Accede a Comandos > Contoladores > Importar paquetes de controlador...
 
 ## Compatibilidad del sistema operativo destino
 
 Esta acción es compatible en las siguientes plataformas:
 
-| Platform | Supported? |
+| Plataforma | ¿Soportado? |
 |:--:|:--:|
 | Windows 7/Server 2008 R2 | ✔ |
 | Windows 8/Server 2012 | ✔ |

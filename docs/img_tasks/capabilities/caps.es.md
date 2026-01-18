@@ -1,14 +1,14 @@
-# Capability operations
+# Operaciones de Capacidades
 
-By performing capability package (Feature on Demand) operations, you can modify the functionality of the Windows image.
+Al realizar operaciones de paquete de capacidades (Características bajo Demanda), puedes modificar la funcionalidad de la imagen de Windows.
 
-These operations are supported on Windows 10 and later operating systems, including Server versions.
+Estas operaciones son compatibles con Windows 10 y versiones posteriores del sistema operativo, incluidas versiones de Server.
 
-## Available tasks
+## Tareas disponibles
 
-- [Adding capabilities](./add_capability.md)
-- [Getting capability information](../info/cap_info.md)
-- [Removing capabilities](./remove_capability.md)
+- [Añadir capacidades](./add_capability.md)
+- [Obtener información de capacidades](../info/cap_info.md)
+- [Eliminar capacidades](./remove_capability.md)
 
 <p align="center">
 	<img src="/res/img_tasks/capabilities/capabilities.png" />

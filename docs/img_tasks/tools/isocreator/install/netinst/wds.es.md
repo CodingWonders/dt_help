@@ -30,7 +30,7 @@ Finalmente, configura las opciones PXE iniciales para responder tanto a equipos 
 
 ![Initial PXE Settings](../../../../../res/img_tasks/tools/isocreator/netinstall/wds/wds_server_pxe_initial_settings.png)
 
-Tras hacer clic en Next, el servidor quedará configurado y el servicio WDS se iniciará. Es posible que encuentres un problema al intentar arrancar el servicio:
+Tras hacer clic en Siguiente, el servidor quedará configurado y el servicio WDS se iniciará. Es posible que encuentres un problema al intentar arrancar el servicio:
 
 ![WDS Service Startup Error](../../../../../res/img_tasks/tools/isocreator/netinstall/wds/wds_server_startup_error.png)
 
@@ -82,7 +82,7 @@ Si seguiste cada paso correctamente, deberías ver una pantalla como la siguient
 
 ![WDS Startup](../../../../../res/img_tasks/tools/isocreator/netinstall/wds/wds_startup.png)
 
-Pulsa <kbd>ENTER</kbd> y espera a que arranque el entorno WinPE de DISMTools. Una vez arrancado, selecciona la opción 2 para instalación por red:
+Pulsa <kbd>INTRO</kbd> y espera a que arranque el entorno WinPE de DISMTools. Una vez arrancado, selecciona la opción 2 para instalación por red:
 
 ![DT PE Network](../../../../../res/img_tasks/tools/isocreator/netinstall/wds/dt_pe_netinstall.png)
 
@@ -90,7 +90,7 @@ Llegarás a esta pantalla: indica la dirección IP del servidor, el puerto en el
 
 ![WDSHC AuthInfo](../../../../../res/img_tasks/tools/isocreator/netinstall/wds/wdsh_client_authinfo.png)
 
-Elige la imagen del listado y el grupo al que pertenece; pulsa ENTER:
+Elige la imagen del listado y el grupo al que pertenece; pulsa INTRO:
 
 ![WDSHC Install Images](../../../../../res/img_tasks/tools/isocreator/netinstall/wds/wdsh_client_install_images.png)
 

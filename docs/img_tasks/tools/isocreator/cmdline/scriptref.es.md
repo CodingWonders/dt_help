@@ -1,42 +1,42 @@
-# Preinstallation Environment Command-line Administration Script Reference
+# Referencia de Scripts de Administración de Línea de Comandos del Entorno de Preinstalación
 
-This page contains reference documentation for Administration Scripts included with the DISMTools Preinstallation Environment. You can access these by going to the `scripts` folder on the root of the boot drive (type `cd \scripts` to go there).
+Esta página contiene documentación de referencia para Scripts de Administración incluidos con el Entorno de Preinstalación de DISMTools. Puedes acceder a ellos yendo a la carpeta `scripts` en la raíz de la unidad de arranque (escribe `cd \scripts` para ir allí).
 
 <p align="center">
     <img src="/res/img_tasks/tools/isocreator/cmdline/cmdline_scriptref.png" />
 </p>
 
-## Available scripts
+## Scripts disponibles
 
-Currently, 3 scripts are included:
+Actualmente, se incluyen 3 scripts:
 
-### Initialize Networking (`initializenetwork.bat`)
+### Inicializar Red (`initializenetwork.bat`)
 
-This script initializes the networking stack in the Preinstallation Environment for use with network-ready applications, and also enables the firewall.
+Este script inicializa la pila de red en el Entorno de Preinstalación para uso con aplicaciones listas para red, y también habilita el firewall.
 
-### Full Disk Copy (`fullcopy.bat`)
+### Copia Completa de Disco (`fullcopy.bat`)
 
-This script performs a full disk copy from one disk to another with robocopy.
+Este script realiza una copia completa de disco de un disco a otro con robocopy.
 
-Usage:
+Uso:
 
-1. Enter the source drive letter
-2. Enter the destination drive letter
-3. Wait for the process to complete
+1. Ingresa la letra de unidad de origen
+2. Ingresa la letra de unidad de destino
+3. Espera a que el proceso se complete
 
-### Capture Image (`imagecapture.bat`)
+### Capturar Imagen (`imagecapture.bat`)
 
-This script captures a Windows system drive into a WIM file that can be used later. In DISMTools 0.7.2 and later, this tool can be launched automatically after Sysprep completes.
+Este script captura una unidad de sistema Windows en un archivo WIM que puede usarse más tarde. En DISMTools 0.7.2 y posteriores, esta herramienta puede lanzarse automáticamente después de que Sysprep se complete.
 
-Usage:
+Uso:
 
-1. Enter the source drive letter (the Windows installation to capture), or an action to perform:
-    - Type `DIM` to run the Driver Installation Module in case you don't see your drives
-    - Type `NET` to map a network share in the environment. If successful, it will be used as the destination for the WIM file automatically
-    - Type `WDS` to run the WDS Image Capture wizard. This will let you upload the captured image directly to a WDS server   
-2. Enter the destination drive letter (where to save the WIM file)
-3. Enter the WIM file name (for example, `install.wim`)
-4. Enter the image name (for example, `Windows 11 Pro`)
-5. Wait for the process to complete
+1. Ingresa la letra de unidad de origen (la instalación de Windows a capturar), o una acción a realizar:
+    - Escribe `DIM` para ejecutar el Módulo de Instalación de Controladores en caso de que no veas tus unidades
+    - Escribe `NET` para mapear un recurso compartido de red en el entorno. Si tiene éxito, se usará automáticamente como destino para el archivo WIM
+    - Escribe `WDS` para ejecutar el asistente de Captura de Imagen WDS. Esto te permitirá subir la imagen capturada directamente a un servidor WDS   
+2. Ingresa la letra de unidad de destino (donde guardar el archivo WIM)
+3. Ingresa el nombre del archivo WIM (por ejemplo, `install.wim`)
+4. Ingresa el nombre de la imagen (por ejemplo, `Windows 11 Pro`)
+5. Espera a que el proceso se complete
 
-After DISM completes, you will see a result screen.
+Después de que DISM se complete, verás una pantalla de resultado.

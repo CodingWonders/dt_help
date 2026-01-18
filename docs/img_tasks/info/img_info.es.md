@@ -10,7 +10,7 @@ _Esta acción es compatible con DISMTools 0.3.1 y posteriores._
 
 ## Uso
 
-1. Si has cargado un proyecto con una imagen montada, la opción "Currently mounted image" está marcada por defecto. Esta opción se desactiva al cargar un proyecto sin imágenes montadas o al gestionar una instalación online. Puedes elegir cualquier archivo de imagen seleccionando "Another image" y especificando el archivo.
+1. Si has cargado un proyecto con una imagen montada, la opción "Imagen montada actualmente" está marcada por defecto. Esta opción se desactiva al cargar un proyecto sin imágenes montadas o al gestionar una instalación online. Puedes elegir cualquier archivo de imagen seleccionando "Otra imagen" y especificando el archivo.
 2. La vista de lista se rellenará con información básica de los índices: número de índice y nombre de la imagen. Selecciona un índice para ver información detallada.
 
 ## Guardar esta información

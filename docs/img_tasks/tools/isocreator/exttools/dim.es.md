@@ -1,58 +1,58 @@
-### Driver Installation Module
+# Módulo de Instalación de Controladores
 
-The **Driver Installation Module** (DIM) is a quick and easy way of adding device drivers to booted Windows Preinstallation Environments:
+El **Módulo de Instalación de Controladores** (DIM) es una forma rápida y sencilla de añadir controladores de dispositivos a entornos de preinstalación de Windows iniciados:
 
 <p align="center">
     <img src="/res/img_tasks/tools/isocreator/dim/DIM_MainScreen.png" />
 </p>
 
-While full functionality is achieved with the DISMTools Preinstallation Environment, you can still use the DIM in every Preinstallation Environment. This is compatible with the x86, amd64, and arm64 architectures.
+Aunque la funcionalidad completa se logra con el Entorno de Preinstalación de DISMTools, aún puedes usar el DIM en cualquier Entorno de Preinstalación. Esto es compatible con las arquitecturas x86, amd64 y arm64.
 
-*NOTE: arm64 support for the DIM arrived in version 0.6.2.*
+*NOTA: El soporte para arm64 del DIM llegó en la versión 0.6.2.*
 
-#### Usage
+#### Uso
 
-1. Click the "Add" button and choose between a single driver file or an entire folder
+1. Haz clic en el botón "Add" y elige entre un archivo de controlador único o una carpeta completa
 
-    - If you choose a folder, the Driver Installation Module will perform a recursive scan for INF files. This may pick up invalid INF files you may have
+    - Si eliges una carpeta, el Módulo de Instalación de Controladores realizará un escaneo recursivo en busca de archivos INF. Esto puede recoger archivos INF inválidos que puedas tener
 
-2. Perform any changes with the "Edit" and "Remove" buttons
-3. Click the "Install" button and let the program add the drivers
+2. Realiza cualquier cambio con los botones "Edit" y "Remove"
+3. Haz clic en el botón "Install" y deja que el programa añada los controladores
 
-After driver installation, you will see an installation summary:
+Después de la instalación de controladores, verás un resumen de instalación:
 
 <p align="center">
     <img src="/res/img_tasks/tools/isocreator/dim/DIM_Summary.png" />
 </p>
 
-Later, after applying your Windows image, the Preinstallation Environment Helper will add those drivers to the target image.
+Más tarde, después de aplicar tu imagen de Windows, el Ayudante del Entorno de Preinstalación añadirá esos controladores a la imagen objetivo.
 
-#### Practical use: computers with third-party disk controllers
+#### Uso práctico: computadoras con controladores de disco de terceros
 
-A practical use of the Driver Installation Module is to add compatibility for disk controllers that are not shipped with Windows PEs by default. This is the case if the test system is relatively new.
+Un uso práctico del Módulo de Instalación de Controladores es añadir compatibilidad para controladores de disco que no se incluyen con los Windows PE por defecto. Este es el caso si el sistema de prueba es relativamente nuevo.
 
 <p align="center">
     <img src="/res/img_tasks/tools/isocreator/dim/practical_use/disk_before.jpg" />
 </p>
 
-Here's how you can proceed:
+Aquí está cómo puedes proceder:
 
-1. Boot to a live Linux environment and use the partition manager that may come with it to grab the model of the desired drive. If you don't have a Linux ISO available, we recommend [GParted Live](https://gparted.org/livecd.php) for its simplicity and its small size
+1. Inicia en un entorno Linux vivo y usa el administrador de particiones que pueda venir con él para obtener el modelo de la unidad deseada. Si no tienes un ISO de Linux disponible, recomendamos [GParted Live](https://gparted.org/livecd.php) por su simplicidad y su pequeño tamaño
 
     ![GParted](../../../../res/img_tasks/tools/isocreator/dim/practical_use/diskinfo.jpg)
     
-2. Additionally, you may want to get information about the model of the computer. In most Linux systems, you can run `sudo lshw` in the terminal
+2. Además, puedes querer obtener información sobre el modelo de la computadora. En la mayoría de los sistemas Linux, puedes ejecutar `sudo lshw` en el terminal
 
-    ![Computer info](../../../../res/img_tasks/tools/isocreator/dim/practical_use/compinfo.jpg)
+    ![Información de la computadora](../../../../res/img_tasks/tools/isocreator/dim/practical_use/compinfo.jpg)
     
-    After getting the model of the computer, go to the computer manufacturer's website to download compatible drivers. **Make sure that you extract them and that you DON'T install them to your system by accident**. After that, copy the drivers to wherever you want
+    Después de obtener el modelo de la computadora, ve al sitio web del fabricante de la computadora para descargar controladores compatibles. **Asegúrate de que los extraigas y que NO los instales en tu sistema por accidente**. Después de eso, copia los controladores a donde quieras
     
-3. Open the Driver Installation Module, add the folder containing the drivers and click Install
+3. Abre el Módulo de Instalación de Controladores, añade la carpeta que contiene los controladores y haz clic en Install
 
-    ![DIM Installation](../../../../res/img_tasks/tools/isocreator/dim/practical_use/dim_install.jpg)
+    ![Instalación DIM](../../../../res/img_tasks/tools/isocreator/dim/practical_use/dim_install.jpg)
     
-4. Check disks once again
+4. Verifica los discos una vez más
 
-    ![Disk Listing](../../../../res/img_tasks/tools/isocreator/dim/practical_use/disk_after.jpg)
+    ![Lista de discos](../../../../res/img_tasks/tools/isocreator/dim/practical_use/disk_after.jpg)
     
-<!-- And, yes, I know how to make screenshots -->
+<!-- Y sí, sé cómo hacer capturas de pantalla -->

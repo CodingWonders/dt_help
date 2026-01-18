@@ -1,4 +1,4 @@
-### Driver Installation Module
+# Driver Installation Module
 
 The **Driver Installation Module** (DIM) is a quick and easy way of adding device drivers to booted Windows Preinstallation Environments:
 

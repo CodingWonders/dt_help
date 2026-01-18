@@ -21,7 +21,7 @@ Ten en cuenta que la cantidad de paquetes AppX listados depende de la configurac
 
 DISMTools intenta detectar el asset principal del logo cuando seleccionas un paquete AppX; a veces la selección puede ser incorrecta.
 
-Si observas un asset incorrecto, informa un problema en: https://github.com/CodingWonders/DISMTools/issues/new?assignees=CodingWonders&labels=bug&projects=&template=store-logo-asset-preview-issue.md&title= (se requiere cuenta GitHub).
+Si observas un asset incorrecto, informa un problema [aquí](https://github.com/CodingWonders/DISMTools/issues/new?assignees=CodingWonders&labels=bug&projects=&template=store-logo-asset-preview-issue.md&title=) (se requiere cuenta GitHub).
 
 ## Contenido relacionado
 

@@ -1,7 +1,7 @@
 # Conversión de imágenes
 
 <p align="center">
-	<img src="../../res/img_tasks/tools/wim2esd/wim2esd.png" />
+	<img src="/res/img_tasks/tools/wim2esd/wim2esd.png" />
 </p>
 
 Con DISMTools puedes convertir imágenes entre WIM y ESD (y viceversa).

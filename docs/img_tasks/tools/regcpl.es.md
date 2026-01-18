@@ -1,7 +1,7 @@
 # Administrar árboles del registro de la imagen
 
 <p align="center">
-	<img src="../../res/img_tasks/tools/regcpl/regcpl.png" />
+	<img src="/res/img_tasks/tools/regcpl/regcpl.png" />
 </p>
 
 El panel de control del registro de imagen te permite realizar cambios en el registro de la imagen o instalación offline que gestionas, de forma rápida y sencilla.

@@ -7,7 +7,7 @@
 El Gestor de archivos de respuesta desatendida te permite administrar los archivos de respuesta asociados a tu proyecto. Puedes acceder a este gestor de dos maneras:
 
 - Ve a Herramientas> Unattended answer file manager
-- Haz clic con el botón derecho en Unattended answer files en el árbol del proyecto y selecciona Unattended answer files > Manage
+- Haz clic con el botón derecho en Archivos de respuesta desatendida en el árbol del proyecto y selecciona Archivos de respuesta desatendida > Manage
 
 *Esta herramienta está disponible en DISMTools 0.5.1 y posteriores.*
 

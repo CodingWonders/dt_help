@@ -2,7 +2,7 @@
 
 El Diseñador de temas de DISMTools es una herramienta para crear y editar temas. Puedes acceder a él desde:
 
-- `Tools > Options > Personalization` y pulsar "Design your themes"
+- `Tools > Opciones > Personalización` y pulsar "Design your themes"
 - Ejecutando `DT_ThemeDesigner.exe` en `<program directory>\tools\ThemeDesigner`
 
 Verás esta ventana:

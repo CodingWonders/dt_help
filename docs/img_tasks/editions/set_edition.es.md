@@ -4,13 +4,13 @@
     <img src="/res/img_tasks/editions/set_imageedition.png" />
 </p>
 
-Con DISMTools puedes establecer la edición de una imagen de Windows. Esta acción está disponible en Comandos > Windows editions > Upgrade image...
+Con DISMTools puedes establecer la edición de una imagen de Windows. Esta acción está disponible en Comandos > Ediciones de Windows > Actualizar imagen...
 
 ## Compatibilidad por sistema operativo
 
 Esta acción es compatible con las siguientes plataformas:
 
-| Platform | Supported? |
+| Plataforma | ¿Soportado? |
 |:--:|:--:|
 | Windows 7/Server 2008 R2 | ✔ |
 | Windows 8/Server 2012 | ✔ |
@@ -32,8 +32,8 @@ Simplemente especifica la edición a la que deseas actualizar la imagen de Windo
     <img src="/res/img_tasks/editions/set_imageedition_server.png" />
 </p>
 
-- Usa *Copy the End-User License Agreement (EULA) to the following location* si deseas copiar el EULA a una ubicación específica
-- Usa *Accept the End-User License Agreement (EULA) and use the following product key* si deseas aceptar el EULA. Esto es necesario para cambiar la edición en una imagen en línea
+- Usa *Copiar el Contrato de Licencia de Usuario Final (CLUF) a la siguiente ubicación* si deseas copiar el CLUF a una ubicación específica
+- Usa *Aceptar el Contrato de Licencia de Usuario Final (CLUF) y utilizar la siguiente clave de producto* si deseas aceptar el CLUF. Esto es necesario para cambiar la edición en una imagen en línea
 
 ## Observaciones
 

@@ -4,13 +4,13 @@
 	<img src="/res/img_tasks/packages/add_package.png" />
 </p>
 
-Con DISMTools puedes añadir paquetes para incorporar funcionalidades adicionales y/o actualizaciones a una imagen o instalación de Windows. Esta acción está disponible en Comandos > OS packages > Add package... o mediante el botón "Add package...".
+Con DISMTools puedes añadir paquetes para incorporar funcionalidades adicionales y/o actualizaciones a una imagen o instalación de Windows. Esta acción está disponible en Comandos > Paquetes del sistema operativo > Añadir paquete... o mediante el botón "Añadir paquete...".
 
 ## Compatibilidad por sistema operativo
 
 Esta acción es compatible con las siguientes plataformas:
 
-| Platform | Supported? |
+| Plataforma | ¿Soportado? |
 |:--:|:--:|
 | Windows 7/Server 2008 R2 | ✔ |
 | Windows 8/Server 2012 | ✔ |

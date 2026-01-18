@@ -152,10 +152,10 @@ Si eliges usar la versión autocontenida, DISMTools guardará esta preferencia h
 La descarga puede tardar según la velocidad de la conexión y el rendimiento del equipo; al finalizar verás una notificación en el área de sistema.
 
 <p align="center">
-    <img src="/res/img_tasks/unattend/unattendgen_notify.png" />
+    <img src="/res/img_tasks/unattend/unatt_creator/unattendgen_notify.png" />
 </p>
 
-También puedes usar el generador de forma independiente; consulta su repositorio en: https://github.com/CodingWonders/UnattendGen
+También puedes usar el generador de forma independiente; consulta su repositorio [aquí](https://github.com/CodingWonders/UnattendGen)
 
 ## Unión a dominios Active Directory
 
@@ -181,105 +181,105 @@ Puedes especificar el alias de interfaz de dos maneras:
 Cuando selecciones el adaptador, los campos relacionados (PDS, DNS) se rellenarán automáticamente, aunque podrás modificarlos si es necesario.
 
 
-When you pick the NIC from the list, every other field (PDS, DNS server addresses) will be filled in automatically given the current configuration of the NIC. However, you can still change these fields if you need to use different values.
+Cuando seleccionas el adaptador de red de la lista, todos los demás campos (PDS, direcciones de servidor DNS) se rellenarán automáticamente dada la configuración actual del adaptador de red. Sin embargo, aún puedes cambiar estos campos si necesitas usar valores diferentes.
 
-For DNS server addresses, you need to put one address per line. If you want to check if the syntax of the addresses is correct, click **Verify DNS Address Syntax**.
+Para direcciones de servidor DNS, necesitas poner una dirección por línea. Si quieres verificar si la sintaxis de las direcciones es correcta, haz clic en **Verificar Sintaxis de Dirección DNS**.
 
-One example of filled-in information is shown below:
+Un ejemplo de información rellenada se muestra a continuación:
 
 <p align="center">
     <img src="/res/img_tasks/unattend/unatt_creator/dsw/dswizard_dnsinfo.png" />
 </p>
 
-After configuring DNS server information, you will need to configure information related to the initial user with which the target device will join the domain.
+Después de configurar la información del servidor DNS, necesitarás configurar información relacionada con el usuario inicial con el que el dispositivo objetivo se unirá al dominio.
 
 <p align="center">
     <img src="/res/img_tasks/unattend/unatt_creator/dsw/dswizard_dsinfo.png" />
 </p>
 
-- If the device is part of a domain, the domain name will be filled in automatically and you will be able to pick users from available organizational units (OUs) in the domain. However, you can still specify different information manually.
-- If the device is not part of a domain, you will need to specify all information manually.
+- Si el dispositivo es parte de un dominio, el nombre del dominio se rellenará automáticamente y podrás elegir usuarios de unidades organizativas disponibles (OU) en el dominio. Sin embargo, aún puedes especificar información diferente manualmente.
+- Si el dispositivo no es parte de un dominio, necesitarás especificar toda la información manualmente.
 
-To pick a user from the domain:
+Para elegir un usuario del dominio:
 
-1. Select the OU from the drop-down list. After selecting the OU, the list of users in the OU will be populated automatically
-2. Select the user from the list
+1. Selecciona la OU de la lista desplegable. Después de seleccionar la OU, la lista de usuarios en la OU se poblará automáticamente
+2. Selecciona el usuario de la lista
 
-Both the UPN and the SAM account names will be filled in automatically. When specifying this information manually, you will need to specify the user part of the UPN. For instance, `johndoe`.
+Tanto los nombres de cuenta UPN como SAM se rellenarán automáticamente. Al especificar esta información manualmente, necesitarás especificar la parte de usuario del UPN. Por ejemplo, `johndoe`.
 
-Finally, specify the password of the user. Since DISMTools will **NOT** check if the password is correct, make sure that you type it correctly.
+Finalmente, especifica la contraseña del usuario. Dado que DISMTools **NO** verificará si la contraseña es correcta, asegúrate de escribirla correctamente.
 
-You've finished the Domain Services Wizard. When you get to the components screen, you will see that the necessary components and settings have been added to your answer file.
+Has terminado el Asistente de Servicios de Dominio. Cuando llegues a la pantalla de componentes, verás que los componentes y configuraciones necesarios se han añadido a tu archivo de respuesta.
 
-## Starter Script Reference
+## Referencia de Scripts Iniciales
 
-Currently, there are 12 starter scripts available:
+Actualmente, hay 12 scripts iniciales disponibles:
 
-| Script Name | Stage | Description |
-|:------------|:-----:|:------------|
-| Close First Logon Animation | During System Configuration | This script closes the First Logon Animation process and allows a system to reach the desktop sooner. This works on Windows 10 and Windows 11. |
-| Enable Verbose Status Messages | During System Configuration | This script enables the verbose status messages that are enabled by default on Windows Server. This can help report service start/stop status. |
-| Set OEM Information | During System Configuration | This script configures OEM settings such as the manufacturer or the model to further customize a Windows installation. |
-| Set Quick Machine Recovery Settings | During System Configuration | This script configures a target system's Quick Machine Recovery settings on Windows 11 24H2 and later. |
-| Configure folders for Git integration | When the first user logs on | This script configures a folder, or a set of folders, for Git source control integration in the File Explorer. Git and the latest versions of system components need to be installed in the target system to take advantage of all features. |
-| Invoke WinUtil Configuration | When the first user logs on | This script configures a target system using a configuration file exported from the Windows Utility. |
-| Set Personalization Settings | When the first user logs on | This script configures settings related to color modes and accent colors on the user environment of the target system. |
-| Set Registered Owner and Organization | When the first user logs on | This script configures the registered owner and organization of the target system. |
-| Set up a custom wallpaper | When the first user logs on | This script configures a wallpaper in the target system environment. |
-| Update Microsoft Store apps | When the first user logs on | This script invokes an update of all Microsoft Store applications. A network is required for this to work. |
-| Disable Second Chance OOBE | When users log on for the first time | This script disables the Second Chance Out-of-Box Experience on the target system. This works on Windows 10 and Windows 11. |
-| Disable Windows Notification Sources | When users log on for the first time | This script disables user-specified notification sources in the target system. |
+| Nombre del Script | Etapa | Descripción |
+|:------------------|:-----:|:------------|
+| Cerrar Animación de Primer Inicio de Sesión | Durante Configuración del Sistema | Este script cierra el proceso de Animación de Primer Inicio de Sesión y permite que un sistema llegue al escritorio más pronto. Funciona en Windows 10 y 11. |
+| Habilitar Mensajes de Estado Detallados | Durante Configuración del Sistema | Este script habilita los mensajes de estado detallados que están habilitados por defecto en Windows Server. Esto puede ayudar a reportar el estado de inicio/parada de servicios. |
+| Establecer Información OEM | Durante Configuración del Sistema | Este script configura ajustes OEM como el fabricante o el modelo para personalizar aún más una instalación de Windows. |
+| Establecer Ajustes de Recuperación Rápida de Máquina | Durante Configuración del Sistema | Este script configura los ajustes de Recuperación Rápida de Máquina del sistema objetivo en Windows 11 24H2 y posteriores. |
+| Configurar carpetas para integración de Git | Cuando el primer usuario inicia sesión | Este script configura una carpeta, o un conjunto de carpetas, para integración de control de fuente Git en el Explorador de Archivos. Git y las últimas versiones de componentes del sistema necesitan estar instalados en el sistema objetivo para aprovechar todas las características. |
+| Invocar Configuración WinUtil | Cuando el primer usuario inicia sesión | Este script configura un sistema objetivo usando un archivo de configuración exportado de la Utilidad de Windows. |
+| Establecer Ajustes de Personalización | Cuando el primer usuario inicia sesión | Este script configura ajustes relacionados con modos de color y colores de acento en el entorno de usuario del sistema objetivo. |
+| Establecer Propietario Registrado y Organización | Cuando el primer usuario inicia sesión | Este script configura el propietario registrado y la organización del sistema objetivo. |
+| Configurar un fondo de pantalla personalizado | Cuando el primer usuario inicia sesión | Este script configura un fondo de pantalla en el entorno del sistema objetivo. |
+| Actualizar aplicaciones de Microsoft Store | Cuando el primer usuario inicia sesión | Este script invoca una actualización de todas las aplicaciones de Microsoft Store. Se requiere una red para que funcione. |
+| Deshabilitar OOBE de Segunda Oportunidad | Cuando los usuarios inician sesión por primera vez | Este script deshabilita la Experiencia Fuera de Caja de Segunda Oportunidad en el sistema objetivo. Funciona en Windows 10 y 11. |
+| Deshabilitar Fuentes de Notificación de Windows | Cuando los usuarios inician sesión por primera vez | Este script deshabilita fuentes de notificación especificadas por el usuario en el sistema objetivo. |
 
-In DISMTools 0.7.2, you can view more information about these starter scripts more easily by using the new **Starter Script Browser**:
+En DISMTools 0.7.2, puedes ver más información sobre estos scripts iniciales más fácilmente usando el nuevo **Navegador de Scripts Iniciales**:
 
 <p align="center">
     <img src="/res/img_tasks/unattend/unatt_creator/unatt_script_browser.png" />
 </p>
 
-Some scripts allow you to configure settings after you import them:
+Algunos scripts permiten configurar ajustes después de importarlos:
 
-### Close First Logon Animation
+### Cerrar Animación de Primer Inicio de Sesión
 
-**Script language**: Batch
+**Lenguaje del script**: Batch
 
-No settings available.
+No hay ajustes disponibles.
 
-### Set OEM Information
+### Establecer Información OEM
 
-**Script language**: Batch
+**Lenguaje del script**: Batch
 
-| Option | Required? | Description |
-|:------:|:---------:|:------------|
-| `OEM_Manufacturer` | Yes | The manufacturer of the system |
-| `OEM_Model` | No | The model of the system |
-| `OEM_SupportURL` | No | The support URL of the system |
-| `OEM_SupportPhone` | No | The support phone number of the system |
-| `OEM_SupportHours` | No | The support hours of the system |
-| `OEM_Logo` | No | The path to the OEM logo of the system. Must be a BMP file |
+| Opción | ¿Requerida? | Descripción |
+|:------:|:-----------:|:------------|
+| `OEM_Manufacturer` | Sí | El fabricante del sistema |
+| `OEM_Model` | No | El modelo del sistema |
+| `OEM_SupportURL` | No | La URL de soporte del sistema |
+| `OEM_SupportPhone` | No | El número de teléfono de soporte del sistema |
+| `OEM_SupportHours` | No | Las horas de soporte del sistema |
+| `OEM_Logo` | No | La ruta al logo OEM del sistema. Debe ser un archivo BMP |
 
-### Set Quick Machine Recovery Settings
+### Establecer Ajustes de Recuperación Rápida de Máquina
 
-**Script language**: Batch
+**Lenguaje del script**: Batch
 
-| Option | Required? | Description |
-|:------:|:---------:|:------------|
-| `QMR_CloudRemediation` | Yes | Enables (1) or disables (0) cloud remediation for QMR |
-| `QMR_AutoRemediation` | Yes | Enables (1) or disables (0) automatic remediation for QMR |
-| `QMR_NextCheckMinutes` | Yes | Sets the number of minutes before the next QMR check |
-| `QMR_NextRebootHours` | Yes | Sets the number of hours before the next reboot |
-| `QMR_Headless` | Yes | Enables (1) or disables (0) headless mode for QMR |
+| Opción | ¿Requerida? | Descripción |
+|:------:|:-----------:|:------------|
+| `QMR_CloudRemediation` | Sí | Habilita (1) o deshabilita (0) la remediación en la nube para QMR |
+| `QMR_AutoRemediation` | Sí | Habilita (1) o deshabilita (0) la remediación automática para QMR |
+| `QMR_NextCheckMinutes` | Sí | Establece el número de minutos antes de la siguiente verificación QMR |
+| `QMR_NextRebootHours` | Sí | Establece el número de horas antes del siguiente reinicio |
+| `QMR_Headless` | Sí | Habilita (1) o deshabilita (0) el modo sin cabeza para QMR |
 
-**Notes:**
+**Notas:**
 
-- Options 3 and 4 will only be applied if automatic remediation is enabled
-- Cloud Remediation allows the system to scan for solutions on WinRE launch
-- Auto Remediation allows the system to continue scanning for solutions if the first attempt fails
+- Las opciones 3 y 4 solo se aplicarán si la remediación automática está habilitada
+- La Remediación en la Nube permite al sistema escanear soluciones en el lanzamiento de WinRE
+- La Remediación Automática permite al sistema continuar escaneando soluciones si el primer intento falla
 
-### Configure folders for Git integration
+### Configurar carpetas para integración de Git
 
-**Script language**: PowerShell
+**Lenguaje del script**: PowerShell
 
-To add new entries to the list of folders for which to show VCS information, add them to the following array, like this:
+Para añadir nuevas entradas a la lista de carpetas para las que mostrar información VCS, añádelas al siguiente array, como esto:
 
 ```powershell
 $gitFolders = @(
@@ -288,125 +288,125 @@ $gitFolders = @(
 )
 ```
 
-Do note that, in order for the Git view to show, the system needs the *Windows Advanced Settings* application.
+Ten en cuenta que, para que la vista de Git se muestre, el sistema necesita la aplicación *Configuración Avanzada de Windows*.
 
-### Invoke WinUtil Configuration
+### Invocar Configuración WinUtil
 
-**Script language**: PowerShell
+**Lenguaje del script**: PowerShell
 
-You need to add your configuration file to the root of the image's mount directory, as `winutil-config.json`. You can learn more about configuration files [here](https://winutil.christitus.com/userguide/automation/).
+Necesitas añadir tu archivo de configuración a la raíz del directorio de montaje de la imagen, como `winutil-config.json`. Puedes aprender más sobre archivos de configuración [aquí](https://winutil.christitus.com/userguide/automation/).
 
-### Set Personalization Settings
+### Establecer Ajustes de Personalización
 
-**Script language**: PowerShell
+**Lenguaje del script**: PowerShell
 
-| Option | Description |
+| Opción | Descripción |
 |:------:|:------------|
-| `$lightThemeSystem` | If 0, sets the system theme to dark mode. If 1, sets it to light mode |
-| `$lightThemeApps` | If 0, sets the app theme to dark mode. If 1, sets it to light mode |
-| `$accentColorOnStart` | If 0, disables accent color on Start, taskbar and action center. If 1, enables it |
-| `$enableTransparency` | If 0, disables transparency effects (Acrylic/Mica). If 1, enables it |
-| `$htmlAccentColor` | Sets the accent color of the system. Must be a hex value |
+| `$lightThemeSystem` | Si 0, establece el tema del sistema en modo oscuro. Si 1, lo establece en modo claro |
+| `$lightThemeApps` | Si 0, establece el tema de las aplicaciones en modo oscuro. Si 1, lo establece en modo claro |
+| `$accentColorOnStart` | Si 0, deshabilita el color de acento en Inicio, barra de tareas y centro de acción. Si 1, lo habilita |
+| `$enableTransparency` | Si 0, deshabilita efectos de transparencia (Acrylic/Mica). Si 1, los habilita |
+| `$htmlAccentColor` | Establece el color de acento del sistema. Debe ser un valor hex |
 
-### Set Registered Owner and Organization
+### Establecer Propietario Registrado y Organización
 
-**Script language**: Batch
+**Lenguaje del script**: Batch
 
-| Option | Required? | Description |
-|:------:|:---------:|:------------|
-| `AutoUserInfo` | Yes | Determines whether to set registered owner as the name of the currently signed user (0 or 1) |
-| `RegisteredUser` | Yes | The registered owner of the system |
-| `RegisteredOrg` | No | The registered organization of the system |
+| Opción | ¿Requerida? | Descripción |
+|:------:|:-----------:|:------------|
+| `AutoUserInfo` | Sí | Determina si establecer el propietario registrado como el nombre del usuario actualmente firmado (0 o 1) |
+| `RegisteredUser` | Sí | El propietario registrado del sistema |
+| `RegisteredOrg` | No | La organización registrada del sistema |
 
-**Notes:**
+**Notas:**
 
-- If `AutoUserInfo` is set to 1 and a Microsoft account is used, the registered owner will be set to the first 5 letters of the email address
-- This script should not be used when users log on for the first time because user information will change every time a new user logs on for the first time if the following conditions are met:
-    - `AutoUserInfo` is set to 1
-    - More than one user account is created, either from the answer file or after OOBE
+- Si `AutoUserInfo` se establece en 1 y se usa una cuenta Microsoft, el propietario registrado se establecerá en las primeras 5 letras de la dirección de email
+- Este script no debería usarse cuando los usuarios inician sesión por primera vez porque la información del usuario cambiará cada vez que un nuevo usuario inicie sesión por primera vez si se cumplen las siguientes condiciones:
+    - `AutoUserInfo` se establece en 1
+    - Se crea más de una cuenta de usuario, ya sea desde el archivo de respuesta o después de OOBE
 
-### Set up a custom wallpaper
+### Configurar un fondo de pantalla personalizado
 
-**Script language**: PowerShell
+**Lenguaje del script**: PowerShell
 
-Place the wallpaper in any path inside the Windows image. Then, replace `<path to your wallpaper here>` with the actual path to your wallpaper starting from the mount directory of the Windows image. For example:
+Coloca el fondo de pantalla en cualquier ruta dentro de la imagen de Windows. Luego, reemplaza `<path to your wallpaper here>` con la ruta actual a tu fondo de pantalla empezando desde el directorio de montaje de la imagen de Windows. Por ejemplo:
 
-| Path in mount directory | Actual Path |
-|:-----------------------:|:-----------:|
+| Ruta en directorio de montaje | Ruta Actual |
+|:-----------------------------:|:-----------:|
 | `C:\mount\wallpaper.jpg` | `$env:SYSTEMDRIVE\wallpaper.jpg` |
 | `C:\mount\Pictures\wallpaper.png` | `$env:SYSTEMDRIVE\Pictures\wallpaper.png` |
 
-If the image file does not exist in the target image and continue with the script, you will see a black desktop background.
+Si el archivo de imagen no existe en la imagen objetivo y continúas con el script, verás un fondo de escritorio negro.
 
-### Update Microsoft Store apps
+### Actualizar aplicaciones de Microsoft Store
 
-**Script language**: Batch
+**Lenguaje del script**: Batch
 
-No settings available.
+No hay ajustes disponibles.
 
-### Disable Second Chance OOBE
+### Deshabilitar OOBE de Segunda Oportunidad
 
-**Script language**: Batch
+**Lenguaje del script**: Batch
 
-No settings available.
+No hay ajustes disponibles.
 
-### Disable Windows Notification Sources
+### Deshabilitar Fuentes de Notificación de Windows
 
-**Script language**: Batch
+**Lenguaje del script**: Batch
 
-By default, the script will disable the following notification sources:
+Por defecto, el script deshabilitará las siguientes fuentes de notificación:
 
-- Suggested
-- Startup App Notification
+- Sugerido
+- Notificación de Aplicación de Inicio
 - OneDrive
-- Microsoft Account Health
-- Copilot (AppX package)
+- Salud de Cuenta Microsoft
+- Copilot (paquete AppX)
 
-These entries will be added to list of notification sources, in Settings -> System -> Notifications. To add more entries to the list, do the following:
+Estas entradas se añadirán a la lista de fuentes de notificación, en Configuración -> Sistema -> Notificaciones. Para añadir más entradas a la lista, haz lo siguiente:
 
 ```batch
-FOR %%a IN (Windows.SystemToast.Suggested ... Windows.SystemToast.AccountHealth <your source here>) DO (
+FOR %%a IN (Windows.SystemToast.Suggested ... Windows.SystemToast.AccountHealth <tu fuente aquí>) DO (
     reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Notifications\Settings\%%a" /f
     reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Notifications\Settings\%%a" /v Enabled /t REG_DWORD /d 0 /f
 )
 ```
 
-Notes for your source:
+Notas para tu fuente:
 
-- If your source contains spaces, surround it with quotes
+- Si tu fuente contiene espacios, enciérrala entre comillas
 
-### Change History
+### Historial de Cambios
 
 - DISMTools 0.7.2 Preview 3:
-    - Added:
-        - Configure Git folders for File Explorer
-    - Modified:
-        - Added name and description fields to starter scripts for script browser
+    - Añadido:
+        - Configurar carpetas Git para Explorador de Archivos
+    - Modificado:
+        - Añadidos campos de nombre y descripción a scripts iniciales para navegador de scripts
 - DISMTools 0.7.2 Preview 2:
-    - Added:
-        - Verbose Status Messages
-    - Modified:
-        - Disable Windows Notification Sources: added Copilot notifications to blocklist
-        - Set Quick Machine Recovery Settings: added value checking
+    - Añadido:
+        - Mensajes de Estado Detallados
+    - Modificado:
+        - Deshabilitar Fuentes de Notificación de Windows: añadidas notificaciones Copilot a lista negra
+        - Establecer Ajustes de Recuperación Rápida de Máquina: añadido verificación de valor
 - DISMTools 0.7.1 Preview 4:
-    - Added:
-        - Disable Windows Notification Sources
-        - Disable Second Chance OOBE
-        - Set OEM Information
-        - Set Registered Owner and Organization
-        - Set Quick Machine Recovery Settings
-    - Modified:
-        - Invoke WinUtil Configuration: reduced ping count to server
+    - Añadido:
+        - Deshabilitar Fuentes de Notificación de Windows
+        - Deshabilitar OOBE de Segunda Oportunidad
+        - Establecer Información OEM
+        - Establecer Propietario Registrado y Organización
+        - Establecer Ajustes de Recuperación Rápida de Máquina
+    - Modificado:
+        - Invocar Configuración WinUtil: reducido conteo de ping al servidor
 - DISMTools 0.7.1 Preview 3:
-    - Added:
-        - Skip OOBE First Logon Animation
-        - Personalize User Environment
+    - Añadido:
+        - Saltar Animación de Primer Inicio de Sesión OOBE
+        - Personalizar Entorno de Usuario
 - DISMTools 0.7.1 Preview 2:
-    - Added:
-        - Set up a custom wallpaper
-        - Update Microsoft Store apps
-        - Invoke WinUtil Configuration
+    - Añadido:
+        - Configurar un fondo de pantalla personalizado
+        - Actualizar aplicaciones de Microsoft Store
+        - Invocar Configuración WinUtil
 
-## Acknowledgements
+## Agradecimientos
 
-Special thanks to Christoph Schneegans for creating the library that makes this creator possible.
+Agradecimientos especiales a Christoph Schneegans por crear la biblioteca que hace posible este creador.

@@ -1,13 +1,13 @@
-# Extensibility Suite
+# Suite de Extensibilidad
 
-The Extensibility Suite lets you expand the DISMTools Preinstallation Environment even further by letting you modify its functionality and add applications. You can add to the Preinstallation Environment applications that you may find useful, or applications that you have worked on.
+La Suite de Extensibilidad te permite expandir el Entorno de Preinstalación de DISMTools aún más al permitirte modificar su funcionalidad y añadir aplicaciones. Puedes añadir al Entorno de Preinstalación aplicaciones que puedas encontrar útiles, o aplicaciones en las que hayas trabajado.
 
-*This task is available in DISMTools 0.5.1 and later.*
+*Esta tarea está disponible en DISMTools 0.5.1 y posteriores.*
 
-## Usage
+## Uso
 
-1. Go to Tools > Create a testing environment...
-2. Specify the architecture and target location
-3. Click Create
+1. Ve a Herramientas > Crear un entorno de prueba...
+2. Especifica la arquitectura y la ubicación objetivo
+3. Haz clic en Crear
 
-Then, you can look at the README file in the target directory to learn more.
+Luego, puedes ver el archivo README en el directorio objetivo para aprender más.

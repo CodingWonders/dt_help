@@ -4,13 +4,13 @@
 	<img src="/res/img_tasks/drivers/remove_driver.png" />
 </p>
 
-Con DISMTools puedes eliminar controladores de terceros de una imagen de Windows. Accede a Comandos > Drivers > Remove driver...
+Con DISMTools puedes eliminar controladores de terceros de una imagen de Windows. Accede a Comandos > Contoladores > Eliminar controlador...
 
 ## Compatibilidad del sistema operativo destino
 
 Esta acción es compatible en las siguientes plataformas:
 
-| Platform | Supported? |
+| Plataforma | ¿Soportado? |
 |:--:|:--:|
 | Windows 7/Server 2008 R2 | ✔ |
 | Windows 8/Server 2012 | ✔ |
@@ -33,7 +33,7 @@ Hay 4 modos de vista disponibles:
 - Controladores de terceros, sin controladores críticos de arranque, con inbox
 - Controladores de terceros, controladores críticos de arranque e inbox
 
-No se recomienda eliminar controladores críticos de arranque ni controladores inbox, ya que podrían dejar la imagen sin capacidad de arranque. Por ello no se muestran por defecto, salvo que actives la opción de proceso en segundo plano **Detect all drivers**.
+No se recomienda eliminar controladores críticos de arranque ni controladores inbox, ya que podrían dejar la imagen sin capacidad de arranque. Por ello no se muestran por defecto, salvo que actives la opción de proceso en segundo plano **Detectar todos los controladores**.
 
 ## Contenido relacionado
 

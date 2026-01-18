@@ -4,13 +4,13 @@
 	<img src="/res/img_tasks/drivers/export_driver.png" />
 </p>
 
-Con DISMTools puedes exportar fácilmente todos los controladores de terceros de una imagen de Windows a una carpeta para usarlos posteriormente en otra imagen. Accede a esta acción en Comandos > Drivers > Export driver packages...
+Con DISMTools puedes exportar fácilmente todos los controladores de terceros de una imagen de Windows a una carpeta para usarlos posteriormente en otra imagen. Accede a esta acción en Comandos > Contoladores > Exportar paquetes de controlador...
 
 ## Compatibilidad del sistema operativo destino
 
 Esta acción es compatible en las siguientes plataformas:
 
-| Platform | Supported? |
+| Plataforma | ¿Soportado? |
 |:--:|:--:|
 | Windows 7/Server 2008 R2 | ✔ |
 | Windows 8/Server 2012 | ✔ |
@@ -22,4 +22,4 @@ Esta acción es compatible en las siguientes plataformas:
 
 ## Uso
 
-Especifica la carpeta destino para exportar los controladores (**export target**) y pulsa OK.
+Especifica la carpeta destino para exportar los controladores (**destino de exportación**) y pulsa OK.

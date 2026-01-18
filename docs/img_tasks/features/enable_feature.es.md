@@ -4,7 +4,7 @@
 <img src="/res/img_tasks/features/enable_feature.png" />
 </p>
 
-Con DISMTools puedes habilitar características en una imagen para añadir componentes opcionales a una instalación de Windows. Esta acción está disponible en Comandos > OS packages > Enable feature... o mediante el botón "Enable feature...".
+Con DISMTools puedes habilitar características en una imagen para añadir componentes opcionales a una instalación de Windows. Esta acción está disponible en Comandos > Paquetes del sistema operativo > Habilitar característica... o mediante el botón "Habilitar característica...".
 
 ## Compatibilidad del sistema operativo destino
 

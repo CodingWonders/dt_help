@@ -1,16 +1,16 @@
-# Setting the image product key
+# Establecer la clave de producto de la imagen
 
 <p align="center">
     <img src="/res/img_tasks/editions/set_imagekey.png" />
 </p>
 
-With DISMTools you can set the product key of a Windows image. This action can be accessed by clicking Comandos > Windows editions > Set product key...
+Con DISMTools puedes establecer la clave de producto de una imagen de Windows. Esta acción se puede acceder haciendo clic en Comandos > Ediciones de Windows > Establecer clave de producto...
 
-## Target OS support
+## Soporte del sistema operativo objetivo
 
-This action is supported on the following platforms:
+Esta acción es compatible con las siguientes plataformas:
 
-| Platform | Supported? |
+| Plataforma | ¿Soportado? |
 |:--:|:--:|
 | Windows 7/Server 2008 R2 | ✔ |
 | Windows 8/Server 2012 | ✔ |
@@ -18,12 +18,12 @@ This action is supported on the following platforms:
 | Windows 10/Server 2016/2019/2022 | ✔ |
 | Windows 11/Server 2025 | ✔ |
 
-<i>This action is supported on DISMTools 0.6.2 and newer</i>
+<i>Esta acción es compatible con DISMTools 0.6.2 y versiones posteriores</i>
 
-## Usage
+## Uso
 
-Simply specify the product key you want to set on your Windows image. You can also verify if the product key is valid by clicking the "Validate key" button.
+Simplemente especifica la clave de producto que deseas establecer en tu imagen de Windows. También puedes verificar si la clave de producto es válida haciendo clic en el botón "Validar clave".
 
-## Remarks
+## Observaciones
 
-This is not applicable to active Windows installations.
+Esto no es aplicable a instalaciones activas de Windows.

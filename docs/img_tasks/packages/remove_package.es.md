@@ -4,13 +4,13 @@
 	<img src="/res/img_tasks/packages/remove_package.png" />
 </p>
 
-Con DISMTools puedes eliminar paquetes de una imagen o instalación de Windows. Esta acción está disponible en Comandos > OS packages > Remove package... o mediante el botón "Remove package...".
+Con DISMTools puedes eliminar paquetes de una imagen o instalación de Windows. Esta acción está disponible en Comandos > Paquetes del sistema operativo > Eliminar paquete... o mediante el botón "Eliminar paquete...".
 
 ## Compatibilidad por sistema operativo
 
 Esta acción es compatible con las siguientes plataformas:
 
-| Platform | Supported? |
+| Plataforma | ¿Soportado? |
 |:--:|:--:|
 | Windows 7/Server 2008 R2 | ✔ |
 | Windows 8/Server 2012 | ✔ |

@@ -10,8 +10,8 @@ Si la sesión de mantenimiento de una imagen requiere recarga, puedes restaurarl
 
 Puedes recargar la sesión de mantenimiento de una imagen de tres maneras:
 
-- En el [gestor de imágenes montadas](../tools/mimgmgr.md), selecciona la imagen cuya sesión quieres recargar y haz clic en "Reload servicing"
-- Si tienes un proyecto con una imagen montada que requiere recarga de sesión, haz clic en "Reload servicing session" o recarga el proyecto
+- En el [gestor de imágenes montadas](../tools/mimgmgr.md), selecciona la imagen cuya sesión quieres recargar y haz clic en "Recargar sesión de servicio"
+- Si tienes un proyecto con una imagen montada que requiere recarga de sesión, haz clic en "Recargar sesión de servicio" o recarga el proyecto
 - En la versión CLI del gestor de imágenes montadas, marca la imagen que quieras y pulsa R
 
 <p align="center">

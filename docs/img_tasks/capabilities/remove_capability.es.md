@@ -4,13 +4,13 @@
 	<img src="/res/img_tasks/capabilities/remove_capability.png" />
 </p>
 
-With DISMTools you can remove capabilities, or Features on Demand (FoDs), from a Windows image or installation. This action can be accessed by clicking Comandos > Capabilities > Remove capability...
+Con DISMTools puedes eliminar capacidades, o Características bajo Demanda (FoD), de una imagen de Windows o instalación. Esta acción se puede acceder haciendo clic en Comandos > Capacidades > Eliminar capacidad...
 
-## Target OS support
+## Soporte del sistema operativo objetivo
 
-This action is supported on the following platforms:
+Esta acción es compatible con las siguientes plataformas:
 
-| Platform | Supported? |
+| Plataforma | ¿Soportado? |
 |:--:|:--:|
 | Windows 7/Server 2008 R2 | ❌ |
 | Windows 8/Server 2012 | ❌ |
@@ -18,12 +18,12 @@ This action is supported on the following platforms:
 | Windows 10/Server 2016/2019/2022 | ✔ |
 | Windows 11/Server 2025 | ✔ |
 
-<i>This action is supported on DISMTools 0.3 and newer</i>
+<i>Esta acción es compatible con DISMTools 0.3 y versiones posteriores</i>
 
-## Usage
+## Uso
 
-You need to specify the capabilities you want to remove from your Windows image or installation.
+Necesitas especificar las capacidades que deseas eliminar de tu imagen de Windows o instalación.
 
-## Related topics
+## Temas relacionados
 
-- [Command-line help](https://example.com)
+- [Ayuda de línea de comandos](https://example.com)

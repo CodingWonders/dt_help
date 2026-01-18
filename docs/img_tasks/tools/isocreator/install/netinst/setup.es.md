@@ -21,8 +21,8 @@ Deberías poder comprobar si están instalados buscando las herramientas de admi
 
 Si no están presentes, evalúa la situación actual del servidor. Para ello:
 
-1. Abre Server Manager
-2. Haz clic en "Add roles and features" y ejecuta una instalación basada en roles o en características
+1. Abre Administrador del servidor
+2. Haz clic en "Añadir roles y características" y ejecuta una instalación basada en roles o en características
 3. Selecciona tu servidor y comprueba qué roles están presentes. Ambos deben estar instalados:
 
     ![Server Roles](../../../../../res/img_tasks/tools/isocreator/netinstall/wds/roles.png)
@@ -34,7 +34,7 @@ Según el caso:
     1. Marca DHCP y WDS e incluye las herramientas de administración
     2. Continúa sin modificar características a menos que necesites habilitar/deshabilitar alguna
     3. Lee las instrucciones para DHCP con atención
-    4. En la configuración del rol WDS, deja marcados los roles de Deployment y Transport
+    4. En la configuración del rol WDS, deja marcados los roles de implementación y transporte
     5. Continúa con la instalación. Tras la instalación, verás que uno de los roles necesita configuración: el rol DHCP.
     6. Realiza la configuración del servidor DHCP según las indicaciones:
 
@@ -62,7 +62,7 @@ Si ya cuentas con una infraestructura de red preparada para despliegues remotos,
 
 Para crear el conmutador virtual:
 
-1. En Hyper‑V Manager, abre el Virtual Switch Manager y crea un conmutador **Internal**. Asigna el nombre que desees y haz clic en OK. Deberías ver algo así:
+1. En Hyper‑V Manager, abre el Virtual Switch Manager y crea un conmutador **interno**. Asigna el nombre que desees y haz clic en OK. Deberías ver algo así:
 
     ![vSwitch](../../../../../res/img_tasks/tools/isocreator/netinstall/wds/viridian_new_vswitch.png)
 
@@ -111,17 +111,17 @@ Haz clic derecho en IPv4 y selecciona New Scope. En el asistente, sigue estos pa
 
     ![Address Lease Duration](../../../../../res/img_tasks/tools/isocreator/netinstall/wds/dhcp_ipv4_scope_leases.png)
 
-5. Cuando se te pregunte si quieres configurar más detalles del ámbito, selecciona Yes y pulsa Next. Indica la puerta de enlace predeterminada para el ámbito. Si seguiste la guía del vSwitch, la puerta de enlace será la IP que gestiona ICS en el equipo anfitrión. Este valor también suele ser la dirección DNS si la configuraste anteriormente:
+5. Cuando se te pregunte si quieres configurar más detalles del ámbito, selecciona Yes y pulsa Siguiente. Indica la puerta de enlace predeterminada para el ámbito. Si seguiste la guía del vSwitch, la puerta de enlace será la IP que gestiona ICS en el equipo anfitrión. Este valor también suele ser la dirección DNS si la configuraste anteriormente:
 
     ![Gateway](../../../../../res/img_tasks/tools/isocreator/netinstall/wds/dhcp_ipv4_scope_gateway.png)
 
-6. Tras configurar la puerta de enlace y el DNS, deja WINS tal cual y pulsa Next. Cuando te pregunten si activar el ámbito, selecciona No y pulsa Next:
+6. Tras configurar la puerta de enlace y el DNS, deja WINS tal cual y pulsa Siguiente. Cuando te pregunten si activar el ámbito, selecciona No y pulsa Siguiente:
 
     ![Activation](../../../../../res/img_tasks/tools/isocreator/netinstall/wds/dhcp_ipv4_scope_activate.png)
 
-7. En el ámbito recién creado, haz clic derecho en Scope Options y selecciona "Configure Options...":
+7. En el ámbito recién creado, haz clic derecho en Opciones del ámbito y selecciona "Configure Opciones...":
 
-    ![Configure Options](../../../../../res/img_tasks/tools/isocreator/netinstall/wds/dhcp_scope_options_menu_item.png)
+    ![Configure Opciones](../../../../../res/img_tasks/tools/isocreator/netinstall/wds/dhcp_scope_options_menu_item.png)
     
 8. Configura las siguientes opciones según tu solución de despliegue:
 

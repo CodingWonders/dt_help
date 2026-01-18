@@ -18,7 +18,7 @@ Esta acción es compatible con las siguientes plataformas:
 | Windows 10/Server 2016/2019/2022 | ✔ |
 | Windows 11/Server 2025 | ✔ |
 
-**NOTA:** si añades paquetes AppX aprovisionados a una instalación en línea, puede ser necesario habilitar la carga lateral (sideloading) de aplicaciones; de lo contrario podrías obtener el código de error `0xc1570113`. Más información en: https://learn.microsoft.com/es-es/windows-hardware/manufacture/desktop/sideload-apps-with-dism-s14?view=windows-11#configure-pcs-for-developing-windows-apps.
+**NOTA:** si añades paquetes AppX aprovisionados a una instalación en línea, puede ser necesario habilitar la carga lateral (sideloading) de aplicaciones; de lo contrario podrías obtener el código de error `0xc1570113`. Más información [aquí](https://learn.microsoft.com/es-es/windows-hardware/manufacture/desktop/sideload-apps-with-dism-s14?view=windows-11#configure-pcs-for-developing-windows-apps).
 
 <i>Esta acción está soportada en DISMTools 0.2 y posteriores</i>
 
@@ -69,7 +69,7 @@ II. La aplicación contiene paquetes stub
 
 **P: ¿Dónde puedo descargar paquetes de aplicaciones?**
 
-**R:** Puedes usar el [Microsoft Store Generation Project](https://store.rg-adguard.net/) y la versión web de la Microsoft Store (https://apps.microsoft.com/store/apps). Pasos:
+**R:** Puedes usar el [Microsoft Store Generation Project](https://store.rg-adguard.net/) y la versión web de la [Microsoft Store](https://apps.microsoft.com/store/apps). Pasos:
 
 1. Abre el sitio Microsoft Apps y busca la aplicación
 2. Copia el enlace de la aplicación

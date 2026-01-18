@@ -1,7 +1,7 @@
 # Fusionador de archivos SWM
 
 <p align="center">
-	<img src="../../res/img_tasks/tools/swm2wim/swm2wim.png" />
+	<img src="/res/img_tasks/tools/swm2wim/swm2wim.png" />
 </p>
 
 Con DISMTools puedes fusionar archivos SWM (WIM dividido) en un único archivo WIM.

@@ -1,7 +1,7 @@
 # Probar tus imágenes de Windows con las herramientas de creación de ISO
 
 <p align="center">
-    <img src="../../res/img_tasks/tools/isocreator/isocreator.png" />
+    <img src="/res/img_tasks/tools/isocreator/isocreator.png" />
 </p>
 
 Si quieres probar los cambios realizados en una imagen de Windows, puedes hacerlo fácilmente con las herramientas de creación de ISO, que incluyen el **creador de ISO** y el **PE Helper (Preinstallation Environment Helper)**.

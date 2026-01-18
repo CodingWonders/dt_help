@@ -12,7 +12,7 @@ Esta acción evita que las aplicaciones afectadas se registren para nuevos usuar
 
 Esta acción es compatible con las siguientes plataformas:
 
-| Platform | Supported? |
+| Plataforma | ¿Soportado? |
 |:--:|:--:|
 | Windows 7/Server 2008 R2 | ❌ |
 | Windows 8/Server 2012 | ✔ |
@@ -53,7 +53,7 @@ Para eliminar completamente una aplicación, usa PowerShell:
 
 **R:** El programa determina el estado de registro contando los archivos `.pckgdep` en la carpeta `<mountPath>\ProgramData\Microsoft\Windows\AppRepository\Packages\<pkgName>` (donde `<mountPath>` es el directorio de montaje de la imagen o el disco local de una instalación activa, y `<pkgName>` el nombre del paquete). No puedes acceder a `AppRepository` desde el Explorador, pero sí a sus subdirectorios usando herramientas de terceros.
 
-Al acceder verás archivos `.pckgdep` cuyos nombres comienzan por `S-1-...` (un SID, identificador de cuenta). Más información sobre SIDs en: https://devblogs.microsoft.com/oldnewthing/20230613-00/?p=108335. Para listar SIDs locales, ejecuta `wmic useraccount get name,sid`.
+Al acceder verás archivos `.pckgdep` cuyos nombres comienzan por `S-1-...` (un SID, identificador de cuenta). Más información sobre SIDs [aquí](https://devblogs.microsoft.com/oldnewthing/20230613-00/?p=108335). Para listar SIDs locales, ejecuta `wmic useraccount get name,sid`.
 
 ## Contenido relacionado
 

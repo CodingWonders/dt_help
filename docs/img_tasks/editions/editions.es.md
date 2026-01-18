@@ -2,7 +2,7 @@
 
 Al realizar operaciones de edición de imagen puedes actualizar una imagen de Windows a una edición superior y establecer la clave de producto. También puedes obtener la edición actual y las ediciones a las que puedes actualizar.
 
-Estas tareas están disponibles en Comandos > Windows editions.
+Estas tareas están disponibles en Comandos > Ediciones de Windows.
 
 ## Tareas disponibles
 

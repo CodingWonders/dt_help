@@ -3,7 +3,7 @@
 El Administrador de variables de entorno del sistema te permite ver y modificar la información sobre las variables de entorno en una imagen de Windows. Utiliza el administrador para ver y/o modificar nombres y valores de variables.
 
 <p align="center">
-    <img src="../../res/img_tasks/tools/envvarmgr/envvarmgr.png" />
+    <img src="/res/img_tasks/tools/envvarmgr/envvarmgr.png" />
 </p>
 
 Puedes acceder al Administrador de variables de entorno en *Herramientas -> Administrar variables de entorno del sistema*.

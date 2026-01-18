@@ -13,7 +13,7 @@ Cuando termines de trabajar con una imagen de Windows, puedes desmontarla fácil
 
 ### Seleccionar una imagen montada
 
-Si no conoces el directorio de montaje de la imagen, haz clic en "Pick..." y verás un selector desde el que puedes elegir la imagen a desmontar:
+Si no conoces el directorio de montaje de la imagen, haz clic en "Escoger..." y verás un selector desde el que puedes elegir la imagen a desmontar:
 
 <p align="center">
 	<img src="/res/img_tasks/mgmt/unmount_image_picker.png" />
@@ -23,8 +23,8 @@ Si no conoces el directorio de montaje de la imagen, haz clic en "Pick..." y ver
 
 Estas opciones se aplican únicamente a la operación de commit.
 
-- Si quieres comprobar la integridad de la imagen antes de proceder al desmontaje, marca "Check image integrity".
-- Si deseas aislar tus cambios del resto de índices creando uno nuevo, marca "Append changes to another index".
+- Si quieres comprobar la integridad de la imagen antes de proceder al desmontaje, marca "Comprobar integridad de la imagen".
+- Si deseas aislar tus cambios del resto de índices creando uno nuevo, marca "Anexar cambios a otro índice".
 
 ## La operación de desmontaje y las imágenes de solo lectura
 

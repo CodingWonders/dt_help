@@ -4,15 +4,15 @@
 	<img src="/res/img_tasks/capabilities/add_capability.png" />
 </p>
 
-With DISMTools you can add capabilities, or Features on Demand (FoDs), to a Windows image or installation. Capabilities are features ready to be added at any time. More on capabilities [here](https://example.com).
+Con DISMTools puedes añadir capacidades, o Características bajo Demanda (FoD), a una imagen de Windows o instalación. Las capacidades son características listas para añadir en cualquier momento. Más sobre capacidades [aquí](https://example.com).
 
-This action can be accessed by clicking Comandos > Capabilities > Add capability...
+Esta acción se puede acceder haciendo clic en Comandos > Capacidades > Añadir capacidad...
 
-## Target OS support
+## Soporte del sistema operativo objetivo
 
-This action is supported on the following platforms:
+Esta acción es compatible con las siguientes plataformas:
 
-| Platform | Supported? |
+| Plataforma | ¿Soportado? |
 |:--:|:--:|
 | Windows 7/Server 2008 R2 | ❌ |
 | Windows 8/Server 2012 | ❌ |
@@ -20,18 +20,18 @@ This action is supported on the following platforms:
 | Windows 10/Server 2016/2019/2022 | ✔ |
 | Windows 11/Server 2025 | ✔ |
 
-<i>This action is supported on DISMTools 0.3 and newer</i>
+<i>Esta acción es compatible con DISMTools 0.3 y versiones posteriores</i>
 
-## Usage
+## Uso
 
-You need to specify the capabilities you want to add to your Windows image or installation, and specify some settings in order to get the result you want.
+Necesitas especificar las capacidades que deseas añadir a tu imagen de Windows o instalación, y especificar algunos ajustes para obtener el resultado que deseas.
 
-## Options
+## Opciones
 
-- You can specify a **source** where you have the necessary files for capability addition. You can browse your file system for an appropriate source, or get the source from group policy
-- If you strictly want this operation to use your specified source and not Windows Update, tick the **Windows Update access limit** option (online installations only)
-- If you want, you can **commit the image after adding the capabilities** (Windows images only)
+- Puedes especificar una **fuente** donde tengas los archivos necesarios para la adición de capacidades. Puedes examinar tu sistema de archivos para una fuente apropiada, u obtener la fuente de la política de grupo
+- Si realmente quieres que esta operación use tu fuente especificada y no Windows Update, marca la opción **Límite de acceso a Windows Update** (solo instalaciones en línea)
+- Si deseas, puedes **confirmar la imagen después de añadir las capacidades** (solo imágenes de Windows)
 
-## Related topics
+## Temas relacionados
 
-- [Command-line help](https://example.com)
+- [Ayuda de línea de comandos](https://example.com)

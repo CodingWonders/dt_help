@@ -1,6 +1,6 @@
-# Preinstallation Environment Command-line
+# Línea de comandos del Entorno de Preinstalación
 
-In DISMTools 0.7 and later, the Preinstallation Environment allows you to load Command Prompt by pressing <kbd>C</kbd> at the main menu:
+En DISMTools 0.7 y posteriores, el Entorno de Preinstalación te permite cargar el Símbolo del sistema presionando <kbd>C</kbd> en el menú principal:
 
 <p align="center">
     <img src="/res/img_tasks/tools/isocreator/cmdline/cmdline_menuentry.png" />
@@ -10,6 +10,6 @@ In DISMTools 0.7 and later, the Preinstallation Environment allows you to load C
     <img src="/res/img_tasks/tools/isocreator/cmdline/cmdline.png" />
 </p>
 
-From this environment, you can run any command, including Administration Scripts included with this Preinstallation Environment, like you would in a regular Windows PE system. To learn more about Administration Scripts, see the [Administration Script Reference](./scriptref.md) page.
+Desde este entorno, puedes ejecutar cualquier comando, incluyendo Scripts de Administración incluidos con este Entorno de Preinstalación, como lo harías en un sistema Windows PE regular. Para aprender más sobre Scripts de Administración, consulta la página [Referencia de Scripts de Administración](./scriptref.md).
 
-The environment will restart automatically after 72 hours (3 days).
+El entorno se reiniciará automáticamente después de 72 horas (3 días).

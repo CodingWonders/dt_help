@@ -1,100 +1,100 @@
-# Starting local installations
+# Iniciando instalaciones locales
 
-You can start the installation of your operating system in 2 ways:
+Puedes iniciar la instalación de tu sistema operativo de 2 formas:
 
-- By booting to installation media,
-- By starting the installation from within a full Windows environment (DISMTools 0.6.1 and later), or
-- By booting to the boot image of the installation disc file via the **Preboot eXecution Environment** (PXE) (DISMTools 0.7 and later)
+- Arrancando a medios de instalación,
+- Iniciando la instalación desde dentro de un entorno completo de Windows (DISMTools 0.6.1 y posteriores), o
+- Arrancando a la imagen de arranque del archivo de disco de instalación a través del **Entorno de Ejecución Previo al Arranque** (PXE) (DISMTools 0.7 y posteriores)
 
-In DISMTools 0.7.1 and later, performing these tasks has become much easier thanks to a new autorun application included in the root of the installation media:
+En DISMTools 0.7.1 y posteriores, realizar estas tareas se ha vuelto mucho más fácil gracias a una nueva aplicación de autorrecuperación incluida en la raíz de los medios de instalación:
 
 <p align="center">
     <img src="/res/img_tasks/tools/isocreator/autorun/autorun_mainscreen.png" />
 </p>
 
-## Starting from a full Windows environment
+## Iniciando desde un entorno completo de Windows
 
-DISMTools 0.6.1 and later come with a program that prepares your computer for OS installation. This is called *HotInstall*, and the process of computer preparation is as follows:
+DISMTools 0.6.1 y posteriores vienen con un programa que prepara tu computadora para la instalación del sistema operativo. Se llama *HotInstall*, y el proceso de preparación de la computadora es el siguiente:
 
-**NOTE:** HotInstall does not support Ventoy drives, due to the way they work
+**NOTA:** HotInstall no es compatible con unidades Ventoy, debido a la forma en que funcionan
 
-**IMPORTANT:** HotInstall **WILL NOT** perform an upgrade. It will only prepare your computer for a clean installation of the operating system.
+**IMPORTANTE:** HotInstall **NO** realizará una actualización. Solo preparará tu computadora para una instalación limpia del sistema operativo.
 
-1. Start `setup.exe` in the root of the DVD or USB drive. If you see a notification when inserting the installation media, you can also click on it to start the installer, effectively taking advantage of AutoRun:
+1. Inicia `setup.exe` en la raíz de la unidad DVD o USB. Si ves una notificación al insertar los medios de instalación, también puedes hacer clic en ella para iniciar el instalador, aprovechando efectivamente AutoRun:
 
-    ![HotInstall start](../../../../res/img_tasks/tools/isocreator/hotinstall/hotinstall_dvdstart.png)
+    ![Inicio de HotInstall](../../../../res/img_tasks/tools/isocreator/hotinstall/hotinstall_dvdstart.png)
 
-2. Accept the disclaimers and click Next:
+2. Acepta los disclaimers y haz clic en Siguiente:
 
-    ![HotInstall disclaimer](../../../../res/img_tasks/tools/isocreator/hotinstall/hotinstall_disclaimers.png)
+    ![Disclaimer de HotInstall](../../../../res/img_tasks/tools/isocreator/hotinstall/hotinstall_disclaimers.png)
 
-3. Review that the ISO file contains the installation image you want to test, and click Next. On this screen, you can also export all your third-party drivers to a folder, in case you need them later:
+3. Revisa que el archivo ISO contenga la imagen de instalación que deseas probar, y haz clic en Siguiente. En esta pantalla, también puedes exportar todos tus controladores de terceros a una carpeta, en caso de que los necesites más tarde:
 
-    ![HotInstall image review](../../../../res/img_tasks/tools/isocreator/hotinstall/hotinstall_review_image_info.png)
+    ![Revisión de imagen de HotInstall](../../../../res/img_tasks/tools/isocreator/hotinstall/hotinstall_review_image_info.png)
     
-4. Wait for your computer to be prepared for installation. This process will take some time, depending on your computer's performance:
+4. Espera a que tu computadora se prepare para la instalación. Este proceso tomará algún tiempo, dependiendo del rendimiento de tu computadora:
 
-    ![HotInstall progress](../../../../res/img_tasks/tools/isocreator/hotinstall/hotinstall_progress.png)
+    ![Progreso de HotInstall](../../../../res/img_tasks/tools/isocreator/hotinstall/hotinstall_progress.png)
 
-After restarting your computer, choose "DISMTools Operating System Installation" (if it is not selected by default) and press Enter. The first stage of the installation will start:
+Después de reiniciar tu computadora, elige "Instalación del Sistema Operativo DISMTools" (si no está seleccionada por defecto) y presiona Intro. La primera etapa de la instalación comenzará:
 
 <p align="center">
     <img src="/res/img_tasks/tools/isocreator/hotinstall/hotinstall_bootmgr.png" />
 </p>
 
-## Selecting the disk and partition
+## Seleccionando el disco y la partición
 
-The PE Helper will get the disks that are available on your computer:
+El Ayudante PE obtendrá los discos disponibles en tu computadora:
 
 <p align="center">
     <img src="/res/img_tasks/tools/isocreator/dt_pe/dt_pe_disk_chooser.png" />
 </p>
 
-On this screen, you can also stop for a moment to take actions if something does not look right with the disk listing, or if you want to see what disks have enough free space for the installation of your Windows image:
+En esta pantalla, también puedes detenerte un momento para tomar acciones si algo no se ve bien con el listado de discos, o si deseas ver qué discos tienen suficiente espacio libre para la instalación de tu imagen de Windows:
 
-- If you don't see the disk you want to use, it could be because your computer uses a third-party disk controller. If that is the case, type `DIM` and press Enter to open the Driver Installation Module. More information on how to use this tool can be found in the External Tools section of the documentation
-- (**Only for installations started with HotInstall**) If you want to see the free space on your disks, type `DSCR` and press Enter. This will show you the Disk Space Checker report generated by HotInstall:
+- Si no ves el disco que deseas usar, podría ser porque tu computadora usa un controlador de disco de terceros. Si ese es el caso, escribe `DIM` y presiona Intro para abrir el Módulo de Instalación de Controladores. Puedes encontrar más información sobre cómo usar esta herramienta en la sección Herramientas Externas de la documentación
+- (**Solo para instalaciones iniciadas con HotInstall**) Si deseas ver el espacio libre en tus discos, escribe `DSCR` y presiona Intro. Esto te mostrará el informe del Verificador de Espacio de Disco generado por HotInstall:
 
 <p align="center">
     <img src="/res/img_tasks/tools/isocreator/hotinstall/hotinstall_dscr.png" />
 </p>
 
-After selecting the disk, you will be asked to select the partition where the operating system will be installed. You can choose to clean all the partitions of your disk, or you can choose to format a specific partition:
+Después de seleccionar el disco, se te pedirá que selecciones la partición donde se instalará el sistema operativo. Puedes optar por limpiar todas las particiones de tu disco, o puedes optar por formatear una partición específica:
 
 <p align="center">
     <img src="/res/img_tasks/tools/isocreator/dt_pe/dt_pe_part_chooser.png" />
 </p>
 
-**IMPORTANT:** all actions past this point are irreversible. Make sure that you have backed up your data, and that you have selected the correct disk, before proceeding.
+**IMPORTANTE:** todas las acciones a partir de este punto son irreversibles. Asegúrate de que has hecho una copia de seguridad de tus datos, y de que has seleccionado el disco correcto, antes de continuar.
 
-## Choosing the index of the Windows image
+## Eligiendo el índice de la imagen de Windows
 
-After selecting the disk and partition, you will be asked to choose the index of the Windows image that you want to apply. The PE Helper will show you basic index information, including the name you have given to the image:
+Después de seleccionar el disco y la partición, se te pedirá que elijas el índice de la imagen de Windows que deseas aplicar. El Ayudante PE te mostrará información básica del índice, incluyendo el nombre que le has dado a la imagen:
 
 <p align="center">
     <img src="/res/img_tasks/tools/isocreator/dt_pe/dt_pe_image_chooser.png" />
 </p>
 
-You can also see more information about the image by typing `INFO` and pressing Enter:
+También puedes ver más información sobre la imagen escribiendo `INFO` y presionando Intro:
 
 <p align="center">
     <img src="/res/img_tasks/tools/isocreator/DT_PE_ImageInfo.png" />
 </p>
 
-After choosing the index, the PE Helper will apply the image to the selected disk or partition, will run serviceability tests, and will create boot files.
+Después de elegir el índice, el Ayudante PE aplicará la imagen al disco o partición seleccionados, ejecutará pruebas de mantenimiento, y creará archivos de arranque.
 
-After everything is done, your computer will restart automatically in 10 seconds:
+Después de que todo esté hecho, tu computadora se reiniciará automáticamente en 10 segundos:
 
 <p align="center">
     <img src="/res/img_tasks/tools/isocreator/dt_pe/dt_pe_comp_restart.png" />
 </p>
 
-From this point, you can remove the installation media and let your computer finish operating system configuration.
+A partir de este punto, puedes quitar los medios de instalación y permitir que tu computadora termine la configuración del sistema operativo.
 
-## Serviceability tests
+## Pruebas de Mantenimiento
 
-Serviceability tests are performed during OS installation to make sure that the image that has been applied is valid. They are only run if the architectures of the PE and the image are the same, and must pass in order to successfully complete the installation of the operating system.
+Las pruebas de mantenimiento se realizan durante la instalación del sistema operativo para asegurarse de que la imagen que ha sido aplicada es válida. Solo se ejecutan si las arquitecturas del PE y de la imagen son iguales, y deben pasar para completar exitosamente la instalación del sistema operativo.
 
-Windows Setup also performs serviceability tests right before the first reboot.
+Windows Setup también realiza pruebas de mantenimiento justo antes del primer reinicio.
 
-If these tests fail, you may need to repair the component store of your Windows image.
+Si estas pruebas fallan, es posible que necesites reparar el almacén de componentes de tu imagen de Windows.

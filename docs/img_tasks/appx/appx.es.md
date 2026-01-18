@@ -6,7 +6,7 @@ DISMTools 0.2 incorporó el servicio de paquetes AppX, permitiendo añadir y eli
 
 ## Dentro de un paquete AppX
 
-**NOTA:** esta información se basa en el empaquetado MSIX, aunque también aplica a AppX. Una visión general de MSIX está disponible en: https://learn.microsoft.com/es-es/windows/msix/overview. Aquí nos centramos en aspectos técnicos relevantes para DISMTools.
+**NOTA:** esta información se basa en el empaquetado MSIX, aunque también aplica a AppX. Una visión general de MSIX está disponible [aquí](https://learn.microsoft.com/es-es/windows/msix/overview). Aquí nos centramos en aspectos técnicos relevantes para DISMTools.
 
 Esta es la estructura general de un paquete AppX:
 

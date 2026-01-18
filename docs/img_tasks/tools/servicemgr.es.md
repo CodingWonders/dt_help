@@ -3,7 +3,7 @@
 El Administrador de servicios del sistema te permite ver y modificar información sobre los servicios en una imagen de Windows. Usa el administrador para cambiar el tipo de inicio de los servicios o simplemente para consultar su información.
 
 <p align="center">
-    <img src="../../res/img_tasks/tools/servicemgr/servicemgr.png" />
+    <img src="/res/img_tasks/tools/servicemgr/servicemgr.png" />
 </p>
 
 Puedes acceder al Administrador de servicios desde *Herramientas -> Administrar servicios del sistema*.
