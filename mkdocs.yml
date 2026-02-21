@@ -409,3 +409,4 @@ nav:
   - External tools:
     - Creating your themes: img_tasks/exttools/themedesigner.md
     - Viewing diagnostic logs: img_tasks/exttools/dynaviewer.md
+    - Creating your starter scripts: img_tasks/exttools/sse.md
