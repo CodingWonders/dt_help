@@ -95,8 +95,6 @@ For items that are disabled, the theme engine calculates a color based on the fo
 
 The theme engine parses the theme file to create a theme object, in which each of the properties is stored.
 
-Themes **do not persist during updates**, so you'll have to back them up and add them again after the update. If DISMTools can't find any themes, it will use the default color set defined internally. The theme format may also change in the future, so you may need to adapt your themes to the new format. DISMTools won't support themes using older versions of the theme format.
-
 ### Format Version History
 
 | Version | Used by DISMTools versions | Notes |
