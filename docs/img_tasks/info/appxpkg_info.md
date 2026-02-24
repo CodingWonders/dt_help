@@ -23,6 +23,10 @@ DISMTools tries to detect the main store logo asset when you select an AppX pack
 
 If you are given an incorrect store logo asset, please report an issue [here](https://github.com/CodingWonders/DISMTools/issues/new?assignees=CodingWonders&labels=bug&projects=&template=store-logo-asset-preview-issue.md&title=). Do note that you need a GitHub account to report feedback.
 
+## Searching through this information
+
+DISMTools 0.5 introduced search capabilities that let you search through installed AppX packages on Windows images and offline installations. DISMTools 0.7.3 improves this functionality by supporting active installations.
+
 ## Related content
 
 - [Image information dialogs](../info/infodlgs.md)
