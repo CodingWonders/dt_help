@@ -79,7 +79,9 @@ You can pick from 5 search engines in Options -> Image operations:
 | Startpage | 0.7.2 |
 | Brave Search | 0.7.2 |
 
-Artificial Intelligence (AI) overview features are disabled by default for both Google and Brave Search.
+Engine modes based on how many artificial intelligence features there are in them were introduced in version 0.7.3 to allow you to have finer control over AI features. Use the drop-down menu in Options -> Image operations to control AI feature tolerance in search engines.
+
+These AI features usually include search summaries, and links to start conversations with a chatbot. If you want more privacy-focused results, configure tolerance settings to only use those that have these features disabled. If you are more permissive when it comes to AI in search engines, you can also configure the tolerance settings accordingly. This gives you complete control, something that I think you should have on every technology.
 
 <p align="center">
     <img src="../../res/img_tasks/info/online_lookup_options.png" />
