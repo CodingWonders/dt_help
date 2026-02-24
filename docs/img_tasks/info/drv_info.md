@@ -54,9 +54,52 @@ You can save this information to a report file by clicking the Save button on th
 
 Also note that, if you have background processes configured to not detect all drivers, you will be asked if you want to save the information of all of them.
 
-## Additional search functionality
+## Search filters
 
-With the Search functionality introduced in DISMTools 0.5 you can search through your installed drivers more easily. This will default to the first column. However, if you want to search through installed drivers based on their original file names (second column), you can **prepend your search query with `og:`**.
+DISMTools 0.5 introduced search filters and functionality to search through installed drivers. When performing your search queries, you can use the following filters to specify where you want to search, depending on which version of DISMTools you are using:
+
+| Filter               | Description                                           | Version introduced |
+|----------------------|-------------------------------------------------------|--------------------|
+| `og:`                | Search through the original file names of the drivers | 0.5                |
+| `prov:`              | Filter by the provider name of a driver               | 0.7.3 Preview 2    |
+| `cn:`, `classname:`  | Filter by the class name of a driver                  | 0.7.3 Preview 2    |
+| `inbox:`, `noinbox:` | Filter by driver inbox status                         | 0.7.3 Preview 2    |
+| `bc:`, `nobc:`       | Filter by driver boot critical status                 | 0.7.3 Preview 2    |
+| `date:`              | Filter by driver release date                         | 0.7.3 Preview 4    |
+| `sig:`, `nosig:`     | Filter by driver signature status                     | 0.7.3 Preview 4    |
+
+When filtering drivers by *date*, you have to use one of the following PowerShell-like sub-operators in this format:
+
+```
+date:<sub-operator>[comparer]-<field>
+```
+
+| Sub-operator           | Description                                                            |
+|------------------------|------------------------------------------------------------------------|
+| `eq[comparer]-<field>` | Search for drivers released in the specified `<field>` value           |
+| `ne[comparer]-<field>` | Search for drivers not released in the specified `<field>` value       |
+| `lt[comparer]-<field>` | Search for drivers released before the specified `<field>` value       |
+| `le[comparer]-<field>` | Search for drivers released before or on the specified `<field>` value |
+| `gt[comparer]-<field>` | Search for drivers released after the specified `<field>` value        |
+| `ge[comparer]-<field>` | Search for drivers released after or on the specified `<field>` value  |
+
+The `[comparer]` value can be one of the following:
+
+- `y` to compare by year
+- `m` to compare by month
+- No value to compare by date
+
+When comparing by date, the field value has to be in European format (*dd/MM/yyyy*), but you can use shorter variants of that format. Some examples of driver search queries are the following:
+
+<!-- sorry Americans for not using your date format -->
+
+| Task                                                                                                        | Query                                       |
+|-------------------------------------------------------------------------------------------------------------|---------------------------------------------|
+| Show installed drivers with original file names that contain "iaStor" (*Intel RST/VMD storage controllers*) | `og:iaStor`                                 |
+| Show installed drivers provided by NVIDIA                                                                   | `prov:nvidia`                               |
+| Show installed SCSI adapters and other storage controllers                                                  | `cn:scsiadapter` or `classname:scsiadapter` |
+| Show installed drivers released before 2020                                                                 | `date:lt-01/01/2020` or `date:lty-2020`     |
+| Show installed drivers released in the month of September                                                   | `date:eqm-9`                                |
 
 ## Related content
 
