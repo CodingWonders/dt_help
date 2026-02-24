@@ -25,6 +25,7 @@ The System Service Manager displays the following information about each service
     - Start Type
     - Delayed Start (**only for Automatic start type**)
     - Service Type (kernel device driver, file system driver, adapter, Windows application, Windows service)
+    - User Service Flags (for [per-user services](https://woshub.com/manage-per-user-services-windows/))
 - **Required Privileges** tab:
     - Lists the privileges required by the service to run
 - **Error Control** tab:
