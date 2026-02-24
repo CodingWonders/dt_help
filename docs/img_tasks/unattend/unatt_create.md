@@ -182,6 +182,8 @@ Finally, like with the **Windows Image Explorer**, you can use the generator pro
 
 If the unattended answer file and, by extension, the Windows image, will be targeted to a fleet of computers in a domain; you can configure domain join settings using the **Domain Services Wizard**.
 
+**DOMAIN JOIN SETTINGS ARE NOT AVAILABLE ON HOME VERSIONS OF WINDOWS.**
+
 You can access the Domain Services Wizard by clicking the **Join target device to domain...** button that will appear in the following pages:
 
 - System Configuration
@@ -223,7 +225,7 @@ To pick a user from the domain:
 1. Select the OU from the drop-down list. After selecting the OU, the list of users in the OU will be populated automatically
 2. Select the user from the list
 
-Both the UPN and the SAM account names will be filled in automatically. When specifying this information manually, you will need to specify the user part of the UPN. For instance, `johndoe`.
+Both the UPN (*User Principal Name*) and the SAM (*Security Account Manager*) account names will be filled in automatically. When specifying this information manually, you will need to specify the user part of the UPN. For instance, `johndoe`.
 
 Finally, specify the password of the user. Since DISMTools will **NOT** check if the password is correct, make sure that you type it correctly.
 
@@ -231,7 +233,7 @@ You've finished the Domain Services Wizard. When you get to the components scree
 
 ## Starter Script Reference
 
-Currently, there are 12 starter scripts available:
+Currently, there are **15** starter scripts available:
 
 | Script Name | Stage | Description |
 |:------------|:-----:|:------------|
@@ -239,6 +241,7 @@ Currently, there are 12 starter scripts available:
 | Enable Verbose Status Messages | During System Configuration | This script enables the verbose status messages that are enabled by default on Windows Server. This can help report service start/stop status. |
 | Set OEM Information | During System Configuration | This script configures OEM settings such as the manufacturer or the model to further customize a Windows installation. |
 | Set Quick Machine Recovery Settings | During System Configuration | This script configures a target system's Quick Machine Recovery settings on Windows 11 24H2 and later. |
+| Display Bugcheck Parameters | During System Configuration | This script configures a system's blue screen to display additional parameters useful for troubleshooting purposes. |
 | Configure folders for Git integration | When the first user logs on | This script configures a folder, or a set of folders, for Git source control integration in the File Explorer. Git and the latest versions of system components need to be installed in the target system to take advantage of all features. |
 | Invoke WinUtil Configuration | When the first user logs on | This script configures a target system using a configuration file exported from the Windows Utility. |
 | Set Personalization Settings | When the first user logs on | This script configures settings related to color modes and accent colors on the user environment of the target system. |
@@ -247,12 +250,16 @@ Currently, there are 12 starter scripts available:
 | Update Microsoft Store apps | When the first user logs on | This script invokes an update of all Microsoft Store applications. A network is required for this to work. |
 | Disable Second Chance OOBE | When users log on for the first time | This script disables the Second Chance Out-of-Box Experience on the target system. This works on Windows 10 and Windows 11. |
 | Disable Windows Notification Sources | When users log on for the first time | This script disables user-specified notification sources in the target system. |
+| Show File Extensions | When users log on for the first time | This script makes the File Explorer show file extensions. |
+| Disable Drag Tray | When users log on for the first time | This script disables the drag tray in recent versions of Windows 11 24H2 and 25H2. |
 
 In DISMTools 0.7.2, you can view more information about these starter scripts more easily by using the new **Starter Script Browser**:
 
 <p align="center">
     <img src="../../res/img_tasks/unattend/unatt_creator/unatt_script_browser.png" />
 </p>
+
+You can also create your own starter scripts by using the [Starter Script Editor](../exttools/sse.md).
 
 Some scripts allow you to configure settings after you import them:
 
@@ -292,6 +299,12 @@ No settings available.
 - Options 3 and 4 will only be applied if automatic remediation is enabled
 - Cloud Remediation allows the system to scan for solutions on WinRE launch
 - Auto Remediation allows the system to continue scanning for solutions if the first attempt fails
+
+### Display Bugcheck Parameters
+
+**Script language**: Batch
+
+No settings available.
 
 ### Configure folders for Git integration
 
@@ -392,6 +405,18 @@ FOR %%a IN (Windows.SystemToast.Suggested ... Windows.SystemToast.AccountHealth 
 Notes for your source:
 
 - If your source contains spaces, surround it with quotes
+
+### Show File Extensions
+
+**Script language**: Batch
+
+No settings available.
+
+### Disable Drag Tray
+
+**Script language**: Batch
+
+No settings available.
 
 ### Change History
 
