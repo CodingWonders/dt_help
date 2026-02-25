@@ -8,7 +8,7 @@ This page contains reference documentation for Administration Scripts included w
 
 ## Available scripts
 
-Currently, 3 scripts are included:
+Currently, 4 scripts are included:
 
 ### Initialize Networking (`initializenetwork.bat`)
 
@@ -26,7 +26,7 @@ Usage:
 
 ### Capture Image (`imagecapture.bat`)
 
-This script captures a Windows system drive into a WIM file that can be used later. In DISMTools 0.7.2 and later, this tool can be launched automatically after Sysprep completes.
+This script captures a Windows system drive into a WIM file that can be used later. In DISMTools 0.7.2 and later, this tool can be launched automatically after Sysprep completes, using the [Sysprep Preparation Tool](../exttools/sysprep.md).
 
 Usage:
 
@@ -40,3 +40,23 @@ Usage:
 5. Wait for the process to complete
 
 After DISM completes, you will see a result screen.
+
+### Create Boot Files (`createbootfiles.bat`)
+
+This script allows you to reconfigure a disk to make it bootable by copying the boot files of the installation to its System Reserved partition (MSR) or EFI System Partition (ESP), based on the firmware type that you pass to it as an argument.
+
+Usage:
+
+- Pass one of the following values as an argument:
+
+    | Value                   | Operating mode |
+    |:------------------------|:--------------:|
+    | `BIOS`, `MBR`, `LEGACY` | Legacy mode    |
+    | `UEFI`, `GPT`           | UEFI mode      |
+
+Once the script launches:
+
+1. Provide the number of the source disk
+2. Provide the number of the destination MSR/ESP partition in the selected disk
+3. Provide the letter of the volume to copy boot files from
+4. Wait for the tool to do its work, and restart the computer
