@@ -15,12 +15,6 @@ With DISMTools you can get the information about the capabilities present in Win
 - When no capabilities are selected or when the dialog is launched for the first time in the execution of the program, you'll only see brief information about all capabilities, which includes the capability identity and its state
 - To get information about a specific capability, **select it from the list**. You'll then see that information on the right
 
-## Information regarding download and install sizes
-
-In DISMTools versions from the 0.3 series that support this action (0.3.1-0.3.3) have an issue where the download and install sizes could overflow, returning negative values. This issue is caused by the managed DISM API library. 
-
-DISMTools 0.4 is not affected by this issue due to it having an updated version of that library that fixes this issue.
-
 ## Additional search functionality
 
 With the state filter functionality introduced in DISMTools 0.6 you can get the information you want based on a capability's state. To filter capabilities by state, **type `state:` and provide one of the following state values**:

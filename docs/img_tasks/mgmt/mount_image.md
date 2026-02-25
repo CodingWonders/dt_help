@@ -9,7 +9,7 @@ One essential task to perform is mounting a Windows image, and DISMTools can ass
 ## Usage
 
 1. Specify the source image file to mount. It can be a WIM, VHD, ESD, SWM, or ISO file. However, SWM, ESD and ISO files require prior processing before mounting them
-2. Specify the index to mount in the Options group. You can easily view all indexes of an image in the list on the right
+2. Specify the index to mount in the Options group. You can easily view all indexes of an image in the list on the right, and select an index from there too
 3. Specify the directory to mount the image to. If you want to use the mount directory provided by the project, click "Use defaults"
 
 ## SWM and ESD processing

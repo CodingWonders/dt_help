@@ -77,6 +77,8 @@ What we're interested in is the `<MainBundle>` section, which defines the packag
 
 The `Uri` property is what matters. DISMTools versions from 0.3.2 onwards read these files, detect a URL, and perform a file download.
 
+If there is no `<MainBundle>` section, but there is a `<MainPackage>` section, the same properties are obtained. The `Uri` property still matters in that case.
+
 <p align="center">
 	<img src="../../res/img_tasks/appx/appinstaller_down.png" />
 </p>
