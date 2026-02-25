@@ -34,6 +34,8 @@ This action will generate an **image information report**, which you can view at
 
 DISMTools 0.4 expands this functionality by showing a preview of the information report after completing the process.
 
+Generated reports (in HTML) can also be saved to any location in DISMTools 0.7.3 and later.
+
 ## Searching through this information
 
 DISMTools 0.5 introduces **Search capabilities** to the information dialogs, allowing you to get the results you want more easily.
