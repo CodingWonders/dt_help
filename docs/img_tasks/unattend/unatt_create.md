@@ -205,6 +205,8 @@ When you pick the NIC from the list, every other field (PDS, DNS server addresse
 
 For DNS server addresses, you need to put one address per line. If you want to check if the syntax of the addresses is correct, click **Verify DNS Address Syntax**.
 
+From this wizard, you can also check if the target devices can reach the domain controller using the provided domain suffix by clicking **Test DNS resolution...**. If you see the IP address of the server, then the target devices should be able to reach the domain controller. Try this on a domain-joined machine so you can verify if its current network adapter settings can be used for other devices.
+
 One example of filled-in information is shown below:
 
 <p align="center">
@@ -217,15 +219,25 @@ After configuring DNS server information, you will need to configure information
     <img src="../../res/img_tasks/unattend/unatt_creator/dsw/dswizard_dsinfo.png" />
 </p>
 
-- If the device is part of a domain, the domain name will be filled in automatically and you will be able to pick users from available organizational units (OUs) in the domain. However, you can still specify different information manually.
-- If the device is not part of a domain, you will need to specify all information manually.
+You can pick a user in one of 3 ways:
 
-To pick a user from the domain:
+- By specifying its *Security Account Manager* (SAM) account name manually, such as `johndoe`. This is the only option if the device is either not part of a domain or isn't the domain controller
 
-1. Select the OU from the drop-down list. After selecting the OU, the list of users in the OU will be populated automatically
-2. Select the user from the list
+<p align="center">
+    <img src="../../res/img_tasks/unattend/unatt_creator/dsw/dswizard_dsinfo_manualaccount.png" />
+</p>
 
-Both the UPN (*User Principal Name*) and the SAM (*Security Account Manager*) account names will be filled in automatically. When specifying this information manually, you will need to specify the user part of the UPN. For instance, `johndoe`.
+- By specifying a user from any organizational unit (OU) in the domain using the OU and user drop-down lists
+
+<p align="center">
+    <img src="../../res/img_tasks/unattend/unatt_creator/dsw/dswizard_dsinfo_userinou.png" />
+</p>
+
+- By specifying a user object from anywhere in the domain using the account object picker. After selecting the object, its SAM account name will be used. Use this method if the account is not in any organizational unit, but is part of a standard container
+
+<p align="center">
+    <img src="../../res/img_tasks/unattend/unatt_creator/dsw/dswizard_dsinfo_userindomain.png" />
+</p>
 
 Finally, specify the password of the user. Since DISMTools will **NOT** check if the password is correct, make sure that you type it correctly.
 
@@ -233,25 +245,34 @@ You've finished the Domain Services Wizard. When you get to the components scree
 
 ## Starter Script Reference
 
-Currently, there are **15** starter scripts available:
+Currently, there are **24** starter scripts available:
 
-| Script Name | Stage | Description |
-|:------------|:-----:|:------------|
-| Close First Logon Animation | During System Configuration | This script closes the First Logon Animation process and allows a system to reach the desktop sooner. This works on Windows 10 and Windows 11. |
-| Enable Verbose Status Messages | During System Configuration | This script enables the verbose status messages that are enabled by default on Windows Server. This can help report service start/stop status. |
-| Set OEM Information | During System Configuration | This script configures OEM settings such as the manufacturer or the model to further customize a Windows installation. |
-| Set Quick Machine Recovery Settings | During System Configuration | This script configures a target system's Quick Machine Recovery settings on Windows 11 24H2 and later. |
-| Display Bugcheck Parameters | During System Configuration | This script configures a system's blue screen to display additional parameters useful for troubleshooting purposes. |
-| Configure folders for Git integration | When the first user logs on | This script configures a folder, or a set of folders, for Git source control integration in the File Explorer. Git and the latest versions of system components need to be installed in the target system to take advantage of all features. |
-| Invoke WinUtil Configuration | When the first user logs on | This script configures a target system using a configuration file exported from the Windows Utility. |
-| Set Personalization Settings | When the first user logs on | This script configures settings related to color modes and accent colors on the user environment of the target system. |
-| Set Registered Owner and Organization | When the first user logs on | This script configures the registered owner and organization of the target system. |
-| Set up a custom wallpaper | When the first user logs on | This script configures a wallpaper in the target system environment. |
-| Update Microsoft Store apps | When the first user logs on | This script invokes an update of all Microsoft Store applications. A network is required for this to work. |
-| Disable Second Chance OOBE | When users log on for the first time | This script disables the Second Chance Out-of-Box Experience on the target system. This works on Windows 10 and Windows 11. |
-| Disable Windows Notification Sources | When users log on for the first time | This script disables user-specified notification sources in the target system. |
-| Show File Extensions | When users log on for the first time | This script makes the File Explorer show file extensions. |
-| Disable Drag Tray | When users log on for the first time | This script disables the drag tray in recent versions of Windows 11 24H2 and 25H2. |
+| Script Name | Stage |
+|:------------|:-----:|
+| Close First Logon Animation | During System Configuration |
+| Disable Shutdown Event Tracker | During System Configuration |
+| Disable warnings for unsigned RDP files | During System Configuration |
+| Disable Windows Admin Center and Azure Arc banners | During System Configuration |
+| Display Bugcheck Parameters | During System Configuration |
+| Enable Batch script file locks | During System Configuration |
+| Enable Verbose Status Messages | During System Configuration |
+| Remove File System MAX_PATH length limit | During System Configuration |
+| Set OEM Information | During System Configuration |
+| Set Quick Machine Recovery Settings | During System Configuration |
+| Configure folders for Git integration | When the first user logs on |
+| Configure Start menu appearance | When the first user logs on |
+| Invoke WinUtil Configuration | When the first user logs on |
+| Refresh Windows Explorer | When the first user logs on |
+| Set Personalization Settings | When the first user logs on |
+| Set Registered Owner and Organization | When the first user logs on |
+| Show and Hide System Desktop Icons | When the first user logs on |
+| Set up a custom wallpaper | When the first user logs on |
+| Update Microsoft Store apps | When the first user logs on |
+| Disable Drag Tray | When users log on for the first time |
+| Disable Second Chance OOBE | When users log on for the first time |
+| Disable Windows Notification Sources | When users log on for the first time |
+| Set File Explorer launch folder | When users log on for the first time |
+| Show File Extensions | When users log on for the first time |
 
 In DISMTools 0.7.2, you can view more information about these starter scripts more easily by using the new **Starter Script Browser**:
 
@@ -264,6 +285,48 @@ You can also create your own starter scripts by using the [Starter Script Editor
 Some scripts allow you to configure settings after you import them:
 
 ### Close First Logon Animation
+
+**Script language**: Batch
+
+No settings available.
+
+### Disable Shutdown Event Tracker
+
+**Script language**: Batch
+
+No settings available.
+
+### Disable warnings for unsigned RDP files
+
+**Script language**: Batch
+
+No settings available.
+
+### Disable Windows Admin Center and Azure Arc banners
+
+**Script language**: Batch
+
+No settings available.
+
+### Display Bugcheck Parameters
+
+**Script language**: Batch
+
+No settings available.
+
+### Enable Batch script file locks
+
+**Script language**: Batch
+
+No settings available.
+
+### Enable Verbose Status Messages
+
+**Script language**: Batch
+
+No settings available.
+
+### Remove File System MAX_PATH length limit
 
 **Script language**: Batch
 
@@ -300,12 +363,6 @@ No settings available.
 - Cloud Remediation allows the system to scan for solutions on WinRE launch
 - Auto Remediation allows the system to continue scanning for solutions if the first attempt fails
 
-### Display Bugcheck Parameters
-
-**Script language**: Batch
-
-No settings available.
-
 ### Configure folders for Git integration
 
 **Script language**: PowerShell
@@ -321,11 +378,29 @@ $gitFolders = @(
 
 Do note that, in order for the Git view to show, the system needs the *Windows Advanced Settings* application.
 
+### Configure Start menu appearance
+
+**Script language**: Batch
+
+Configure the `_StartMenuView` variable with one of the following values to set the Start menu layout:
+
+| Value | Start menu layout |
+|:-----:|:-----------------:|
+| `0` | Category View |
+| `1` | Grid View |
+| `2` | List View |
+
 ### Invoke WinUtil Configuration
 
 **Script language**: PowerShell
 
 You need to add your configuration file to the root of the image's mount directory, as `winutil-config.json`. You can learn more about configuration files [here](https://winutil.christitus.com/userguide/automation/).
+
+### Refresh Windows Explorer
+
+**Script language**: PowerShell
+
+No settings available. Use this script immediately after a script performs changes to the user environment, so the workspace is refreshed without restarting Explorer. However, you may still need to do this if the script does not achieve what you want.
 
 ### Set Personalization Settings
 
@@ -369,7 +444,29 @@ Place the wallpaper in any path inside the Windows image. Then, replace `<path t
 
 If the image file does not exist in the target image and continue with the script, you will see a black desktop background.
 
+### Show and Hide System Desktop Icons
+
+**Script language**: Batch
+
+Set one or more of the following variables to 0 or 1 depending on whether you want to show or hide the respective system desktop icons:
+
+| Variable | Desktop icon |
+|:--------:|:------------:|
+| `_ComputerIconHidden` | This PC |
+| `_ControlPanelIconHidden` | Control Panel |
+| `_UserFilesIconHidden` | User's Files |
+| `_RecycleBinIconHidden` | Recycle Bin |
+| `_NetworkNeighborhoodIconHidden` | Network |
+
+Set the variable to 0 to show the respective icon, or set it to 1 to hide it. To see the changes, you will need to either refresh the desktop workspace using the respective starter script, or restart Explorer.
+
 ### Update Microsoft Store apps
+
+**Script language**: Batch
+
+No settings available.
+
+### Disable Drag Tray
 
 **Script language**: Batch
 
@@ -406,13 +503,18 @@ Notes for your source:
 
 - If your source contains spaces, surround it with quotes
 
-### Show File Extensions
+### Set File Explorer launch folder
 
 **Script language**: Batch
 
-No settings available.
+Set the `_LaunchTo` variable to one of the following values to set the File Explorer launch folder:
 
-### Disable Drag Tray
+| Value | Launch folder |
+|:-----:|:-------------:|
+| `0` | Quick Access (Windows 10) -- Home (Windows 11) |
+| `1` | This PC |
+
+### Show File Extensions
 
 **Script language**: Batch
 
