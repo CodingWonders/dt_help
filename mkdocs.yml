@@ -5,23 +5,29 @@ theme:
   prev_next_buttons_location: none
   logo: logo.png
   palette:
-
+  
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
+      primary: green
+      accent: green
       toggle:
         icon: material/brightness-auto
         name: Switch to light mode
 
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
+      primary: green
       scheme: default 
+      accent: green
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
 
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
+      primary: green
       scheme: slate
+      accent: green
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
@@ -30,6 +36,8 @@ extra_javascript:
 markdown_extensions:
   - mdx_math
 use_directory_urls: false
+plugins:
+  - glightbox
 nav:
 - Home: index.md
 - Getting started: getting_started/start.md
