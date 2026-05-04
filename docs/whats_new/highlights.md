@@ -16,33 +16,27 @@ The Sysprep Preparation Tool can now prepare the DISMTools Preinstallation Envir
   <img src="../res/whats_new/WhatsNew_1.png">
 </p>
 
-## Improved functionality when creating answer files
+## Unattended answer file creation: now super-powered
 
-The unattended answer file creation wizard now lets you quickly pick Ireland as the home location to show privacy settings that are only shown by default on EEA countries, and now lets you **create your own starter scripts** with the new Starter Script Editor:
+Unattended answer file features have seen several, and major, improvements with version 0.8.
 
-<p align="center">
-  <img src="../res/whats_new/WhatsNew_2.png">
-</p>
+When joining domains, you can now pick user account objects that are not necessarily in organizational units. But, when they are, you will also see them sorted alphabetically. More account checks have been added, mainly to detect those that don't require a password. And, to test domain name resolution, you can quickly invoke `nslookup` using your provided domain suffix.
 
-[Learn more about the Starter Script Editor](../img_tasks/exttools/sse.md)
+Moving on to starter scripts, there are **more than 20 starter scripts available to you**. You can also create your starter scripts using your Visual Basic scripts or JScript files, if you still depend on said scripts, and you can do so more comfortably with the new functionality in the Starter Script Editor, such as dark mode support. If one script needs to run before or after a set of scripts, you can quickly change the order of execution to suit your needs.
 
-## New ways of filtering information
+Next, when creating local user accounts, you can now configure their display names separately. You should use a custom display name when you have an account whose name contains either spaces or special characters, to avoid issues with certain programs or scripts and environment variables, and potentially more issues. For example, for a user named *John Doe* you can use an account name of *johndoe* and use the former name as the display name.
 
-DISMTools 0.7.3 introduces several new operators that you can use when getting installed driver information to filter results based on provider name, class name, signature status, and more.
+Finally, when applying unattended answer files, you now have control over whether to copy them to the image's Sysprep directory.
 
-[Learn more about the new driver information filters](../img_tasks/info/drv_info.md)
+[Learn more about the improved answer file features](../img_tasks/exttools/sse.md)
 
-## Improved DPI handling
+## Build information queries much more easily
 
-Work has been done in DISMTools 0.7.3 to make it handle HiDPI panels more properly. The end-result is that the program now looks incredible on such display panels. If you have a small display panel with a high resolution, try cranking up that DPI setting now.
+DISMTools 0.8 makes making search queries easier with the information filter assistants.
 
-## More search engines and more control are in your hands
+## New image formats are now supported
 
-DISMTools 0.7.3 introduces several new search engines that you can use when searching items in information dialogs online and lets you configure what engines are available based on how much you tolerate artificial intelligence (AI) features in them. This gives you complete control of your privacy when using search engines. So, if you're privacy-conscious, lower the tolerance settings.
-
-## The data you provide to extend the program now persists during updates
-
-DISMTools 0.7.3 makes available a directory that you can use to store user data. This data is used to extend the program's functionality. Starter scripts that you create can be saved there and you will be able to use them all the time, even after program updates. The same goes for themes that you create using the theme designer, and for the wallpaper overrides of the DISMTools Preinstallation Environment.
+DISMTools 0.8 massively improves support for **Full Flash Utility (FFU)** files as another entry in sector-based Windows images.
 
 ## Overall refinements
 
