@@ -4,6 +4,9 @@ theme:
   sticky_navigation: False
   prev_next_buttons_location: none
   logo: logo.png
+  favicon: img/favicon.ico
+  features:
+    - search.suggest
   palette:
   
     # Palette toggle for automatic mode
@@ -35,9 +38,21 @@ extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 markdown_extensions:
   - mdx_math
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
 use_directory_urls: false
 plugins:
-  - glightbox
+  - search
+  - offline
+  - glightbox:
+      background: none    # f'ing hate yaml
 nav:
 - Home: index.md
 - Getting started: getting_started/start.md
