@@ -28,7 +28,7 @@ In the **Regional Configuration** page, you can set the language, system locale,
     <img src="../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_regional_settings.png" />
 </p>
 
-In the **System Configuration** page, you can set the computer name, the architectures that you wish to target with your answer file, and other settings:
+In the **System Configuration** page, you can set the computer name (either manually, by letting Windows set one for you, or by using a script), the architectures that you wish to target with your answer file, and other settings:
 
 <p align="center">
     <img src="../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_system_configuration.png" />
@@ -119,23 +119,44 @@ In the **Post-Installation Scripts** page, you can configure additional scripts 
     <img src="../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_postinst_scripts.png" />
 </p>
 
-You can either write the post-installation scripts from scratch, or import existing ones.
+You can work on post-installation scripts in the following ways:
 
-Notes:
+- By writing them from scratch
+- By importing existing scripts. You can import Batch, PowerShell, VBScript and JScript files. DISMTools will automatically detect the script language based on the file extension
+- By using a starter script from anywhere in your file system or from the Starter Script Browser. Refer to the Starter Script Reference section for more information about available starter scripts and how to create your own
 
-- After scripts are done, you can restart Windows Explorer in case you have applied personalization changes, for example, via the Registry
-- If you are new to the world of post-installation scripts, you can go with new Starter Scripts. Go to the starter script reference section (at the bottom of this page) for more information
+You can add multiple post-installation scripts for each stage by using the plus and minus buttons. Navigate between scripts by using the respective buttons.
 
-In the **Component Settings** page, you can specify placeholders for additional components that you want to add to your answer file for specific passes. You will have to fill them in manually after the answer file is generated:
+Additionally, you can reorder the scripts. To do this, click the following button:
+
+<p align="center">
+    <img src="../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_postinst_scripts_reorder_btn.png" />
+</p>
+
+Then, select a script and use the controls to move the script to the desired position. Finally, click OK:
+
+<p align="center">
+    <img src="../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_postinst_scripts_reorder.gif" />
+</p>
+
+In the **Component Settings** page, you can specify additional components and settings to be added to your answer file. Use the buttons on the top of this page to add, remove, and navigate between components.
 
 <p align="center">
     <img src="../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_components.png" />
 </p>
 
+After you add a new entry, you have to specify both the component you want to customize, and its pass. Then, add the XML data that corresponds to the settings you want to configure for that component. Use the link at the bottom of this page to look up a component online.
+
+<p align="center">
+    <img src="../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_components_newcmp.png" />
+</p>
+
+<p align="center">
+    <img src="../../res/img_tasks/unattend/unatt_creator/steps/unatt_creator_components_cmpsel.png" />
+</p>
+
 Notes:
 
-- You can learn more about the components [here](https://learn.microsoft.com/en-us/windows-hardware/customize/desktop/unattend/components-b-unattend)
-- You can fill in the placeholders in the Editor mode, or in the Windows System Image Manager
 - If you don't want to configure components, simply skip this step
 
 Finally, before creating the answer file, you can review the settings that you have configured in the wizard. If you want to change any settings, you can go back to the respective pages:
@@ -205,7 +226,23 @@ When you pick the NIC from the list, every other field (PDS, DNS server addresse
 
 For DNS server addresses, you need to put one address per line. If you want to check if the syntax of the addresses is correct, click **Verify DNS Address Syntax**.
 
-From this wizard, you can also check if the target devices can reach the domain controller using the provided domain suffix by clicking **Test DNS resolution...**. If you see the IP address of the server, then the target devices should be able to reach the domain controller. Try this on a domain-joined machine so you can verify if its current network adapter settings can be used for other devices.
+You can also perform additional tasks with primary domain suffixes:
+
+<p align="center">
+    <img src="../../res/img_tasks/unattend/unatt_creator/dsw/dswizard_dnsinfo_dnstools.png" />
+</p>
+
+- To check if the target devices can reach the domain controller using the provided domain suffix by clicking **Test DNS resolution**. If you see the IP address of the server, then the target devices should be able to reach the domain controller. Try this on a domain-joined machine so you can verify if its current network adapter settings can be used for other devices:
+
+<p align="center">
+    <img src="../../res/img_tasks/unattend/unatt_creator/dsw/dswizard_dnsinfo_testdns.png" />
+</p>
+
+- To use a domain suffix from a list of DNS zones, click **Choose DNS zone...** and pick the domain suffix from the list. This option is only available on domain controllers:
+
+<p align="center">
+    <img src="../../res/img_tasks/unattend/unatt_creator/dsw/dswizard_dnsinfo_dnszone.png" />
+</p>
 
 One example of filled-in information is shown below:
 
@@ -520,7 +557,7 @@ Set the `_LaunchTo` variable to one of the following values to set the File Expl
 
 No settings available.
 
-### Change History
+## Change History
 
 - DISMTools 0.7.2 Preview 3:
     - Added:
