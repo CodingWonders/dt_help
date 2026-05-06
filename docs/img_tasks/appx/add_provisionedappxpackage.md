@@ -93,7 +93,7 @@ If your browser complains about the safety of the files, confirm you want to dow
 1. Open the Registry Editor, go to `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Applications` and grab the name of the application you want to register
 2. Next, open PowerShell as an administrator and type the following:
 
-```powershell
+```powershell linenums="1"
 Get-ItemPropertyValue -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Applications\*<PackageName>*\' -Name "Path" | Add-AppxPackage -DisableDevelopmentMode -Register
 ```
 
@@ -101,7 +101,7 @@ Get-ItemPropertyValue -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\App
 
 - If the command complains about `%SYSTEMDRIVE%` being in the `Path` value, replace it with the drive you've booted to, like this:
 
-```powershell
+```powershell linenums="1"
 (Get-ItemPropertyValue -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\Applications\*<PackageName>*\' -Name "Path").Replace('%SYSTEMDRIVE%', 'C:').Trim() | Add-AppxPackage -DisableDevelopmentMode -Register
 ```
 

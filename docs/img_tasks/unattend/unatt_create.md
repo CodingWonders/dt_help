@@ -369,7 +369,7 @@ No settings available.
 
 To add new entries to the list of folders for which to show VCS information, add them to the following array, like this:
 
-```powershell
+```powershell linenums="1"
 $gitFolders = @(
 	"$env:SYSTEMDRIVE\dev\repo1",
     "$env:SYSTEMDRIVE\dev\repo2"

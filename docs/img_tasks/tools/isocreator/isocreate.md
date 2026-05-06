@@ -24,7 +24,7 @@ You can determine whether a UEFI system with Secure Boot features support for th
 
 - To verify in PowerShell, run this command:
 
-```powershell
+```powershell linenums="1"
 [System.Text.Encoding]::ASCII.GetString((Get-SecureBootUEFI db).bytes) -match 'Windows UEFI CA 2023'
 ```
 

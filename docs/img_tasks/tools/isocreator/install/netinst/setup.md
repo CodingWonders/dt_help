@@ -141,7 +141,7 @@ Right-click IPv4 and select New scope. In the wizard, follow these steps:
 
 You can configure the aforementioned settings either in this scope or globally. In any case, if you want to use both platforms, you should prepare scripts that automate these tasks. Here's an example of how to do it:
 
-```powershell
+```powershell linenums="1"
 Set-DhcpServerv4OptionValue [-ScopeId "<IP Scope>"] -OptionId 66 -Value "<TFTP Server IP>"
 Set-DhcpServerv4OptionValue [-ScopeId "<IP Scope>"] -OptionId 67 -Value "<TFTP NBP for provider>"
 ```

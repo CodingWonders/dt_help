@@ -70,13 +70,13 @@ In the DISMTools repository, you can find the source code of DynaLog. Then, you 
 
 To log an event, call the `LogMessage` method like this:
 
-```csharp
+```csharp linenums="1"
 DynaLog.LogMessage("This is a log message");
 ```
 
 The parent method can be explicitly ignored in the event by setting the second parameter in `LogMessage` to `false`:
 
-```csharp
+```csharp linenums="1"
 DynaLog.LogMessage("This is a log message with parent ignored", false);
 ```
 
