@@ -126,7 +126,7 @@ nav:
       - External Tools:
         - Driver Installation Module: img_tasks/tools/isocreator/exttools/dim.md
         - Extensibility Suite: img_tasks/tools/isocreator/exttools/dtpe_es.md
-        - SysPrep Preparation Tool: img_tasks/tools/isocreator/exttools/sysprep.md
+        - Sysprep Preparation Tool: img_tasks/tools/isocreator/exttools/sysprep.md
       - Command-line:
         - Overview: img_tasks/tools/isocreator/cmdline/cmdline.md
         - Administration Script Reference: img_tasks/tools/isocreator/cmdline/scriptref.md

@@ -8,7 +8,11 @@ The Sysprep Preparation Tool is a utility included with DISMTools 0.7.1 and late
 
 To use the Sysprep Preparation Tool, the computer must be in **audit mode**. To enter audit mode at the OOBE, press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F3</kbd>. The computer will restart and boot into audit mode automatically.
 
-*Do note that the installation must not be unattended. If it is, you will not be able to enter audit mode. If you had added an answer file, you'll need to remove it before installing the system. To remove answer files, go to Commands -> Unattended answer files -> Remove applied answer file.*
+!!! note
+	The installation must not be unattended. If it is, you will not be able to enter audit mode. If you had added an answer file, you'll need to remove it before installing the system. To remove answer files, go to *Commands -> Unattended answer files -> Remove applied answer file*.
+
+!!! tip
+	You can make your Windows image boot directly into audit mode by going to *Commands > Unattended answer files > Make system enter audit mode*. Then, commit the image.
 
 You can determine if the OOBE is unattended in the reference computer by determining if you need to interact with it. For example, here:
 
@@ -42,14 +46,17 @@ The Sysprep Preparation Tool is automatically added to ISOs by the Preinstallati
 	<img src="../../../../res/img_tasks/tools/isocreator/syspreppreparator/SysprepPreparator_AutorunEntry.png" />
 </p>
 
-In DISMTools 0.7.2 and later, you can pick from 2 modes in which the tool can run:
+When you select this option, you will be presented with additional options:
 
-- **Automatic mode** will run the tool with minimal user interaction and default settings. If a check fails or returns a warning, the tool will let you pause and review the results before proceeding
-- **Manual mode** will run the tool with full user interaction
+<p align="center">
+	<img src="../../../../res/img_tasks/tools/isocreator/syspreppreparator/SysprepPreparator_AutorunEntry_AdvOpts.png" />
+</p>
 
-Whichever mode you choose, you can also prepare the boot image of the installation media for image capture after Sysprep completes by checking *Capture image after preparing the system*. You can learn more about image capture in the [administration script reference](../cmdline/scriptref.md).
+The guide will continue with the following options:
 
-The guide will continue in manual mode.
+- Manual mode
+- Capture after preparation
+- Copy registry changes and other current preferences for new user profiles
 
 You will arrive at the wizard.
 
@@ -57,7 +64,7 @@ You will arrive at the wizard.
 	<img src="../../../../res/img_tasks/tools/isocreator/syspreppreparator/SysprepPreparator_Home.png" />
 </p>
 
-The tool will perform checks on your computer before proceeding. These range from setup states, to third-party drivers, to domain join; and more. You will see the results of these checks after they complete:
+The tool will perform checks on your computer before proceeding. These range from setup states, to third-party drivers, domain join; and more. You will see the results of these checks after they complete:
 
 <p align="center">
 	<img src="../../../../res/img_tasks/tools/isocreator/syspreppreparator/SysprepPreparator_CheckScreen.png" />
@@ -87,6 +94,20 @@ Continuing with the wizard, you will arrive at this page, where you can configur
 </p>
 
 Normally, you don't need to configure anything here. The default options are suitable for most use cases. However, if you need to customize Sysprep's behavior, you can do so here.
+
+You may want to check *Copy registry changes and other current preferences for new user profiles* if you want changes made to the Administrator session to be carried over to the default user profile, using `CopyProfile`. Examples of such preferences include:
+
+- The desktop background
+- File Explorer settings
+- Taskbar auxiliary pins (like Microsoft 365 Copilot)
+- And more
+
+!!! note
+	To make the desktop background be used by new user profiles you will need to change permissions to allow the `Everyone` built-in to read the file, and you will need to put the file in a common location like the root of the drive.
+
+	![](../../../../res/img_tasks/tools/isocreator/syspreppreparator/SysprepPreparator_AuditMode_WallpaperACL.png)
+
+	![](../../../../res/img_tasks/tools/isocreator/syspreppreparator/SysprepPreparator_AuditMode_WallpaperACL_Result.png)
 
 Finally, wait for the tool to complete its work:
 

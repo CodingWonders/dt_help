@@ -60,7 +60,15 @@ Items marked as Windows applications or services should not have their start typ
 
 This is the only field you can modify for the moment. More modifyable fields may be added in future versions.
 
-To save the new list of services, click *Save*. The process of saving service changes will take around 20-25 seconds.
+To save the new list of services, click *Save*.
+
+## Deleting a service
+
+To delete a service, select it and click *Delete service*. This will mark the service for deletion, and it will be deleted when you save the changes. Services marked for deletion can be cleared of their deletion marks by clicking *Restore service*.
+
+## Saving service information
+
+To save service information to a report, click *Save service information*. This will save a report of the current service configuration to a Markdown file.
 
 ## Restoring previous service information
 
