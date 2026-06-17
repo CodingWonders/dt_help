@@ -5,6 +5,8 @@ theme:
   prev_next_buttons_location: none
   logo: logo.png
   favicon: img/favicon.ico
+  font:
+    text: Inter
   features:
     - search.suggest
   palette:
