@@ -28,7 +28,14 @@ Next, when creating local user accounts, you can now configure their display nam
 
 Finally, when applying unattended answer files, you now have control over whether to copy them to the image's Sysprep directory.
 
-[Learn more about the improved answer file features](../img_tasks/exttools/sse.md)
+<p align="center">
+  <img src="../res/whats_new/WhatsNew_2.png">
+</p>
+
+Learn more about the improved answer file features:
+
+- [Domain join](../img_tasks/unattend/unatt_create.md#active-directory-domain-services-domain-join)
+- [Starter scripts](../img_tasks/unattend/unatt_create.md#starter-script-reference)
 
 ## Work more comfortably with Windows images
 
@@ -44,6 +51,10 @@ A major improvement is the support for **Full Flash Utility (FFU)** files, as an
 
 Need to export certain drivers from an active installation? You can now export drivers using a class name filter. Class name filter selectors also detect third-party classes defined by drivers. For example, if you want to export [NPU](https://en.wikipedia.org/wiki/Neural_processing_unit) and compute accelerator devices, you can now do that by filtering for the *ComputeAccelerator* class. Finally, exporting and viewing information about drivers now works with Windows 7 images.
 
+<p align="center">
+  <img src="../res/whats_new/WhatsNew_3.png">
+</p>
+
 ## Overall refinements
 
 This release also focuses on refining existing tasks and functionality to improve the user experience. For example, the program is more reliable and components have been updated to their latest versions.
@@ -52,10 +63,8 @@ This release also focuses on refining existing tasks and functionality to improv
 
 # Thanks to the contributors
 
-<!-- The following people have helped shape this version of DISMTools by reporting issues or suggesting new features or changes:
+The following people have helped shape this version of DISMTools by reporting issues or suggesting new features or changes:
 
-[Real-MullaC](https://github.com/Real-MullaC), [bovirus](https://github.com/bovirus), [jekovcar](https://github.com/jekovcar), [rayman95 (MDL Forums)](https://forums.mydigitallife.net/members/rayman95.1153686/)
-
-If you want to appear in this list, you can report issues or suggestions in any channel you prefer (via the [MDL forum thread](https://forums.mydigitallife.net/threads/dismtools.87263/), via the [GitHub repository](https://github.com/CodingWonders/DISMTools), or via any announcements on the [DISMTools subreddit](https://reddit.com/r/DISMTools) or on the [Windows](https://reddit.com/r/Windows), [Windows11](https://reddit.com/r/Windows11) and [Windows10](https://reddit.com/r/Windows10) subreddits (as comments)) or submit new code changes (read the [contribution guidelines](https://github.com/CodingWonders/DISMTools/blob/stable/CONTRIBUTING.md) for more information). -->
+[TackleBarry80](https://github.com/TackleBarry80), [Dede333](https://github.com/Dede333), [charlezmmonroe-byte](https://github.com/charlezmmonroe-byte)
 
 To contribute to the software, you can report issues or suggestions in any channel you prefer (via the [MDL forum thread](https://forums.mydigitallife.net/threads/dismtools.87263/), via the [GitHub repository](https://github.com/CodingWonders/DISMTools), or via any announcements on the [DISMTools subreddit](https://reddit.com/r/DISMTools) or on the [Windows](https://reddit.com/r/Windows), [Windows11](https://reddit.com/r/Windows11) and [Windows10](https://reddit.com/r/Windows10) subreddits (as comments)) or submit new code changes (read the [contribution guidelines](https://github.com/CodingWonders/DISMTools/blob/stable/CONTRIBUTING.md) for more information).

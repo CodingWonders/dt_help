@@ -20,7 +20,7 @@ DISMTools 0.6.1 and later come with a program that prepares your computer for OS
 
 **IMPORTANT:** HotInstall **WILL NOT** perform an upgrade. It will only prepare your computer for a clean installation of the operating system.
 
-1. Start `setup.exe` in the root of the DVD or USB drive. If you see a notification when inserting the installation media, you can also click on it to start the installer, effectively taking advantage of AutoRun:
+1. Select *Install an Operating System* from the autorun menu:
 
     ![HotInstall start](../../../../res/img_tasks/tools/isocreator/hotinstall/hotinstall_dvdstart.png)
 

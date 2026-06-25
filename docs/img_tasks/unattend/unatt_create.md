@@ -183,7 +183,7 @@ DISMTools 0.6.1 adds the ability to normalize the spacing of the answer file to 
 
 ## Requirements
 
-The unattended answer file creator requires the .NET 9 Runtime for the generator program to function. If DISMTools detects that the runtime hasn't been installed, you will be offered the ability to use the self-contained version, which contains the runtime:
+The unattended answer file creator requires the .NET 10 Runtime for the generator program to function. If DISMTools detects that the runtime hasn't been installed, you will be offered the ability to use the self-contained version, which contains the runtime:
 
 <p align="center">
     <img src="../../res/img_tasks/unattend/unatt_creator/unattendgen_selfcontained.png" />
@@ -282,11 +282,13 @@ You've finished the Domain Services Wizard. When you get to the components scree
 
 ## Starter Script Reference
 
-Currently, there are **24** starter scripts available:
+Currently, there are **27** starter scripts available:
 
 | Script Name | Stage |
 |:------------|:-----:|
+| Change PowerShell Execution Policy | During System Configuration |
 | Close First Logon Animation | During System Configuration |
+| Configure current power plan timeout values | During System Configuration |
 | Disable Shutdown Event Tracker | During System Configuration |
 | Disable warnings for unsigned RDP files | During System Configuration |
 | Disable Windows Admin Center and Azure Arc banners | During System Configuration |
@@ -308,6 +310,7 @@ Currently, there are **24** starter scripts available:
 | Disable Drag Tray | When users log on for the first time |
 | Disable Second Chance OOBE | When users log on for the first time |
 | Disable Windows Notification Sources | When users log on for the first time |
+| Restore context menu for Windows 11 systems | When users log on for the first time |
 | Set File Explorer launch folder | When users log on for the first time |
 | Show File Extensions | When users log on for the first time |
 
@@ -321,11 +324,37 @@ You can also create your own starter scripts by using the [Starter Script Editor
 
 Some scripts allow you to configure settings after you import them:
 
+### Change PowerShell Execution Policy
+
+**Script language**: Batch
+
+Configure the execution policy of PowerShell by setting the `_PWSHExecutionPolicy` variable to one of the following values:
+
+- `Unrestricted`
+- `RemoteSigned`
+- `Restricted`
+- `AllSigned`
+- `Bypass`
+- `Undefined`
+
 ### Close First Logon Animation
 
 **Script language**: Batch
 
 No settings available.
+
+### Configure current power plan timeout values
+
+**Script language**: Batch
+
+Options exist for when the computer is running on battery power and when plugged in. The following table groups them in one option ending in `(Ac|Dc)`, depending on the context:
+
+|          Option            |                          Description                            |
+|:--------------------------:|:----------------------------------------------------------------|
+| `_MonitorTimeout(Ac|Dc)`   | Sets the number of seconds before the monitor turns off         |
+| `_DiskTimeout(Ac|Dc)`      | Sets the number of seconds before storage devices stop          |
+| `_StandbyTimeout(Ac|Dc)`   | Sets the number of seconds before the device enters sleep mode  |
+| `_HibernateTimeout(Ac|Dc)` | Sets the number of seconds before the device enters hibernation |
 
 ### Disable Shutdown Event Tracker
 
@@ -540,6 +569,12 @@ Notes for your source:
 
 - If your source contains spaces, surround it with quotes
 
+### Restore context menu for Windows 11 systems
+
+**Script language**: Batch
+
+No settings available.
+
 ### Set File Explorer launch folder
 
 **Script language**: Batch
@@ -556,38 +591,6 @@ Set the `_LaunchTo` variable to one of the following values to set the File Expl
 **Script language**: Batch
 
 No settings available.
-
-## Change History
-
-- DISMTools 0.7.2 Preview 3:
-    - Added:
-        - Configure Git folders for File Explorer
-    - Modified:
-        - Added name and description fields to starter scripts for script browser
-- DISMTools 0.7.2 Preview 2:
-    - Added:
-        - Verbose Status Messages
-    - Modified:
-        - Disable Windows Notification Sources: added Copilot notifications to blocklist
-        - Set Quick Machine Recovery Settings: added value checking
-- DISMTools 0.7.1 Preview 4:
-    - Added:
-        - Disable Windows Notification Sources
-        - Disable Second Chance OOBE
-        - Set OEM Information
-        - Set Registered Owner and Organization
-        - Set Quick Machine Recovery Settings
-    - Modified:
-        - Invoke WinUtil Configuration: reduced ping count to server
-- DISMTools 0.7.1 Preview 3:
-    - Added:
-        - Skip OOBE First Logon Animation
-        - Personalize User Environment
-- DISMTools 0.7.1 Preview 2:
-    - Added:
-        - Set up a custom wallpaper
-        - Update Microsoft Store apps
-        - Invoke WinUtil Configuration
 
 ## Acknowledgements
 

@@ -52,9 +52,11 @@ Based on this:
 
 ## Preparing the network infrastructure
 
-If you already have a network infrastructure set up for remote deployment, feel free to skip this step. However, if you just want to tinker with remote installations at home with a wireless connection, you can do the following steps to create a virtual switch (*vSwitch*).
+If you already have a network infrastructure set up for remote deployment, feel free to skip this step. Otherwise, follow these steps to set it up.
 
-**Notes:** 
+You may have a switch lying around that you can use to connect your server and the computers you want to deploy the operating system to. If not, you can use a virtual switch.
+
+**Hyper-V notes:** 
 
 - These steps only work with Hyper-V
 - After rebooting your host computer, your virtual machines connected to your switch may lose connection to the Internet. However, the switch will still function for remote OS installation
@@ -77,7 +79,7 @@ Turn on the server VM and run `ipconfig /all` to make sure the virtual network a
 
 ![Connect To Switch](../../../../../res/img_tasks/tools/isocreator/netinstall/wds/viridian_server_ipconfig.png)
 
-**Tip:** if you want to make sure the IP address of the server doesn't change (remains static), or if it can't pick up the default gateway address, go to the network adapter properties of the virtual network adapter, and configure IPv4 to use the following values:
+Configure the static IP address for the DHCP server to the values you see in ipconfig.
 
 ![Static IP](../../../../../res/img_tasks/tools/isocreator/netinstall/wds/viridian_server_static_ip.png)
 

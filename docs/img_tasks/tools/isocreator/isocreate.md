@@ -11,6 +11,7 @@ With DISMTools 0.6.1 and later, you can also specify 2 options:
 
 - **Copy to Ventoy drives** lets you take advantage of your [Ventoy](https://ventoy.net/en) drives for operating system installation. After the ISO is generated, it will be copied automatically to all Ventoy drives you have plugged into your computer
 - **Use newly-signed boot binaries** will make the ISO files that you create ship with EFI boot binaries signed with the *Windows UEFI CA 2023* code-signing certificate. This is not checked by default because of reasons that are mentioned later in this document
+- **Include essential drivers from this system** will export SCSI adapters, storage controllers, and network adapters from your system to the Preinstallation Environment, and to the target Windows image
 
 This process can take between 5 to 10 minutes, depending on the size of the Windows image and the speed of your computer's disk drive.
 
@@ -54,6 +55,16 @@ In DISMTools 0.7.2 and later, you may see the following warning:
 </p>
 
 This warning will show if you're creating an ISO file on a UEFI system with Secure Boot enabled that does not support the UEFI CA 2023 binaries; if you check the "Use newly-signed boot binaries" option.
+
+You can also check the state of certificates in DB by navigating through your UEFI firmware settings. Here is an example:
+
+<p align="center">
+    <img src="../../../res/img_tasks/tools/isocreator/uefica2023/uefica23_pcuefi_sbadmin.png" />
+</p>
+
+<p align="center">
+    <img src="../../../res/img_tasks/tools/isocreator/uefica2023/uefica23_pcuefi_sbdb.png" />
+</p>
 
 Both Microsoft and OEMs are providing both software and firmware updates to computers in order to add support for the 2023 binaries and to update the revocation lists. To fix this problem, make sure your OS and your firmware are updated. Alternatively, you might be able to continue *without* using the updated boot binaries, but this may cause new systems to not boot to the resulting ISO files if they have revoked the 2011 certificates.
 
@@ -111,7 +122,7 @@ DISMTools 0.8 and later versions allow you to configure the Preinstallation Envi
     <img src="../../../res/img_tasks/tools/isocreator/dt_pe/policy/dt_pe_policy.png" />
 </p>
 
-**Policy version:** *0.8.0.26052*
+**Policy version:** *0.8.0.26063*
 
 - **Custom wallpaper**: allows you to set a custom wallpaper (in JPG format) for the Preinstallation Environment, using the wallpaper overrides introduced in version 0.7.3. You can pick any image you like, but you can also go with your current wallpaper, assuming it's in JPG format.
 - **Show version information on the top-left corner of the primary screen**: this will show the version of the Preinstallation Environment in the top-left corner of the primary screen, like this:
@@ -153,6 +164,28 @@ DISMTools 0.8 and later versions allow you to configure the Preinstallation Envi
 
 - **Default keyboard layout**: this allows you to specify the default keyboard layout to be used in the Preinstallation Environment. The specified keyboard layout will be the default one, but users can change it in the installation method selection screen if they want to.
 
+    !!! note
+        The keyboard layout you specify can also be used to override keyboard preferences in the target image, if it does not have an answer file that sets it to something else.
+
+- **Conflict resolution for unattended answer files**: if an answer file exists in both the root of the ISO file and in the Windows image, this option allows you to specify which one should be used. The following options are available:
+
+    - *Ask me how to resolve the conflict*
+    - *Handle the conflict by using the answer file of the ISO file*
+    - *Handle the conflict by using the answer file of the Windows image file*
+
+<p align="center">
+    <img src="../../../res/img_tasks/tools/isocreator/dt_pe/policy/dt_pe_policy_answerfile_conflict_question.png" />
+</p>
+
+!!! warning
+    You should not assume what the answer files in both locations contain, and you may experience unexpected behavior if you use the wrong answer file. It is recommended to always check the contents of both answer files before deciding which one to use.
+
+    When being asked how to resolve the conflict, you can invoke a review by pressing `R`.
+
+<p align="center">
+    <img src="../../../res/img_tasks/tools/isocreator/dt_pe/policy/dt_pe_policy_answerfile_review.png" />
+</p>
+
 Preinstallation Environment policies are stored in the system registry, under `HKEY_LOCAL_MACHINE\SOFTWARE\DISMTools\Preinstallation Environment\Policies`. The policies use the following names in the registry:
 
 | Policy | Value name |
@@ -166,6 +199,8 @@ Preinstallation Environment policies are stored in the system registry, under `H
 | Amount of connection attempts that should be considered when connecting to a WDS server | `WDSHCConnAttempts` |
 | Port to be used by PXE Helper clients to send requests by default | `PXEServerPort` |
 | Default keyboard layout | `KeyboardLayoutCode` |
+| Override keyboard layouts used by target images with the one I select here | `KeyboardLayoutOverrideExistingLayout` |
+| Unattended answer file conflict resolution | `AnswerFileConflictResponse` |
 
 The policies you configure from the ISO creator are known as *custom policies*. You can also make policy changes permanent by configuring them as *default policies* in the application settings. To save the settings as default policies, click *Save to default policies*.
 

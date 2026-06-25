@@ -123,7 +123,7 @@ nav:
       - Local installations: img_tasks/tools/isocreator/install/localinstall.md
       - Network-based installations:
         - Overview: img_tasks/tools/isocreator/install/netinst/pxehelpers.md
-        - Creating a basic network setup (Hyper-V): img_tasks/tools/isocreator/install/netinst/setup.md
+        - Creating a basic network setup: img_tasks/tools/isocreator/install/netinst/setup.md
         - Windows Deployment Services (WDS) Helper: img_tasks/tools/isocreator/install/netinst/wds.md
       - External Tools:
         - Driver Installation Module: img_tasks/tools/isocreator/exttools/dim.md

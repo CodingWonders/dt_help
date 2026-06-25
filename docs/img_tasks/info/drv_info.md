@@ -101,6 +101,10 @@ When comparing by date, the field value has to be in European format (*dd/MM/yyy
 | Show installed drivers released before 2020                                                                 | `date:lt-01/01/2020` or `date:lty-2020`     |
 | Show installed drivers released in the month of September                                                   | `date:eqm-9`                                |
 
+## Filter assistants
+
+DISMTools 0.8 introduces filter assistants that allow you to quickly write the queries. To invoke the driver filter assistant, click the wand next to the search box. Then, select the field you want to filter by, and values, and the program will automatically generate the query for you.
+
 ## Related content
 
 - [Image information dialogs](../info/infodlgs.md)

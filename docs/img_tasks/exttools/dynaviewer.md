@@ -38,6 +38,10 @@ It's recommended that you use the DynaLog Log Viewer in the event of a problem. 
 
 DynaLog Log Viewer can also be used to view logs from other programs that use the DynaLog logging framework, that can easily be implemented in your preferred programming language.
 
+## Filtering log events
+
+You can filter log events by process ID, event caller and message. When performing message-based filtering, you can enable both case-sensitive and regex-based filtering.
+
 ## Running on older versions of Windows
 
 DISMTools includes 2 versions of the Log Viewer that contain the same feature set but target different frameworks:
