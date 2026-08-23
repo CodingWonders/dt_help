@@ -25,4 +25,4 @@ This action is supported on the following platforms:
 Specify the destination to export the drivers to (**export target**) and click OK. You can perform one of 2 export modes:
 
 - **Export all third-party drivers**: this will export all third-party drivers of the image to the specified folder. This is the default option
-- **Export drivers by class name**: this will export all third-party drivers of the image that belong to a specific class, which you can select from a list of predefined class names, and those offered by third-party drivers
+- **Export drivers by class names**: this will export all third-party drivers of the image that belong to specific classes, which you can select from a list of predefined class names, and those offered by third-party drivers

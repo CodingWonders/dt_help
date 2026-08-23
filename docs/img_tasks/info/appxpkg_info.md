@@ -25,7 +25,33 @@ If you are given an incorrect store logo asset, please report an issue [here](ht
 
 ## Searching through this information
 
-DISMTools 0.5 introduced search capabilities that let you search through installed AppX packages on Windows images and offline installations. DISMTools 0.7.3 improves this functionality by supporting active installations.
+To find specific AppX packages by name, use the search box.
+
+### Search filters
+
+You can filter AppX package information by registration status by using one of the following filters:
+
+- `regto:anyone` shows all AppX packages that have been registered to, at least, one user
+- `regto:noone` shows all AppX packages that have not been registered to any user
+- `regto:me` shows all AppX packages that have been registered to the current user
+- `regto:<user>` shows all AppX packages that have been registered to a specific user, where `<user>` can be one of the following values:
+
+    - A user name
+    - A user's Security Identifier (SID)
+
+!!! note
+
+    Registration filters by user name or SID are only accessible if DISMTools is configured to map registration information to users in a system.
+
+Use the filter assistant, by clicking the wand next to the search box, to easily find the user you want to filter by:
+
+<p align="center">
+    <img src="../../res/img_tasks/info/appxpkg_info_regto_modes.png" />
+</p>
+
+<p align="center">
+    <img src="../../res/img_tasks/info/appxpkg_info_regto_users.png" />
+</p>
 
 ## Related content
 

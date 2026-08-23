@@ -30,11 +30,6 @@ To offer functionality to upload to the Starter Script Library, the Starter Scri
   <img src="../res/whats_new/WhatsNew_2.png">
 </p>
 
-Learn more about the improved answer file features:
-
-- [Domain join](../img_tasks/unattend/unatt_create.md#active-directory-domain-services-domain-join)
-- [Starter scripts](../img_tasks/unattend/unatt_create.md#starter-script-reference)
-
 ## Work more comfortably with Windows images
 
 DISMTools 0.8.1 introduces several improvements to core Windows image management flows that make working with images more comfortable.
@@ -55,6 +50,6 @@ This release also focuses on refining existing tasks and functionality to improv
 
 The following people have helped shape this version of DISMTools by reporting issues or suggesting new features or changes:
 
-[Deadstar95 (*DaleCooper*)](https://github.com/Deadstar95)
+[Deadstar95 (*DaleCooper*)](https://github.com/Deadstar95), [Abs313a](https://github.com/Abs313a)
 
 To contribute to the software, you can report issues or suggestions in any channel you prefer (via the [MDL forum thread](https://forums.mydigitallife.net/threads/dismtools.87263/), via the [GitHub repository](https://github.com/CodingWonders/DISMTools), or via any announcements on the [DISMTools subreddit](https://reddit.com/r/DISMTools) or on the [Windows](https://reddit.com/r/Windows), [Windows11](https://reddit.com/r/Windows11) and [Windows10](https://reddit.com/r/Windows10) subreddits (as comments)) or submit new code changes (read the [contribution guidelines](https://github.com/CodingWonders/DISMTools/blob/stable/CONTRIBUTING.md) for more information).

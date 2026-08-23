@@ -56,17 +56,19 @@ Also note that, if you have background processes configured to not detect all dr
 
 ## Search filters
 
-DISMTools 0.5 introduced search filters and functionality to search through installed drivers. When performing your search queries, you can use the following filters to specify where you want to search, depending on which version of DISMTools you are using:
+When performing your search queries, you can use the following filters to specify where you want to search:
 
-| Filter               | Description                                           | Version introduced |
-|----------------------|-------------------------------------------------------|--------------------|
-| `og:`                | Search through the original file names of the drivers | 0.5                |
-| `prov:`              | Filter by the provider name of a driver               | 0.7.3 Preview 2    |
-| `cn:`, `classname:`  | Filter by the class name of a driver                  | 0.7.3 Preview 2    |
-| `inbox:`, `noinbox:` | Filter by driver inbox status                         | 0.7.3 Preview 2    |
-| `bc:`, `nobc:`       | Filter by driver boot critical status                 | 0.7.3 Preview 2    |
-| `date:`              | Filter by driver release date                         | 0.7.3 Preview 4    |
-| `sig:`, `nosig:`     | Filter by driver signature status                     | 0.7.3 Preview 4    |
+| Filter               | Description                                           |
+|----------------------|-------------------------------------------------------|
+| `og:`                | Search through the original file names of the drivers |
+| `prov:`              | Filter by the provider name of a driver               |
+| `cn:`, `classname:`  | Filter by the class name of a driver                  |
+| `inbox:`, `noinbox:` | Filter by driver inbox status                         |
+| `bc:`, `nobc:`       | Filter by driver boot critical status                 |
+| `date:`              | Filter by driver release date                         |
+| `sig:`, `nosig:`     | Filter by driver signature status                     |
+
+When filtering drivers by *class name*, you can specify multiple class names by separating them with a semicolon.
 
 When filtering drivers by *date*, you have to use one of the following PowerShell-like sub-operators in this format:
 
@@ -93,17 +95,18 @@ When comparing by date, the field value has to be in European format (*dd/MM/yyy
 
 <!-- sorry Americans for not using your date format -->
 
-| Task                                                                                                        | Query                                       |
-|-------------------------------------------------------------------------------------------------------------|---------------------------------------------|
-| Show installed drivers with original file names that contain "iaStor" (*Intel RST/VMD storage controllers*) | `og:iaStor`                                 |
-| Show installed drivers provided by NVIDIA                                                                   | `prov:nvidia`                               |
-| Show installed SCSI adapters and other storage controllers                                                  | `cn:scsiadapter` or `classname:scsiadapter` |
-| Show installed drivers released before 2020                                                                 | `date:lt-01/01/2020` or `date:lty-2020`     |
-| Show installed drivers released in the month of September                                                   | `date:eqm-9`                                |
+| Task                                                                                                        | Query                                               |
+|-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
+| Show installed drivers with original file names that contain "iaStor" (*Intel RST/VMD storage controllers*) | `og:iaStor`                                         |
+| Show installed drivers provided by NVIDIA                                                                   | `prov:nvidia`                                       |
+| Show installed SCSI adapters and other storage controllers                                                  | `cn:scsiadapter` or `classname:scsiadapter`         |
+| Show installed SCSI adapters and network adapters                                                           | `cn:scsiadapter;net` or `classname:scsiadapter;net` |
+| Show installed drivers released before 2020                                                                 | `date:lt-01/01/2020` or `date:lty-2020`             |
+| Show installed drivers released in the month of September                                                   | `date:eqm-9`                                        |
 
 ## Filter assistants
 
-DISMTools 0.8 introduces filter assistants that allow you to quickly write the queries. To invoke the driver filter assistant, click the wand next to the search box. Then, select the field you want to filter by, and values, and the program will automatically generate the query for you.
+To invoke the driver filter assistant, click the wand next to the search box. Then, select the field you want to filter by, and values, and the program will automatically generate the query for you.
 
 ## Related content
 
