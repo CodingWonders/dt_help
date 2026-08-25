@@ -42,7 +42,7 @@ To get features in a certain state containing a given name, you need to type the
 
 ## Filter assistants
 
-DISMTools 0.8 introduces filter assistants that allow you to quickly write the queries. To invoke the feature filter assistant, click the wand next to the search box. Then, select the field you want to filter by, and values, and the program will automatically generate the query for you.
+To invoke the feature filter assistant, click the wand next to the search box. Then, select the field you want to filter by, and values, and the program will automatically generate the query for you.
 
 ## Related content
 

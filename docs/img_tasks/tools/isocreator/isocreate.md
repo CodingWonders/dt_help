@@ -25,9 +25,9 @@ You can determine whether a UEFI system with Secure Boot features support for th
 
 - To verify in PowerShell, run this command:
 
-``powershell linenums="1"
+```powershell linenums="1"
 [System.Text.Encoding]::ASCII.GetString((Get-SecureBootUEFI db).bytes) -match 'Windows UEFI CA 2023'
-``
+```
 
 <p align="center">
     <img src="https://techcommunity.microsoft.com/t5/s/gxcuf89792/images/bS00MTIxNzM1LTU3MzgxN2kwQ0ZBNzNGQ0FEMjU2RTBE?revision=7" />   
@@ -122,7 +122,7 @@ DISMTools 0.8 and later versions allow you to configure the Preinstallation Envi
     <img src="../../../res/img_tasks/tools/isocreator/dt_pe/policy/dt_pe_policy.png" />
 </p>
 
-**Policy version:** *0.8.0.26063*
+**Policy version:** *0.8.1.26082*
 
 - **Custom wallpaper**: allows you to set a custom wallpaper (in JPG format) for the Preinstallation Environment, using the wallpaper overrides introduced in version 0.7.3. You can pick any image you like, but you can also go with your current wallpaper, assuming it's in JPG format.
 - **Show version information on the top-left corner of the primary screen**: this will show the version of the Preinstallation Environment in the top-left corner of the primary screen, like this:

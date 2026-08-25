@@ -33,8 +33,21 @@ You can't perform management of an installation on a drive if it meets at least 
 
 - The drive contains an installation of Windows Vista or an earlier version of Windows
 - The drive containing the installation is not formatted as NTFS
-- The drive containing the installation is mounted as a removable medium
 - The drive containing the installation is mounted with read-only privileges
+
+## BitLocker volume support
+
+DISMTools can detect if a volume connected to the system is encrypted with BitLocker. You will see "BITLOCKER" in the drive format field on all volumes that are encrypted and locked. To continue, you will need to provide the numerical password:
+
+<p align="center">
+	<img src="../res/img_tasks/offline_inst_mgmt/off_inst_mgmt_bitlocker.png" />
+</p>
+
+After an installation in an encrypted volume has been managed, the volume will be locked again.
+
+!!! note
+
+	You can prevent DISMTools from locking BitLocker volumes after leaving offline installation management from Options > Image operations
 
 ## Differences with standard project management
 

@@ -282,20 +282,28 @@ You've finished the Domain Services Wizard. When you get to the components scree
 
 ## Starter Script Reference
 
-Currently, there are **27** starter scripts available:
+Currently, there are **35** starter scripts available:
 
 | Script Name | Stage |
 |:------------|:-----:|
 | Change PowerShell Execution Policy | During System Configuration |
 | Close First Logon Animation | During System Configuration |
 | Configure current power plan timeout values | During System Configuration |
+| Configure Windows Server processor scheduling | During System Configuration |
+| Control Remote Desktop parameters | During System Configuration |
+| Prevent Automatic BitLocker Drive Encryption | During System Configuration |
+| Disable Fast Startup | During System Configuration |
 | Disable Shutdown Event Tracker | During System Configuration |
 | Disable warnings for unsigned RDP files | During System Configuration |
 | Disable Windows Admin Center and Azure Arc banners | During System Configuration |
+| Disable Windows Platform Binary Table (WPBT) | During System Configuration |
 | Display Bugcheck Parameters | During System Configuration |
+| Empty Start Menu Pins for Windows 11 | During System Configuration |
 | Enable Batch script file locks | During System Configuration |
 | Enable Verbose Status Messages | During System Configuration |
+| Prevent Installation of Expedited Device Applications | During System Configuration |
 | Remove File System MAX_PATH length limit | During System Configuration |
+| Set a custom lock screen background | During System Configuration |
 | Set OEM Information | During System Configuration |
 | Set Quick Machine Recovery Settings | During System Configuration |
 | Configure folders for Git integration | When the first user logs on |
@@ -591,6 +599,57 @@ Set the `_LaunchTo` variable to one of the following values to set the File Expl
 **Script language**: Batch
 
 No settings available.
+
+### Configure Windows Server processor scheduling
+
+**Script language**: Batch
+
+Set `_ApplicationPriority` to `0` to prioritize foreground applications, or `1` to prioritize background services.
+
+### Control Remote Desktop parameters
+
+**Script language**: Batch
+
+| Option | Description |
+|:------:|:------------|
+| `_RdpEnabled` | Enables (1) or disables (0) Remote Desktop |
+| `_RDS_NLA` | Enables (1) or disables (0) Network Level Authentication for Remote Desktop |
+
+### Prevent Automatic BitLocker Drive Encryption
+
+**Script language**: Batch
+
+No settings available.
+
+### Disable Fast Startup
+
+**Script language**: Batch
+
+No settings available.
+
+### Disable Windows Platform Binary Table (WPBT)
+
+**Script language**: Batch
+
+No settings available.
+
+### Empty Start Menu Pins for Windows 11
+
+**Script language**: Batch
+
+No settings available.
+
+### Prevent Installation of Expedited Device Applications
+
+**Script language**: Batch
+
+No settings available.
+
+### Set a custom lock screen background
+
+**Script language**: Batch
+
+Set `_LockScreenBackground` to the path of the JPG file to use as the lock screen background. PNG files are not supported.
 
 ## Acknowledgements
 
