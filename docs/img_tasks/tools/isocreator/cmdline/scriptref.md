@@ -74,7 +74,7 @@ This set of scripts allows you to manage BitLocker-encrypted drives in the Prein
 | `bdemgr encrypt` | `bdeencrypt` | Encrypts the drive with BitLocker |
 | `bdemgr decrypt` | `bdedecrypt` | Decrypts the BitLocker-encrypted drive |
 
-For more general information about BitLocker, simply type `bdemgr`. For each task, select the volume to perform the operation on, and follow the instructions.
+For more general information about BitLocker utilities, simply type `bdemgr`. For each task, select the volume to perform the operation on, and follow the instructions.
 
 For encryption and decryption tasks, you will have to wait for the process to complete. The time you will have to wait depends on the used disk space and the speed of the drive. Real-time progress is displayed in the encryption and decryption windows.
 
