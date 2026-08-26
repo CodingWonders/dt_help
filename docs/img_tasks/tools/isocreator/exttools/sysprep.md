@@ -123,4 +123,4 @@ After your computer shuts down, you can capture its image with your preferred me
 
 ## Related content
 
-You can download this tool to run it independently here: [Sysprep Preparator Repository](https://github.com/CodingWonders/SysprepPreparator).
+You can download this tool to run it independently [here](https://github.com/CodingWonders/SysprepPreparator).

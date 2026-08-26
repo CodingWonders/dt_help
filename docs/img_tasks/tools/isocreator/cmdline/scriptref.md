@@ -26,7 +26,7 @@ Usage:
 
 ### Capture Image (`imagecapture.bat`)
 
-This script captures a Windows system drive into a WIM file that can be used later. In DISMTools 0.7.2 and later, this tool can be launched automatically after Sysprep completes, using the [Sysprep Preparation Tool](../exttools/sysprep.md).
+This script captures a Windows system drive into a WIM file that can be used later. This tool can also be launched automatically after Sysprep completes, using the [Sysprep Preparation Tool](../exttools/sysprep.md).
 
 Usage:
 
@@ -36,8 +36,9 @@ Usage:
     - Type `WDS` to run the WDS Image Capture wizard. This will let you upload the captured image directly to a WDS server   
 2. Enter the destination drive letter (where to save the WIM file)
 3. Enter the WIM file name (for example, `install.wim`)
-4. Enter the image name (for example, `Windows 11 Pro`)
-5. Wait for the process to complete
+4. Enter the image name (for example, `Windows 11 Pro`), or continue with default values by pressing ENTER
+5. Enter the image description (for example, `Windows 11 Pro`), or continue with default values by pressing ENTER
+6. Wait for the process to complete
 
 After DISM completes, you will see a result screen.
 
@@ -60,3 +61,23 @@ Once the script launches:
 2. Provide the number of the destination MSR/ESP partition in the selected disk
 3. Provide the letter of the volume to copy boot files from
 4. Wait for the tool to do its work, and restart the computer
+
+### BitLocker Utilities (`bdemgr`)
+
+This set of scripts allows you to manage BitLocker-encrypted drives in the Preinstallation Environment. Use one of the following commands (or aliases) depending on what you want to do:
+
+| Command | Alias | Description |
+|:--------|:------|:------------|
+| `bdemgr info` | `bdeinfo` | Displays information about the BitLocker-encrypted drive |
+| `bdemgr unlock` | `bdeunlock` | Unlocks the BitLocker-encrypted drive |
+| `bdemgr lock` | `bdelock` | Locks the BitLocker-encrypted drive |
+| `bdemgr encrypt` | `bdeencrypt` | Encrypts the drive with BitLocker |
+| `bdemgr decrypt` | `bdedecrypt` | Decrypts the BitLocker-encrypted drive |
+
+For more general information about BitLocker, simply type `bdemgr`. For each task, select the volume to perform the operation on, and follow the instructions.
+
+For encryption and decryption tasks, you will have to wait for the process to complete. The time you will have to wait depends on the used disk space and the speed of the drive. Real-time progress is displayed in the encryption and decryption windows.
+
+!!! warning
+
+    It is recommended that you perform the encryption or decryption tasks as soon as you load the Preinstallation Environment. If a drive is very slow, it can take longer than the allotted 72 hours (3 days) that the Preinstallation Environment is available. If the environment restarts before the process completes, you will have to start over.
