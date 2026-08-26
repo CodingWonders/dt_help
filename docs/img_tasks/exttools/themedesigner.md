@@ -42,7 +42,9 @@ Enjoy your new theme!
     <img src="../../res/img_tasks/exttools/themedesigner/ThemeDesigner_CustomTheme.png" />
 </p>
 
-**NOTE:** themes you create will not work on DISMTools 0.6.2 and older due to the absence of the theme engine.
+!!!note
+
+	 Themes you create will not work on DISMTools 0.6.2 and older due to the absence of the theme engine.
 
 ## Running on older versions of Windows
 
@@ -78,7 +80,9 @@ AccentColor3="#057F1A"
 AccentColor4="#005522"
 ```
 
-**NOTE:** on Windows 9X systems, you will see some artifacts when opening the theme files in a text editor. This is because theme files are encoded in UTF-8, which Windows 9X does not support, as it only provides ASCII support by default. On Windows NT platforms you will not see these issues.
+!!!note
+
+	 On Windows 9X systems, you will see some artifacts when opening the theme files in a text editor. This is because theme files are encoded in UTF-8, which Windows 9X does not support, as it only provides ASCII support by default. On Windows NT platforms you will not see these issues.
 
 Color values are stored as hex values composed of red, green, and blue components. Alpha channel support is not implemented because adding transparency to surfaces is not necessary.
 

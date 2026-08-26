@@ -20,7 +20,11 @@ This action is supported on the following platforms:
 
 <i>This action is supported on DISMTools 0.3 and newer</i>
 
-**NOTE:** DISM will not be invoked when you add drivers to active installations. Instead, the PnP Utility (`pnputil.exe`) will be used to add drivers to the system. DISMTools will adapt its command line arguments to work with pnputil depending on the installed system, with command line arguments being different in Windows 8 and Windows 10 and newer. Performing this action on active installations is only supported on DISMTools 0.7 and newer.
+!!!note
+
+	 DISM will not be invoked when you add drivers to active installations. Instead, the PnP Utility (`pnputil.exe`) will be used to add drivers to the system. DISMTools will adapt its command line arguments to work with pnputil depending on the installed system, with command line arguments being different in Windows 8 and Windows 10 and newer. Performing this action on active installations is only supported on DISMTools 0.7 and newer.
+
+	 For system administrators working with the command line, DISMTools includes a helper script that allows you to recursively install driver INF files on Windows NT 6.x systems (Windows Vista-8.1, Server 2008-2012 R2).
 
 ## Usage
 

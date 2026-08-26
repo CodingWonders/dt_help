@@ -101,7 +101,9 @@ Then, press ENTER to perform an action.
 
 #### Unmounting an image
 
-**NOTE:** if the image is mounted with read-only privileges, this action will directly unmount it discarding changes
+!!!note
+
+	 If the image is mounted with read-only privileges, this action will directly unmount it discarding changes
 
 <p align="center">
 	<img src="../../res/img_tasks/tools/mimgmgr/cli/mimgmgr_unmount_image.png" />
@@ -115,7 +117,9 @@ In this menu:
 
 **Unmount settings**
 
-**NOTE:** these settings only apply to the commit operation. You can't change settings for read-only mounted images.
+!!!note
+
+	 These settings only apply to the commit operation. You can't change settings for read-only mounted images.
 
 <p align="center">
 	<img src="../../res/img_tasks/tools/mimgmgr/cli/mimgmgr_unmount_settings.png" />
@@ -125,7 +129,9 @@ These are the same settings you would find in the [image unmount dialog](../mgmt
 
 #### Removing volume images
 
-**NOTE:** this task is only applicable to images with multiple indexes
+!!!note
+
+	 This task is only applicable to images with multiple indexes
 
 <p align="center">
 	<img src="../../res/img_tasks/tools/mimgmgr/cli/mimgmgr_delete_image.png" />
@@ -151,7 +157,9 @@ From the image index list shown above, you can pick the volume images to remove 
 
 #### Switching indexes
 
-**NOTE:** this task is only applicable to images with multiple indexes
+!!!note
+
+	 This task is only applicable to images with multiple indexes
 
 <p align="center">
 	<img src="../../res/img_tasks/tools/mimgmgr/cli/mimgmgr_switch_image.png" />

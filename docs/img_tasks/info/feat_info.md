@@ -23,7 +23,7 @@ DISMTools 0.5 introduces a new way of viewing custom properties of features. Thi
 
 ## Additional search functionality
 
-With the state filter functionality introduced in DISMTools 0.6 you can get the information you want based on a feature's state. To filter features by state, **type `state:` and provide one of the following state values**:
+You can get the information you want based on a feature's state. To filter features by state, **type `state:` and provide one of the following state values**:
 
 - `enabled`
 - `disabled`

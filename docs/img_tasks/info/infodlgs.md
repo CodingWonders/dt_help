@@ -24,27 +24,17 @@ The following dialogs let you get specific information from a Windows image or i
 
 ## Saving image information
 
-DISMTools 0.3.3 and later let you save this information to a file.
+You can save this information to a file:
 
 <p align="center">
     <img src="../../res/img_tasks/info/info_save.png" />
 </p>
 
-This action will generate an **image information report**, which you can view at any time.
-
-DISMTools 0.4 expands this functionality by showing a preview of the information report after completing the process.
-
-Generated reports (in HTML) can also be saved to any location in DISMTools 0.7.3 and later.
+This action will generate an **image information report**, which you can view at any time. After the process if complete, you will see a preview of the information report after completing the process, which you can save anywhere.
 
 ## Searching through this information
 
-DISMTools 0.5 introduces **Search capabilities** to the information dialogs, allowing you to get the results you want more easily.
-
-This search technology uses **linear search**, a method that is easy to implement (code-wise) and fast at returning results.
-
-<!-- Anything is better than Windows Search though! -->
-
-To get started, simply click on the search box text and start typing.
+Leverate the search functionality in information dialogs to get the results you want more easily. To get started, simply click on the search box text and start typing.
 
 <p align="center">
     <img src="../../res/img_tasks/info/search_example.gif" />
@@ -58,14 +48,14 @@ The following items support this functionality:
 - Capabilities
 - Installed drivers
 
-For features and capabilities, you can now use **state filters** with DISMTools 0.6.
-
 ## Looking up an item online
 
-DISMTools 0.7.2 and later let you look up a selected item online using your preferred search engine. The following items support this functionality:
+You can look up a selected item online using your preferred search engine. The following items support this functionality:
 
 - Features
 - Capabilities
+- Driver INF files (in generated reports)
+- Services (in generated reports)
 
 <p align="center">
     <img src="../../res/img_tasks/info/item_online_lookup.png" />

@@ -7,7 +7,7 @@ To create a new ISO file, do the following:
 3. (Optional) **Choose an unattended answer file to apply**
 4. **Choose the target location of the ISO file.** If the target image exists, you will be asked if you want to replace it when clicking Create
 
-With DISMTools 0.6.1 and later, you can also specify 2 options:
+Additional options can be specified:
 
 - **Copy to Ventoy drives** lets you take advantage of your [Ventoy](https://ventoy.net/en) drives for operating system installation. After the ISO is generated, it will be copied automatically to all Ventoy drives you have plugged into your computer
 - **Use newly-signed boot binaries** will make the ISO files that you create ship with EFI boot binaries signed with the *Windows UEFI CA 2023* code-signing certificate. This is not checked by default because of reasons that are mentioned later in this document
@@ -83,7 +83,9 @@ The installation process is different if you use the PXE Helpers.
 
 ### Choosing an installation method
 
-**NOTE:** the following screen will not appear if you started the installation with HotInstall
+!!!note
+
+	 The following screen will not appear if you started the installation with HotInstall
 
 When you boot up the Preinstallation Environment, you will be presented with a screen that lets you choose your preferred installation method, whether it is a local installation or a network-based one.
 
@@ -186,6 +188,15 @@ DISMTools 0.8 and later versions allow you to configure the Preinstallation Envi
     <img src="../../../res/img_tasks/tools/isocreator/dt_pe/policy/dt_pe_policy_answerfile_review.png" />
 </p>
 
+- **Include boot image files when scanning ISO files for available Windows images**: this allows you to include boot image files in installation media scans. This is a `REG_DWORD` policy with valid values of `0` or `1`, and a default value of `0`. Invalid values will be reset to `0`.
+- **Default image file selection**: this defines what image file to deploy by default if installation media contains multiple images. The available options are:
+
+    - *Ask me to select the image file to deploy*
+    - *Automatically deploy the largest image file*
+    - *Automatically deploy the most recent image file (based on file modification dates)*
+
+    This is a `REG_SZ` policy with valid values of `AskUser`, `LargestFirst`, or `MostRecentFirst`, and a default value of `AskUser`. When the most recent image file option is used, boot image scanning is not considered. If this policy is set to an option other than asking the user, it will select the image file and continue with it without allowing the user to return to the image selector to select another file. Invalid values will be reset to `AskUser`.
+
 Preinstallation Environment policies are stored in the system registry, under `HKEY_LOCAL_MACHINE\SOFTWARE\DISMTools\Preinstallation Environment\Policies`. The policies use the following names in the registry:
 
 | Policy | Value name |
@@ -199,8 +210,10 @@ Preinstallation Environment policies are stored in the system registry, under `H
 | Amount of connection attempts that should be considered when connecting to a WDS server | `WDSHCConnAttempts` |
 | Port to be used by PXE Helper clients to send requests by default | `PXEServerPort` |
 | Default keyboard layout | `KeyboardLayoutCode` |
-| Override keyboard layouts used by target images with the one I select here | `KeyboardLayoutOverrideExistingLayout` |
 | Unattended answer file conflict resolution | `AnswerFileConflictResponse` |
+| Override keyboard layouts used by target images with the one I select here | `KeyboardLayoutOverrideExistingLayout` |
+| Include boot image files when scanning ISO files for available Windows images | `ScanBootImages` |
+| Default image file selection | `ImageSelectorDefaultOption` |
 
 The policies you configure from the ISO creator are known as *custom policies*. You can also make policy changes permanent by configuring them as *default policies* in the application settings. To save the settings as default policies, click *Save to default policies*.
 

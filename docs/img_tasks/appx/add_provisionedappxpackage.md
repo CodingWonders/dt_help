@@ -18,7 +18,9 @@ This action is supported on the following platforms:
 | Windows 10/Server 2016/2019/2022 | ✔ |
 | Windows 11/Server 2025 | ✔ |
 
-**NOTE:** if you are adding provisioned AppX packages to an online installation, you may need to enable sideloading of applications. Otherwise, you may get error code `0xc1570113`. More information can be found [here](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/sideload-apps-with-dism-s14?view=windows-11#configure-pcs-for-developing-windows-apps). You may also need to properly **register the application to the operating system** for it to fully work, a guide for which is explained later in this page.
+!!!note
+
+	 If you are adding provisioned AppX packages to an online installation, you may need to enable sideloading of applications. Otherwise, you may get error code `0xc1570113`. More information can be found [here](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/sideload-apps-with-dism-s14?view=windows-11#configure-pcs-for-developing-windows-apps). You may also need to properly **register the application to the operating system** for it to fully work, a guide for which is explained later in this page.
 
 <i>This action is supported on DISMTools 0.2 and newer</i>
 
@@ -53,11 +55,15 @@ You may notice that all options are disabled. This is because the program uses a
 - If you want, you can **provide a custom data file**
 - If you want to provision applications in some regions, specify them, separated by a semi-colon (;); following the [ISO 3166-1 Alpha 2](https://en.wikipedia.org/wiki/ISO_3166-1) or [Alpha 3](https://en.wikipedia.org/wiki/ISO_3166-1) codes
 
-**NOTE:** specifying a region requires DISM for Windows 10 and/or a Windows 10 or later image.
+!!!note
+
+	 Specifying a region requires DISM for Windows 10 and/or a Windows 10 or later image.
 
 - **<i>New to DISMTools 0.5.1 and later!</i>** If you want, you can configure **stub package preferences** for your applications. Think of these as temporary packages that download the full version of an application. Setting an application to use the full package will explicitly install the full version of the package.
 
-**NOTE:** you can only configure stub package preferences if the following criteria are met:
+!!!note
+
+	 You can only configure stub package preferences if the following criteria are met:
 
 I. The DISM version used and the Windows image serviced are Windows 10 and later
 

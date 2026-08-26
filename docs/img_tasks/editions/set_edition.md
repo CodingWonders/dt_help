@@ -26,7 +26,9 @@ Simply specify the edition you want to upgrade your Windows image to, and some a
 
 ## Options
 
-**NOTE:** these options are only applicable to active Windows Server installations.
+!!!note
+
+	 These options are only applicable to active Windows Server installations.
 
 <p align="center">
     <img src="../../res/img_tasks/editions/set_imageedition_server.png" />

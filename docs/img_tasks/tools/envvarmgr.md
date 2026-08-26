@@ -10,7 +10,9 @@ You can access the Environment Variable Manager by going to *Tools -> Manage sys
 
 *This tool is available in DISMTools 0.7.1 and later.*
 
-**NOTE:** when working with online installations, performing these steps will open the advanced system properties.
+!!!note
+
+	 When working with online installations, performing these steps will open the advanced system properties.
 
 User variables will be applied to default user profiles.
 

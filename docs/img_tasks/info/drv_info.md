@@ -26,7 +26,9 @@ With DISMTools you can get the information about installed drivers, or about dri
 
 - You can go back to the main screen by clicking the link on the top left
 
-**NOTE:** the amount of installed drivers that are listed is determined by the background process settings. By default, drivers that come with the Windows distribution aren't listed, to decrease the time background processes take when getting driver information. The program will give you the option to configure these processes to detect all drivers.
+!!!note
+
+	 The amount of installed drivers that are listed is determined by the background process settings. By default, drivers that come with the Windows distribution aren't listed, to decrease the time background processes take when getting driver information. The program will give you the option to configure these processes to detect all drivers.
 
 ## Going through hardware targets
 

@@ -8,7 +8,9 @@ With DISMTools you can get the information about the capabilities present in Win
 
 *This action is supported on DISMTools 0.3.1 and newer.*
 
-**NOTE:** this action is not supported on Windows images and installations earlier than Windows 10 or Server 2016
+!!!note
+
+	 This action is not supported on Windows images and installations earlier than Windows 10 or Server 2016
 
 ## Usage
 

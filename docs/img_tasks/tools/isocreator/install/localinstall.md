@@ -16,7 +16,9 @@ In DISMTools 0.7.1 and later, performing these tasks has become much easier than
 
 DISMTools 0.6.1 and later come with a program that prepares your computer for OS installation. This is called *HotInstall*, and the process of computer preparation is as follows:
 
-**NOTE:** HotInstall does not support Ventoy drives, due to the way they work
+!!!note
+
+	 HotInstall does not support Ventoy drives, due to the way they work
 
 **IMPORTANT:** HotInstall **WILL NOT** perform an upgrade. It will only prepare your computer for a clean installation of the operating system.
 
@@ -137,5 +139,15 @@ If all conditions are met, you will be asked to choose whether you want to use b
 This question is asked by both the PE Helper and the WDS Helper Client.
 
 You should know which binary to use based on whether the required certificates are present in the target system's Secure Boot database, and whether the target operating system you want to deploy comes with updated boot binaries out of the box. You will be told if you can use UEFI CA 2023 binaries with the current system, but not if the target operating system supports them. 
+
+You can check the state of certificates in DB by navigating through your UEFI firmware settings. Here is an example:
+
+<p align="center">
+    <img src="../../../../res/img_tasks/tools/isocreator/uefica2023/uefica23_pcuefi_sbadmin.png" />
+</p>
+
+<p align="center">
+    <img src="../../../../res/img_tasks/tools/isocreator/uefica2023/uefica23_pcuefi_sbdb.png" />
+</p>
 
 If your computer does support UEFI CA 2023, but you are not sure whether to use them, continue with the default option by pressing ENTER, and the PE Helper will use the UEFI CA 2023 binaries, if available. If the PE Helper does not find updated boot binaries, it will fall back to using Microsoft Windows Production PCA 2011 binaries. Typically, operating system releases start supporting UEFI CA 2023 binaries after updates released on or after February 2024.

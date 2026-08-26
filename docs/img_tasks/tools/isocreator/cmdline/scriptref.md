@@ -8,7 +8,7 @@ This page contains reference documentation for Administration Scripts included w
 
 ## Available scripts
 
-Currently, 4 scripts are included:
+These are the available scripts in the Preinstallation Environment:
 
 ### Initialize Networking (`initializenetwork.bat`)
 

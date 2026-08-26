@@ -6,7 +6,9 @@ DISMTools 0.2 introduced AppX package servicing, which allows you to add and rem
 
 ## Inside an AppX package
 
-**NOTE:** this information is based on how applications are packed in the MSIX format, but this also applies to AppX packages. An overview of the MSIX packaging format can be accessed [here](https://learn.microsoft.com/en-us/windows/msix/overview). However, this information focuses on more technical things about these packages
+!!!note
+
+	 This information is based on how applications are packed in the MSIX format, but this also applies to AppX packages. An overview of the MSIX packaging format can be accessed [here](https://learn.microsoft.com/en-us/windows/msix/overview). However, this information focuses on more technical things about these packages
 
 This is the overall structure of an AppX package:
 
@@ -31,7 +33,9 @@ However, the placement of some files varies depending on the **format** of the a
 
 We are interested in the manifest file because it **provides information about the application**: its name, its publisher info, its version and, most importantly, its dependencies.
 
-**NOTE:** if you've ever stumbled upon an `.eappx` or `.emsix` package, these **cannot be opened or deployed through DISM**, and need to be deployed using the `Add-AppxPackage` cmdlet
+!!!note
+
+	 If you've ever stumbled upon an `.eappx` or `.emsix` package, these **cannot be opened or deployed through DISM**, and need to be deployed using the `Add-AppxPackage` cmdlet
 
 Let's look at a manifest file. This is the manifest file of [Rayman Jungle Run](https://en.wikipedia.org/wiki/Rayman_Origins#Rayman_Jungle_Run):
 

@@ -20,7 +20,9 @@ This action is supported on the following platforms:
 | Windows 10/Server 2016/2019/2022 | ✔ |
 | Windows 11/Server 2025 | ✔ |
 
-**NOTE:** if you are removing AppX packages from a Windows Server Core installation, the Desktop Experience feature needs to be installed. **Do not remove the Desktop Experience feature before removing the desired AppX packages.**
+!!!note
+
+	 If you are removing AppX packages from a Windows Server Core installation, the Desktop Experience feature needs to be installed. **Do not remove the Desktop Experience feature before removing the desired AppX packages.**
 
 <i>This action is supported on DISMTools 0.2 and newer</i>
 

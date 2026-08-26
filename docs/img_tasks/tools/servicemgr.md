@@ -10,7 +10,9 @@ You can access the System Service Manager by going to *Tools -> Manage system se
 
 *This tool is available in DISMTools 0.7.1 and later.*
 
-**NOTE:** when working with online installations, performing these steps will open the default service panel (`services.msc`), as it is more than enough.
+!!!note
+
+	 When working with online installations, performing these steps will open the default service panel (`services.msc`), as it is more than enough.
 
 ## Service Information available
 

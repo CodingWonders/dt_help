@@ -9,7 +9,9 @@ To successfully deploy operating systems via the network, you will need the foll
 - DHCP (Dynamic Host Configuration Protocol)
 - Windows Deployment Services
 
-**NOTE:** you can have a different server that acts as the DHCP server. In that case, you only need the WDS role:
+!!!note
+
+	 You can have a different server that acts as the DHCP server. In that case, you only need the WDS role:
 
 You should be able to determine whether they are installed by simply searching for the management tools:
 
@@ -17,7 +19,9 @@ You should be able to determine whether they are installed by simply searching f
 
 ![WDS Requirement](../../../../../res/img_tasks/tools/isocreator/netinstall/wds/wds_req.png)
 
-**NOTE:** if you don't use WDS, do not install the WDS role. This guide assumes that you will use WDS. However, DHCP is still required for PXE booting.
+!!!note
+
+	 If you don't use WDS, do not install the WDS role. This guide assumes that you will use WDS. However, DHCP is still required for PXE booting.
 
 If not present, it's time to assess the current situation of the server. To do this:
 
@@ -75,19 +79,25 @@ Finally, configure the server to use the new switch:
 
 ![Connect To Switch](../../../../../res/img_tasks/tools/isocreator/netinstall/wds/viridian_connect_to_switch.png)
 
-Turn on the server VM and run `ipconfig /all` to make sure the virtual network adapter is detecting the address used by Internet Connection Sharing as the default gateway. If so, then try pinging it:
+After that step, all further steps apply to all conditions, regardless of the switch.
+
+On the server, run `ipconfig /all` to make sure the network adapter is grabbing IP and gateway addresses. If so, then try pinging the gateway:
 
 ![Connect To Switch](../../../../../res/img_tasks/tools/isocreator/netinstall/wds/viridian_server_ipconfig.png)
 
-Configure the static IP address for the DHCP server to the values you see in ipconfig.
+Configure the static IP address for the DHCP server to the values you see in ipconfig. If you want to set up a domain, configure the DNS settings to their current values as well.
 
 ![Static IP](../../../../../res/img_tasks/tools/isocreator/netinstall/wds/viridian_server_static_ip.png)
 
-If the server can ping your computer, then you have a working vSwitch. You can now hook up the rest of the virtual machines you would like to use to that vSwitch.
+!!! note "For virtual switches only"
+
+    If the server can ping your computer, then you have a working vSwitch. You can now hook up the rest of the virtual machines you would like to use to that vSwitch.
 
 ## Configuring the DHCP Scopes
 
-**NOTE:** the contents of this section, introduced in earlier 0.7 Previews, have been moved to the WDS guide in order to show setups that work with other providers and not just WDS. This guide will only cover how to set up DHCP scopes for PXE.
+!!!note
+
+	 The contents of this section, introduced in earlier 0.7 Previews, have been moved to the WDS guide in order to show setups that work with other providers and not just WDS. This guide will only cover how to set up DHCP scopes for PXE.
 
 A DHCP server, in order to automatically assign IP addresses to clients, needs to have scopes with lengths that can contain the maximum amount of clients to use. If you already configured scopes, you can skip this step. Otherwise, keep reading.
 
@@ -125,7 +135,7 @@ Right-click IPv4 and select New scope. In the wizard, follow these steps:
 
     ![Configure Options](../../../../../res/img_tasks/tools/isocreator/netinstall/wds/dhcp_scope_options_menu_item.png)
     
-8. Then, configure the following options as follows based on your deployment solution:
+8. Then, configure the following options as follows based on your deployment solution (Option 67 is optional):
 
     | Provider | Option | Value |
     |----------|--------|-------|
@@ -138,6 +148,18 @@ Right-click IPv4 and select New scope. In the wizard, follow these steps:
     ![Required scopes](../../../../../res/img_tasks/tools/isocreator/netinstall/wds/dhcp_scope_options_required.png)
 
 9. Finally, right-click the scope and click "Activate"
+
+### DHCP server has been unauthorized and cannot be re-authorized
+
+I have only seen this happen on Active Directory domains where the domain controller is also the DHCP server.
+
+<p align="center">
+    <img src="../../../../../res/img_tasks/tools/isocreator/netinstall/wds/adds_dhcp_authorize.png">
+</p>
+
+1. Go to Active Directory Sites and Services (`dssite.msc`)
+2. In the MMC snap-in, go to Services > NetServices, select your DHCP server from the list and delete it
+3. In the DHCP snap-in (`dhcpmgmt.msc`), re-authorize the server
 
 ## Final remarks
 

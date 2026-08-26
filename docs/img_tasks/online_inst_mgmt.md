@@ -37,7 +37,9 @@ There are some differences between managing an online installation and a standar
 
 ## Risks of online installation management
 
-**NOTE:** read this section *only* if the aforementioned warning didn't make it clear.
+!!!note
+
+	 Read this section *only* if the aforementioned warning didn't make it clear.
 
 Before managing your active installation, you **must** take some risks into account:
 

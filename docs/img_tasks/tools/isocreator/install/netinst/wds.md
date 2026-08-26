@@ -4,7 +4,9 @@ The WDS Helper allows you to deploy Windows images over the network using Window
 
 ## Setting up the WDS server
 
-**NOTE:** this section was previously the continuation of the DHCP server preparation guide in earlier 0.7 previews. This guide assumes that you have already set up a DHCP server. If you haven't, please refer to the [DHCP server preparation guide](./setup.md).
+!!!note
+
+	 This section was previously the continuation of the DHCP server preparation guide in earlier 0.7 previews. This guide assumes that you have already set up a DHCP server. If you haven't, please refer to the [DHCP server preparation guide](./setup.md).
 
 Now that the server can use your switch, we'll need to configure it so that it can work with WDS. To do this, open the WDS management tool, and select your server. Then, right-click it and select "Configure Server":
 

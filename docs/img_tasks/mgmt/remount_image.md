@@ -18,4 +18,8 @@ You can easily reload the servicing session of an image in 3 ways:
 	<img src="../../res/img_tasks/mgmt/mimgmgr_reload.png" />
 </p>
 
-During startup, the program will also attempt to reload the servicing session of all images so that you can quickly begin working on them.
+During startup, the program will also attempt to reload the servicing session of all images so that you can quickly begin working on them. Alternatively, you can have your images reloaded on system startup by using the Automatic Image Reload service. Configure it by going to Tools > Options > Startup options:
+
+<p align="center">
+	<img src="../../res/img_tasks/mgmt/remount_image_airsvc.png" />
+</p>

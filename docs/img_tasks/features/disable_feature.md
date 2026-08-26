@@ -34,7 +34,9 @@ You need to specify the features you want to enable on your Windows image or ins
 
 - To remove features without removing their manifests from the image, check the "Remove feature without removing manifest" option. This will mark the selected features as "Removed"
 
-**NOTE:** if you're disabling features from an online installation, you may need to restart your system for the changes to take effect
+!!!note
+
+	 If you're disabling features from an online installation, you may need to restart your system for the changes to take effect
 
 ## Related topics
 

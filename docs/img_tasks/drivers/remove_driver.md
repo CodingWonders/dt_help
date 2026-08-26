@@ -20,7 +20,9 @@ This action is supported on the following platforms:
 
 <i>This action is supported on DISMTools 0.3 and newer</i>
 
-**NOTE:** DISM will not be invoked when you remove drivers from active installations. Instead, the PnP Utility (`pnputil.exe`) will be used to remove drivers from the system. DISMTools will adapt its command line arguments to work with pnputil depending on the installed system, with command line arguments being different in Windows 8 and Windows 10 and newer. Performing this action on active installations is only supported on DISMTools 0.7 and newer.
+!!!note
+
+	 DISM will not be invoked when you remove drivers from active installations. Instead, the PnP Utility (`pnputil.exe`) will be used to remove drivers from the system. DISMTools will adapt its command line arguments to work with pnputil depending on the installed system, with command line arguments being different in Windows 8 and Windows 10 and newer. Performing this action on active installations is only supported on DISMTools 0.7 and newer.
 
 ## Usage
 

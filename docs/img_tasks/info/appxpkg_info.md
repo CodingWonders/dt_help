@@ -8,7 +8,9 @@ With DISMTools you can get the information about the installed AppX packages in 
 
 *This action is supported on DISMTools 0.3.1 and newer.*
 
-**NOTE:** this action is not supported on Windows images and installations earlier than Windows 8 or Server 2012
+!!!note
+
+	 This action is not supported on Windows images and installations earlier than Windows 8 or Server 2012
 
 ## Usage
 

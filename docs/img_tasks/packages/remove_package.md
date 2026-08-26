@@ -24,7 +24,9 @@ This action is supported on the following platforms:
 
 You can either specify the names of installed packages to remove, or specify a package source and select the files you want to remove from the image or installation.
 
-**NOTE:** if you proceed with the latter option, you may select packages that aren't even installed in the image or installation. However, DISMTools will skip these
+!!!note
+
+	 If you proceed with the latter option, you may select packages that aren't even installed in the image or installation. However, DISMTools will skip these
 
 ## Related topics
 

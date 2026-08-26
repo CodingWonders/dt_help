@@ -8,7 +8,9 @@ With DISMTools you can get the information about installed packages, or about pa
 
 *This action is supported on DISMTools 0.3.1 and newer.*
 
-**NOTE:** capability information can't be gathered on Windows versions earlier than Windows 10 or Server 2016
+!!!note
+
+	 Capability information can't be gathered on Windows versions earlier than Windows 10 or Server 2016
 
 ## Usage
 
