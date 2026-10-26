@@ -4,8 +4,11 @@
 	<img src="./res/product.png" />
 </p>
 
+DISMTools helps you service and manage Windows images through a graphical interface. It brings common image-servicing tasks together so they are easier to find and use.
 
-Welcome to the DISMTools Help Documentation! With DISMTools you can easily manage your Windows images and installations.
+You can mount, apply, capture, export, and manage images, as well as work with drivers, packages, Windows features, capabilities, editions, and provisioned AppX packages. DISMTools also provides information about images and their contents.
+
+Whether you are customizing an offline Windows image or managing a running installation, DISMTools offers tools and guidance for each task. Browse the documentation to get started and learn about the available features.
 
 <p align="center">
 	<img alt="DISMTools functionality in multiple machines" src="./res/product_overview.png" />
