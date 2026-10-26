@@ -2,7 +2,8 @@
 
 To create a new ISO file, do the following:
 
-1. **Pick your Windows image.** You can either browse through your computer for a Windows image to copy, pick an image from the pop-up mounted image picker, or pick the currently loaded one. Once you pick a Windows image, you will see information about each index in the image
+1. **Pick your Windows images.** You can either browse through your computer for a Windows image to copy, pick an image from the pop-up mounted image picker, or pick the currently loaded one. Once you pick a Windows image, you will see information about each index in the image.
+    - You can add multiple images to the ISO file, in WIM or ESD format.
 2. **Choose the architecture for the Preinstallation Environment** by using the architecture list. It is recommended to pick the one that the image supports
 3. (Optional) **Choose an unattended answer file to apply**
 4. **Choose the target location of the ISO file.** If the target image exists, you will be asked if you want to replace it when clicking Create
@@ -13,7 +14,9 @@ Additional options can be specified:
 - **Use newly-signed boot binaries** will make the ISO files that you create ship with EFI boot binaries signed with the *Windows UEFI CA 2023* code-signing certificate. This is not checked by default because of reasons that are mentioned later in this document
 - **Include essential drivers from this system** will export SCSI adapters, storage controllers, and network adapters from your system to the Preinstallation Environment, and to the target Windows image
 
-This process can take between 5 to 10 minutes, depending on the size of the Windows image and the speed of your computer's disk drive.
+This process can take between 5 to 10 minutes, depending on the size of the Windows image and the speed of your computer's disk drive. You can create additional ISO files while the first one is being created. From the program options, you can configure how many ISO files can be created simultaneously. The default is 2 simultaneous ISO creations, but this can be configured up to 10.
+
+To show the options of an ISO creation task, double-click it from the list at the bottom of the window.
 
 #### Windows UEFI CA 2023 information
 

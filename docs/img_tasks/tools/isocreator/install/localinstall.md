@@ -44,6 +44,8 @@ After restarting your computer, choose "DISMTools Operating System Installation"
     <img src="../../../../res/img_tasks/tools/isocreator/hotinstall/hotinstall_bootmgr.png" />
 </p>
 
+To revert your computer back to its original state, select "Go Back to the Previous Operating System" from the boot menu and press Enter.
+
 ## Selecting the disk and partition
 
 The PE Helper will get the disks that are available on your computer:
