@@ -276,13 +276,13 @@ You can pick a user in one of 3 ways:
     <img src="../../res/img_tasks/unattend/unatt_creator/dsw/dswizard_dsinfo_userindomain.png" />
 </p>
 
-Finally, specify the password of the user. Since DISMTools will **NOT** check if the password is correct, make sure that you type it correctly.
+Finally, specify the password of the user. Since DISMTools will **NOT** check if the password is correct, make sure that you type it correctly. However, DISMTools *will* check if the account requires a password to log on.
 
 You've finished the Domain Services Wizard. When you get to the components screen, you will see that the necessary components and settings have been added to your answer file.
 
 ## Starter Script Reference
 
-Currently, there are **35** starter scripts available:
+Currently, there are **37** starter scripts available:
 
 | Script Name | Stage |
 |:------------|:-----:|
@@ -290,6 +290,7 @@ Currently, there are **35** starter scripts available:
 | Close First Logon Animation | During System Configuration |
 | Configure current power plan timeout values | During System Configuration |
 | Configure Windows Server processor scheduling | During System Configuration |
+| Configure System Recovery Settings | During System Configuration |
 | Control Remote Desktop parameters | During System Configuration |
 | Prevent Automatic BitLocker Drive Encryption | During System Configuration |
 | Disable Fast Startup | During System Configuration |
@@ -318,6 +319,7 @@ Currently, there are **35** starter scripts available:
 | Disable Drag Tray | When users log on for the first time |
 | Disable Second Chance OOBE | When users log on for the first time |
 | Disable Windows Notification Sources | When users log on for the first time |
+| Enable Clipboard History | When users log on for the first time |
 | Restore context menu for Windows 11 systems | When users log on for the first time |
 | Set File Explorer launch folder | When users log on for the first time |
 | Show File Extensions | When users log on for the first time |
@@ -577,6 +579,12 @@ Notes for your source:
 
 - If your source contains spaces, surround it with quotes
 
+### Enable Clipboard History
+
+**Script language**: Batch
+
+No settings available.
+
 ### Restore context menu for Windows 11 systems
 
 **Script language**: Batch
@@ -605,6 +613,26 @@ No settings available.
 **Script language**: Batch
 
 Set `_ApplicationPriority` to `0` to prioritize foreground applications, or `1` to prioritize background services.
+
+### Configure System Recovery Settings
+
+**Script language**: Batch
+
+Edit the variables near the top of the script before running it to configure system-wide crash logging, automatic restart, and memory dump behavior. Windows uses these settings for subsequent system crashes. The defaults are shown below:
+
+| Option | Description |
+|:-------|:------------|
+| `_LOG_CRASH` | Enables (1) or disables (0) logging crash events in the system event log |
+| `_REBOOT_AFTER_CRASH`| Automatically restarts the system after memory dump generation |
+| `_CRASH_DUMP_TYPE`| Selects the dump type: `0` none, `1` small, `2` kernel, `3` complete, `4` automatic, or `5` active (Windows 10/11) |
+| `_CRASH_DUMP_MINIDUMP_LOCATION` | Location for small memory dumps |
+| `_CRASH_DUMP_MEMDUMP_LOCATION` | Location for complete and other memory dumps |
+| `_CRASH_DUMP_OVERWRITE` | Overwrites an existing `MEMORY.DMP` file (1) or preserves it (0) |
+| `_CRASH_DUMP_KEEP_DUMPS_ON_LOW_SPACE_EVENTS` | Keeps memory dumps when disk space is low (1) or does not (0) |
+
+The optional `_CrashOnCtrlScroll` and `_CrashOnPowerButton` settings are commented out in the script. Uncomment the relevant setting to enable a manual crash trigger; use these only for special diagnostic scenarios. The Ctrl+Scroll Lock trigger requires a supported keyboard, and the power-button trigger requires a UEFI system.
+
+When setting a dump location that uses an environment variable, escape each percent sign with `^` in the batch assignment (for example, `^%SystemRoot^%\MEMORY.DMP`).
 
 ### Control Remote Desktop parameters
 
