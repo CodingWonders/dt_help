@@ -1,4 +1,5 @@
-site_name: DISMTools Help Documentation
+site_name: DISMTools
+copyright: "&copy; 2022-2026. CodingWonders Software"
 theme:
   name: material
   sticky_navigation: False
@@ -9,6 +10,7 @@ theme:
     text: Inter
   features:
     - search.suggest
+    - navigation.tabs
   palette:
   
     # Palette toggle for automatic mode
@@ -38,6 +40,9 @@ theme:
         name: Switch to system preference
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  - javascripts/latest-release.js
+extra_css:
+  - stylesheets/home.css
 markdown_extensions:
   - mdx_math
   - admonition

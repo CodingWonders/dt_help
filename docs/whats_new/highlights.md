@@ -4,6 +4,10 @@ This new version of DISMTools comes with new features that enhance image managem
 
 If you want to take a look at everything that has changed though, check out the [release notes page](https://github.com/CodingWonders/DISMTools/releases/latest) for more information.
 
+## The overhauled Language System
+
+DISMTools 0.8.2 introduces a new language system that makes it easier to translate the program into other languages. To get started, check out the [translation guides](https://github.com/CodingWonders/dt-languages).
+
 ## The PE Helper: do more at once
 
 DISMTools 0.8.2 offers new functionality to the PE Helper. Rollback environments are now created by HotInstall and the Sysprep Preparation Tool, improving the reliability of reverting boot configuration changes. The Sysprep Preparation Tool has also seen some visual improvements and now clears the Windows Update queue and clears BITS transfers.
